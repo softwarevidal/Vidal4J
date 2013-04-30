@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:vidal="http://api.vidal.net/-/spec/vidal-api/1.0/" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">
+    <title>Search Products - Query :asp</title>
+    <link rel="self" type="application/atom+xml" href="/rest/api/products?q=asp&amp;start-page=1&amp;page-size=25" />
+    <link rel="next" type="application/atom+xml" href="/rest/api/products?q=asp&amp;start-page=2&amp;page-size=25" title="Next page" />
+    <id>/rest/api/products?q=asp&amp;start-page=1&amp;page-size=25</id>
+    <updated>2013-02-21T00:00:00Z</updated>
+    <dc:date>2013-02-21T00:00:00Z</dc:date>
+    <opensearch:itemsPerPage>25</opensearch:itemsPerPage>
+    <opensearch:totalResults>29</opensearch:totalResults>
+    <opensearch:startIndex>1</opensearch:startIndex>
+    <entry>
+        <title>ANTIGRIPPINE A L'ASPIRINE ETAT GRIPPAL cp</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/1147" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1147/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1147/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1147/documents" title="DOCUMENTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/vmp/8038" title="VMP" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/1147</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ANTIGRIPPINE A L'ASPIRINE ETAT GRIPPAL cp</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="2247" type="OWNER">Omega Pharma</vidal:company>
+        <vidal:dispensationPlace name="PHARMACY">PHARMACY</vidal:dispensationPlace>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>false</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>1147</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="AVAILABLE">Commercialisé</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:onMarketDate format="yyyy-MM-dd">1988-04-04</vidal:onMarketDate>
+        <vidal:refundRate name="NR">NR</vidal:refundRate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:vmp vidalId="8038">acide acétylsalicylique * 500 mg + acide ascorbique * 100 mg + caféine * 9,15 mg ; voie orale ; cp</vidal:vmp>
+        <vidal:withoutPrescription>true</vidal:withoutPrescription>
+    </entry>
+    <entry>
+        <title>ASPEGIC INJECTABLE 1 g pdre/solv p sol inj</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/1522" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1522/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1522/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1522/documents" title="DOCUMENTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/vmp/1386" title="VMP" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/1522</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ASPEGIC INJECTABLE 1 g pdre/solv p sol inj</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="2172" type="OWNER">Sanofi-Aventis France</vidal:company>
+        <vidal:dispensationPlace name="NOT_HOMOGENEOUS">NOT_HOMOGENEOUS</vidal:dispensationPlace>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>true</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>1522</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="AVAILABLE">Commercialisé</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:onMarketDate format="yyyy-MM-dd">1983-01-01</vidal:onMarketDate>
+        <vidal:perVolume>1g</vidal:perVolume>
+        <vidal:refundRate name="_65">65%</vidal:refundRate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:vmp vidalId="1386">acide acétylsalicylique (sel de lysine) * 1 000 mg ; voie parentérale ; pdre/solv p sol inj</vidal:vmp>
+        <vidal:withoutPrescription>true</vidal:withoutPrescription>
+    </entry>
+    <entry>
+        <title>ASPEGIC INJECTABLE 500 mg/5 ml pdre/solv p sol inj</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/1523" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1523/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1523/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1523/documents" title="DOCUMENTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/vmp/7582" title="VMP" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/1523</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ASPEGIC INJECTABLE 500 mg/5 ml pdre/solv p sol inj</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="2172" type="OWNER">Sanofi-Aventis France</vidal:company>
+        <vidal:dispensationPlace name="NOT_HOMOGENEOUS">NOT_HOMOGENEOUS</vidal:dispensationPlace>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>true</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>1523</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="AVAILABLE">Commercialisé</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:onMarketDate format="yyyy-MM-dd">1970-10-01</vidal:onMarketDate>
+        <vidal:perVolume>500mg/5ml</vidal:perVolume>
+        <vidal:refundRate name="_65">65%</vidal:refundRate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:vmp vidalId="7582">acide acétylsalicylique (sel de lysine) * 500 mg/5 ml ; voie parentérale ; pdre/solv p sol inj</vidal:vmp>
+        <vidal:withoutPrescription>true</vidal:withoutPrescription>
+    </entry>
+    <entry>
+        <title>ASPEGIC 250 mg pdre p sol buv</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/1524" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1524/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1524/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1524/documents" title="DOCUMENTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/vmp/971" title="VMP" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/1524</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ASPEGIC 250 mg pdre p sol buv</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="2172" type="OWNER">Sanofi-Aventis France</vidal:company>
+        <vidal:dispensationPlace name="PHARMACY">PHARMACY</vidal:dispensationPlace>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>true</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>1524</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="AVAILABLE">Commercialisé</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:onMarketDate format="yyyy-MM-dd">1984-11-20</vidal:onMarketDate>
+        <vidal:perVolume>250mg</vidal:perVolume>
+        <vidal:refundRate name="_65">65%</vidal:refundRate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:vmp vidalId="971">acide acétylsalicylique (sel de lysine) * 250 mg ; voie orale ; pdre p sol buv</vidal:vmp>
+        <vidal:withoutPrescription>true</vidal:withoutPrescription>
+    </entry>
+    <entry>
+        <title>ASPEGIC 500 mg pdre p sol buv en sachet-dose</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/1525" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1525/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1525/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1525/documents" title="DOCUMENTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/vmp/2798" title="VMP" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/1525</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ASPEGIC 500 mg pdre p sol buv en sachet-dose</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="2172" type="OWNER">Sanofi-Aventis France</vidal:company>
+        <vidal:dispensationPlace name="PHARMACY">PHARMACY</vidal:dispensationPlace>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>true</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>1525</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="AVAILABLE">Commercialisé</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:onMarketDate format="yyyy-MM-dd">1972-10-02</vidal:onMarketDate>
+        <vidal:perVolume>500mg</vidal:perVolume>
+        <vidal:refundRate name="NOT_HOMOGENEOUS">partiel</vidal:refundRate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:vmp vidalId="2798">acide acétylsalicylique (sel de lysine) * 500 mg ; voie orale ; pdre p sol buv</vidal:vmp>
+        <vidal:withoutPrescription>true</vidal:withoutPrescription>
+    </entry>
+    <entry>
+        <title>ASPEGIC 1000 mg pdre p sol buv en sachet-dose adulte</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/1526" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1526/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1526/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1526/documents" title="DOCUMENTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/vmp/3373" title="VMP" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/1526</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ASPEGIC 1000 mg pdre p sol buv en sachet-dose adulte</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="2172" type="OWNER">Sanofi-Aventis France</vidal:company>
+        <vidal:dispensationPlace name="PHARMACY">PHARMACY</vidal:dispensationPlace>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>true</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>1526</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="AVAILABLE">Commercialisé</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:onMarketDate format="yyyy-MM-dd">1979-04-15</vidal:onMarketDate>
+        <vidal:perVolume>1000mg</vidal:perVolume>
+        <vidal:refundRate name="NOT_HOMOGENEOUS">partiel</vidal:refundRate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:vmp vidalId="3373">acide acétylsalicylique (sel de lysine) * 1 000 mg ; voie orale ; pdre p sol buv</vidal:vmp>
+        <vidal:withoutPrescription>true</vidal:withoutPrescription>
+    </entry>
+    <entry>
+        <title>ASPEGIC 100 mg pdre p sol buv en sachet-dose nourrisson</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/1528" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1528/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1528/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1528/documents" title="DOCUMENTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/vmp/2462" title="VMP" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/1528</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ASPEGIC 100 mg pdre p sol buv en sachet-dose nourrisson</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="2172" type="OWNER">Sanofi-Aventis France</vidal:company>
+        <vidal:dispensationPlace name="PHARMACY">PHARMACY</vidal:dispensationPlace>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>true</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>1528</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="AVAILABLE">Commercialisé</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:onMarketDate format="yyyy-MM-dd">1980-10-15</vidal:onMarketDate>
+        <vidal:perVolume>100mg</vidal:perVolume>
+        <vidal:refundRate name="_65">65%</vidal:refundRate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:vmp vidalId="2462">acide acétylsalicylique (sel de lysine) * 100 mg ; voie orale ; pdre p sol buv</vidal:vmp>
+        <vidal:withoutPrescription>true</vidal:withoutPrescription>
+    </entry>
+    <entry>
+        <title>ASPIRINE DU RHONE 500 mg cp</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/1537" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1537/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1537/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1537/documents" title="DOCUMENTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/vmp/2087" title="VMP" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/1537</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ASPIRINE DU RHONE 500 mg cp</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="2116" type="OWNER">Bayer Santé Familiale</vidal:company>
+        <vidal:dispensationPlace name="PHARMACY">PHARMACY</vidal:dispensationPlace>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>true</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>1537</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="AVAILABLE">Commercialisé</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:onMarketDate format="yyyy-MM-dd">2000-02-24</vidal:onMarketDate>
+        <vidal:perVolume>500mg</vidal:perVolume>
+        <vidal:refundRate name="NR">NR</vidal:refundRate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:vmp vidalId="2087">acide acétylsalicylique * 500 mg ; voie orale ; cp</vidal:vmp>
+        <vidal:withoutPrescription>true</vidal:withoutPrescription>
+    </entry>
+    <entry>
+        <title>ASPIRINE PH 8 500 mg cp gastrorésis</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/1549" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1549/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1549/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1549/documents" title="DOCUMENTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/vmp/7545" title="VMP" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/1549</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ASPIRINE PH 8 500 mg cp gastrorésis</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="2605" type="OWNER">Meda Pharma</vidal:company>
+        <vidal:dispensationPlace name="PHARMACY">PHARMACY</vidal:dispensationPlace>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>false</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>1549</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="AVAILABLE">Commercialisé</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:onMarketDate format="yyyy-MM-dd">1964-02-15</vidal:onMarketDate>
+        <vidal:perVolume>500mg</vidal:perVolume>
+        <vidal:refundRate name="NR">NR</vidal:refundRate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:vmp vidalId="7545">acide acétylsalicylique * 500 mg ; voie orale ; cp gastrorésis</vidal:vmp>
+        <vidal:withoutPrescription>true</vidal:withoutPrescription>
+    </entry>
+    <entry>
+        <title>ASPIRINE PROTECT 300 mg cp gastrorésis</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/1551" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1551/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1551/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1551/documents" title="DOCUMENTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/vmp/2165" title="VMP" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/1551</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ASPIRINE PROTECT 300 mg cp gastrorésis</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="2522" type="OWNER">Bayer Santé</vidal:company>
+        <vidal:dispensationPlace name="PHARMACY">PHARMACY</vidal:dispensationPlace>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>false</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>1551</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="AVAILABLE">Commercialisé</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:onMarketDate format="yyyy-MM-dd">2000-09-27</vidal:onMarketDate>
+        <vidal:perVolume>300mg</vidal:perVolume>
+        <vidal:refundRate name="_65">65%</vidal:refundRate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:vmp vidalId="2165">acide acétylsalicylique * 300 mg ; voie orale ; cp gastrorésis</vidal:vmp>
+        <vidal:withoutPrescription>true</vidal:withoutPrescription>
+    </entry>
+    <entry>
+        <title>ASPIRINE RATIOPHARM 500 mg cp séc</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/1553" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1553/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1553/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1553/documents" title="DOCUMENTS" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/1553</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ASPIRINE RATIOPHARM 500 mg cp séc</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="751" type="OWNER">Ratiopharm</vidal:company>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>false</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>1553</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="DELETED_ONEYEAR">Supprimé</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:offMarketDate format="yyyy-MM-dd">2009-12-04</vidal:offMarketDate>
+        <vidal:onMarketDate format="yyyy-MM-dd">2001-09-14</vidal:onMarketDate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:withoutPrescription>false</vidal:withoutPrescription>
+    </entry>
+    <entry>
+        <title>ASPIRINE RICHARD 500 mg cp</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/1554" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1554/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1554/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1554/documents" title="DOCUMENTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/vmp/2087" title="VMP" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/1554</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ASPIRINE RICHARD 500 mg cp</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="765" type="OWNER">Richard</vidal:company>
+        <vidal:dispensationPlace name="HOSPITAL">HOSPITAL</vidal:dispensationPlace>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>false</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>1554</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="AVAILABLE">Commercialisé</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:onMarketDate format="yyyy-MM-dd">2011-03-01</vidal:onMarketDate>
+        <vidal:perVolume>500mg</vidal:perVolume>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:vmp vidalId="2087">acide acétylsalicylique * 500 mg ; voie orale ; cp</vidal:vmp>
+        <vidal:withoutPrescription>true</vidal:withoutPrescription>
+    </entry>
+    <entry>
+        <title>ASPIRINE UPSA TAMPONNEE EFFERVESCENTE 1000 mg cp efferv</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/1570" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1570/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1570/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1570/documents" title="DOCUMENTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/vmp/1050" title="VMP" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/1570</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ASPIRINE UPSA TAMPONNEE EFFERVESCENTE 1000 mg cp efferv</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="148" type="OWNER">Bristol-Myers Squibb</vidal:company>
+        <vidal:dispensationPlace name="PHARMACY">PHARMACY</vidal:dispensationPlace>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>true</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>1570</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="AVAILABLE">Commercialisé</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:onMarketDate format="yyyy-MM-dd">1993-02-08</vidal:onMarketDate>
+        <vidal:perVolume>1000mg</vidal:perVolume>
+        <vidal:refundRate name="_65">65%</vidal:refundRate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:vmp vidalId="1050">acide acétylsalicylique * 1 g ; voie orale ; cp efferv</vidal:vmp>
+        <vidal:withoutPrescription>true</vidal:withoutPrescription>
+    </entry>
+    <entry>
+        <title>ASPIRINE UPSA 500 mg cp efferv</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/1571" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1571/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1571/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1571/documents" title="DOCUMENTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/vmp/3374" title="VMP" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/1571</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ASPIRINE UPSA 500 mg cp efferv</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="148" type="OWNER">Bristol-Myers Squibb</vidal:company>
+        <vidal:dispensationPlace name="PHARMACY">PHARMACY</vidal:dispensationPlace>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>true</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>1571</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="AVAILABLE">Commercialisé</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:onMarketDate format="yyyy-MM-dd">1988-10-15</vidal:onMarketDate>
+        <vidal:perVolume>500mg</vidal:perVolume>
+        <vidal:refundRate name="_65">65%</vidal:refundRate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:vmp vidalId="3374">acide acétylsalicylique * 500 mg ; voie orale ; cp efferv</vidal:vmp>
+        <vidal:withoutPrescription>true</vidal:withoutPrescription>
+    </entry>
+    <entry>
+        <title>ASPIRINE UPSA 325 mg gél</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/1572" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1572/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1572/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1572/documents" title="DOCUMENTS" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/1572</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ASPIRINE UPSA 325 mg gél</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="148" type="OWNER">Bristol-Myers Squibb</vidal:company>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>false</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>1572</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="DELETED_ONEYEAR">Supprimé</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:offMarketDate format="yyyy-MM-dd">2012-07-01</vidal:offMarketDate>
+        <vidal:onMarketDate format="yyyy-MM-dd">1994-05-13</vidal:onMarketDate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:withoutPrescription>false</vidal:withoutPrescription>
+    </entry>
+    <entry>
+        <title>ASPIRINE UPSA VITAMINE C  cp efferv tamponnée</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/1574" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1574/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1574/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1574/documents" title="DOCUMENTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/vmp/1318" title="VMP" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/1574</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ASPIRINE UPSA VITAMINE C  cp efferv tamponnée</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="148" type="OWNER">Bristol-Myers Squibb</vidal:company>
+        <vidal:dispensationPlace name="PHARMACY">PHARMACY</vidal:dispensationPlace>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>true</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>1574</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="AVAILABLE">Commercialisé</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:onMarketDate format="yyyy-MM-dd">1960-01-01</vidal:onMarketDate>
+        <vidal:refundRate name="NR">NR</vidal:refundRate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:vmp vidalId="1318">acide acétylsalicylique * 330 mg + acide ascorbique * 200 mg ; voie orale ; cp efferv</vidal:vmp>
+        <vidal:withoutPrescription>true</vidal:withoutPrescription>
+    </entry>
+    <entry>
+        <title>ASPIRINE VITAMINE C OBERLIN cp efferv séc</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/1577" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1577/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1577/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1577/documents" title="DOCUMENTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/vmp/3269" title="VMP" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/1577</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ASPIRINE VITAMINE C OBERLIN cp efferv séc</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="148" type="OWNER">Bristol-Myers Squibb</vidal:company>
+        <vidal:dispensationPlace name="PHARMACY">PHARMACY</vidal:dispensationPlace>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>true</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>1577</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="AVAILABLE">Commercialisé</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:onMarketDate format="yyyy-MM-dd">1968-11-15</vidal:onMarketDate>
+        <vidal:refundRate name="NR">NR</vidal:refundRate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:vmp vidalId="3269">acide acétylsalicylique * 500 mg + acide ascorbique * 200 mg ; voie orale ; cp efferv</vidal:vmp>
+        <vidal:withoutPrescription>true</vidal:withoutPrescription>
+    </entry>
+    <entry>
+        <title>ASPIRINE VITAMINEE B1 C DEROL cp</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/1578" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1578/packages" title="PACKAGES" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/1578</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ASPIRINE VITAMINEE B1 C DEROL cp</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="887" type="OWNER">Substipharm</vidal:company>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>false</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>1578</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="DELETED_ONEYEAR">Supprimé</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:offMarketDate format="yyyy-MM-dd">2008-03-25</vidal:offMarketDate>
+        <vidal:onMarketDate format="yyyy-MM-dd">1947-01-01</vidal:onMarketDate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:withoutPrescription>false</vidal:withoutPrescription>
+    </entry>
+    <entry>
+        <title>ASPIRISUCRE 400 mg cp à croquer</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/1581" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1581/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1581/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1581/documents" title="DOCUMENTS" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/1581</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ASPIRISUCRE 400 mg cp à croquer</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="45" type="OWNER">Arkopharma</vidal:company>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>false</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>1581</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="DELETED_ONEYEAR">Supprimé</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:offMarketDate format="yyyy-MM-dd">2011-07-08</vidal:offMarketDate>
+        <vidal:onMarketDate format="yyyy-MM-dd">2001-04-06</vidal:onMarketDate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:withoutPrescription>false</vidal:withoutPrescription>
+    </entry>
+    <entry>
+        <title>ASPRO ACCEL cp efferv séc</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/1583" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1583/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1583/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1583/documents" title="DOCUMENTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/vmp/1784" title="VMP" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/1583</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ASPRO ACCEL cp efferv séc</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="2116" type="OWNER">Bayer Santé Familiale</vidal:company>
+        <vidal:dispensationPlace name="PHARMACY">PHARMACY</vidal:dispensationPlace>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>true</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>1583</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="AVAILABLE">Commercialisé</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:onMarketDate format="yyyy-MM-dd">1997-01-06</vidal:onMarketDate>
+        <vidal:refundRate name="NR">NR</vidal:refundRate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:vmp vidalId="1784">acide acétylsalicylique * 500 mg + caféine * 50 mg ; voie orale ; cp efferv</vidal:vmp>
+        <vidal:withoutPrescription>true</vidal:withoutPrescription>
+    </entry>
+    <entry>
+        <title>ASPRO ACCEL cp séc</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/1584" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1584/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1584/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1584/documents" title="DOCUMENTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/vmp/1960" title="VMP" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/1584</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ASPRO ACCEL cp séc</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="2116" type="OWNER">Bayer Santé Familiale</vidal:company>
+        <vidal:dispensationPlace name="PHARMACY">PHARMACY</vidal:dispensationPlace>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>true</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>1584</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="AVAILABLE">Commercialisé</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:onMarketDate format="yyyy-MM-dd">1997-01-06</vidal:onMarketDate>
+        <vidal:refundRate name="NR">NR</vidal:refundRate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:vmp vidalId="1960">acide acétylsalicylique * 500 mg + caféine * 50 mg ; voie orale ; cp</vidal:vmp>
+        <vidal:withoutPrescription>true</vidal:withoutPrescription>
+    </entry>
+    <entry>
+        <title>ASPRO 320 mg cp</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/1585" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1585/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1585/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1585/documents" title="DOCUMENTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/vmp/32" title="VMP" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/1585</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ASPRO 320 mg cp</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="2116" type="OWNER">Bayer Santé Familiale</vidal:company>
+        <vidal:dispensationPlace name="PHARMACY">PHARMACY</vidal:dispensationPlace>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>true</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>1585</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="AVAILABLE">Commercialisé</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:offMarketDate format="yyyy-MM-dd">2012-06-22</vidal:offMarketDate>
+        <vidal:onMarketDate format="yyyy-MM-dd">1966-09-13</vidal:onMarketDate>
+        <vidal:perVolume>320mg</vidal:perVolume>
+        <vidal:refundRate name="NR">NR</vidal:refundRate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:vmp vidalId="32">acide acétylsalicylique * 320 mg ; voie orale ; cp</vidal:vmp>
+        <vidal:withoutPrescription>true</vidal:withoutPrescription>
+    </entry>
+    <entry>
+        <title>ASPRO 500 mg cp efferv</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/1587" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1587/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1587/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1587/documents" title="DOCUMENTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/vmp/3374" title="VMP" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/1587</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ASPRO 500 mg cp efferv</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="2116" type="OWNER">Bayer Santé Familiale</vidal:company>
+        <vidal:dispensationPlace name="PHARMACY">PHARMACY</vidal:dispensationPlace>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>true</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>1587</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="AVAILABLE">Commercialisé</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:onMarketDate format="yyyy-MM-dd">1969-10-29</vidal:onMarketDate>
+        <vidal:perVolume>500mg</vidal:perVolume>
+        <vidal:refundRate name="NR">NR</vidal:refundRate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:vmp vidalId="3374">acide acétylsalicylique * 500 mg ; voie orale ; cp efferv</vidal:vmp>
+        <vidal:withoutPrescription>true</vidal:withoutPrescription>
+    </entry>
+    <entry>
+        <title>ASPRO 500 mg cp</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/1588" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1588/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1588/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1588/documents" title="DOCUMENTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/vmp/2087" title="VMP" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/1588</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ASPRO 500 mg cp</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="2116" type="OWNER">Bayer Santé Familiale</vidal:company>
+        <vidal:dispensationPlace name="PHARMACY">PHARMACY</vidal:dispensationPlace>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>true</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>1588</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="AVAILABLE">Commercialisé</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:onMarketDate format="yyyy-MM-dd">1998-02-28</vidal:onMarketDate>
+        <vidal:perVolume>500mg</vidal:perVolume>
+        <vidal:refundRate name="NR">NR</vidal:refundRate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:vmp vidalId="2087">acide acétylsalicylique * 500 mg ; voie orale ; cp</vidal:vmp>
+        <vidal:withoutPrescription>true</vidal:withoutPrescription>
+    </entry>
+    <entry>
+        <title>ASPRO VITAMINE C cp efferv</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/1590" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1590/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1590/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1590/documents" title="DOCUMENTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/vmp/136" title="VMP" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/1590</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ASPRO VITAMINE C cp efferv</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="2116" type="OWNER">Bayer Santé Familiale</vidal:company>
+        <vidal:dispensationPlace name="PHARMACY">PHARMACY</vidal:dispensationPlace>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>true</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>1590</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="AVAILABLE">Commercialisé</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:onMarketDate format="yyyy-MM-dd">1990-09-15</vidal:onMarketDate>
+        <vidal:refundRate name="NR">NR</vidal:refundRate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:vmp vidalId="136">acide acétylsalicylique * 500 mg + acide ascorbique * 300 mg ; voie orale ; cp efferv</vidal:vmp>
+        <vidal:withoutPrescription>true</vidal:withoutPrescription>
+    </entry>
+</feed>

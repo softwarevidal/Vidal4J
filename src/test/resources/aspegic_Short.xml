@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:vidal="http://api.vidal.net/-/spec/vidal-api/1.0/" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">
+    <title>Search Products - Query :aspegic</title>
+    <link rel="self" type="application/atom+xml" href="/rest/api/products?q=aspegic&amp;start-page=1&amp;page-size=25" />
+    <id>/rest/api/products?q=aspegic&amp;start-page=1&amp;page-size=25</id>
+    <updated>2013-02-21T00:00:00Z</updated>
+    <dc:date>2013-02-21T00:00:00Z</dc:date>
+    <opensearch:itemsPerPage>25</opensearch:itemsPerPage>
+    <opensearch:totalResults>7</opensearch:totalResults>
+    <opensearch:startIndex>1</opensearch:startIndex>
+    <entry>
+        <title>ASPEGIC INJECTABLE 1 g pdre/solv p sol inj</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/1522" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1522/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1522/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1522/documents" title="DOCUMENTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/vmp/1386" title="VMP" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/1522</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ASPEGIC INJECTABLE 1 g pdre/solv p sol inj</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="2172" type="OWNER">Sanofi-Aventis France</vidal:company>
+        <vidal:dispensationPlace name="NOT_HOMOGENEOUS">NOT_HOMOGENEOUS</vidal:dispensationPlace>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>true</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>1522</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="AVAILABLE">CommercialisÃ©</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:onMarketDate format="yyyy-MM-dd">1983-01-01</vidal:onMarketDate>
+        <vidal:perVolume>1g</vidal:perVolume>
+        <vidal:refundRate name="_65">65%</vidal:refundRate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:vmp vidalId="1386">acide acÃ©tylsalicylique (sel de lysine) * 1Â 000 mg ; voie parentÃ©rale ; pdre/solv p sol inj</vidal:vmp>
+        <vidal:withoutPrescription>true</vidal:withoutPrescription>
+    </entry>
+    <entry>
+        <title>ASPEGIC INJECTABLE 500 mg/5 ml pdre/solv p sol inj</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/1523" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1523/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1523/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1523/documents" title="DOCUMENTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/vmp/7582" title="VMP" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/1523</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ASPEGIC INJECTABLE 500 mg/5 ml pdre/solv p sol inj</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="2172" type="OWNER">Sanofi-Aventis France</vidal:company>
+        <vidal:dispensationPlace name="NOT_HOMOGENEOUS">NOT_HOMOGENEOUS</vidal:dispensationPlace>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>true</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>1523</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="AVAILABLE">CommercialisÃ©</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:onMarketDate format="yyyy-MM-dd">1970-10-01</vidal:onMarketDate>
+        <vidal:perVolume>500mg/5ml</vidal:perVolume>
+        <vidal:refundRate name="_65">65%</vidal:refundRate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:vmp vidalId="7582">acide acÃ©tylsalicylique (sel de lysine) * 500 mg/5 ml ; voie parentÃ©rale ; pdre/solv p sol inj</vidal:vmp>
+        <vidal:withoutPrescription>true</vidal:withoutPrescription>
+    </entry>
+    <entry>
+        <title>ASPEGIC 250 mg pdre p sol buv</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/1524" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1524/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1524/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1524/documents" title="DOCUMENTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/vmp/971" title="VMP" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/1524</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ASPEGIC 250 mg pdre p sol buv</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="2172" type="OWNER">Sanofi-Aventis France</vidal:company>
+        <vidal:dispensationPlace name="PHARMACY">PHARMACY</vidal:dispensationPlace>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>true</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>1524</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="AVAILABLE">CommercialisÃ©</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:onMarketDate format="yyyy-MM-dd">1984-11-20</vidal:onMarketDate>
+        <vidal:perVolume>250mg</vidal:perVolume>
+        <vidal:refundRate name="_65">65%</vidal:refundRate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:vmp vidalId="971">acide acÃ©tylsalicylique (sel de lysine) * 250 mg ; voie orale ; pdre p sol buv</vidal:vmp>
+        <vidal:withoutPrescription>true</vidal:withoutPrescription>
+    </entry>
+    <entry>
+        <title>ASPEGIC 500 mg pdre p sol buv en sachet-dose</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/1525" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1525/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1525/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1525/documents" title="DOCUMENTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/vmp/2798" title="VMP" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/1525</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ASPEGIC 500 mg pdre p sol buv en sachet-dose</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="2172" type="OWNER">Sanofi-Aventis France</vidal:company>
+        <vidal:dispensationPlace name="PHARMACY">PHARMACY</vidal:dispensationPlace>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>true</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>1525</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="AVAILABLE">CommercialisÃ©</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:onMarketDate format="yyyy-MM-dd">1972-10-02</vidal:onMarketDate>
+        <vidal:perVolume>500mg</vidal:perVolume>
+        <vidal:refundRate name="NOT_HOMOGENEOUS">partiel</vidal:refundRate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:vmp vidalId="2798">acide acÃ©tylsalicylique (sel de lysine) * 500 mg ; voie orale ; pdre p sol buv</vidal:vmp>
+        <vidal:withoutPrescription>true</vidal:withoutPrescription>
+    </entry>
+    <entry>
+        <title>ASPEGIC 1000 mg pdre p sol buv en sachet-dose adulte</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/1526" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1526/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1526/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1526/documents" title="DOCUMENTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/vmp/3373" title="VMP" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/1526</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ASPEGIC 1000 mg pdre p sol buv en sachet-dose adulte</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="2172" type="OWNER">Sanofi-Aventis France</vidal:company>
+        <vidal:dispensationPlace name="PHARMACY">PHARMACY</vidal:dispensationPlace>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>true</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>1526</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="AVAILABLE">CommercialisÃ©</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:onMarketDate format="yyyy-MM-dd">1979-04-15</vidal:onMarketDate>
+        <vidal:perVolume>1000mg</vidal:perVolume>
+        <vidal:refundRate name="NOT_HOMOGENEOUS">partiel</vidal:refundRate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:vmp vidalId="3373">acide acÃ©tylsalicylique (sel de lysine) * 1 000 mg ; voie orale ; pdre p sol buv</vidal:vmp>
+        <vidal:withoutPrescription>true</vidal:withoutPrescription>
+    </entry>
+    <entry>
+        <title>ASPEGIC 100 mg pdre p sol buv en sachet-dose nourrisson</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/1528" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1528/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1528/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/1528/documents" title="DOCUMENTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/vmp/2462" title="VMP" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/1528</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ASPEGIC 100 mg pdre p sol buv en sachet-dose nourrisson</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="2172" type="OWNER">Sanofi-Aventis France</vidal:company>
+        <vidal:dispensationPlace name="PHARMACY">PHARMACY</vidal:dispensationPlace>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>true</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>1528</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="AVAILABLE">CommercialisÃ©</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:onMarketDate format="yyyy-MM-dd">1980-10-15</vidal:onMarketDate>
+        <vidal:perVolume>100mg</vidal:perVolume>
+        <vidal:refundRate name="_65">65%</vidal:refundRate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:vmp vidalId="2462">acide acÃ©tylsalicylique (sel de lysine) * 100 mg ; voie orale ; pdre p sol buv</vidal:vmp>
+        <vidal:withoutPrescription>true</vidal:withoutPrescription>
+    </entry>
+    <entry>
+        <title>ASPEGIC CODEINE pdre p sol buv</title>
+        <link rel="alternate" type="application/atom+xml" href="/rest/api/product/4151" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/4151/packages" title="PACKAGES" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/4151</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">ASPEGIC CODEINE pdre p sol buv</summary>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:company vidalId="2172" type="OWNER">Sanofi-Aventis France</vidal:company>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:hasPublishedDoc>false</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>4151</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:marketStatus name="DELETED_ONEYEAR">SupprimÃ©</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:offMarketDate format="yyyy-MM-dd">2008-11-21</vidal:offMarketDate>
+        <vidal:onMarketDate format="yyyy-MM-dd">2004-09-07</vidal:onMarketDate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:withoutPrescription>false</vidal:withoutPrescription>
+    </entry>
+</feed>
+
