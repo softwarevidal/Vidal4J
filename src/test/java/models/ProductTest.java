@@ -10,7 +10,7 @@ import static utils.APIResultTools.getAPIProductResultFromXMLResource;
 
 public class ProductTest {
 
-   Product product;
+   private Product product;
 
    @Before
    public void setUp() throws FileNotFoundException {

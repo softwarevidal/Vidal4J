@@ -1,9 +1,9 @@
 package models;
 
 public class Company {
-   public int vidalId;
-   public String name;
-   public String type;
+   private int vidalId;
+   private String name;
+   private String type;
 
 
    public Company(int vidalId, String name, String type) {
