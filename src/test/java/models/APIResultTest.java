@@ -27,7 +27,7 @@ public class APIResultTest {
    @Test
    public void shouldReturnNextLinkIfItExists() throws FileNotFoundException {
       APIResult apiResult = getAPIResultFromXMLResource("productByName_Long.xml");
-      assertThat(apiResult.getNextPageLink().getHref().toString())
+      assertThat(apiResult.getNextPageLink().toString())
               .isEqualTo("/rest/api/products?q=asp&start-page=2&page-size=25");
    }
 

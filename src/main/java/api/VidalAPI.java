@@ -1,18 +1,16 @@
 package api;
 
 import models.APIProductResult;
-import models.Product;
 import org.apache.abdera.Abdera;
+import org.apache.abdera.i18n.iri.IRI;
 import org.apache.abdera.model.Document;
-import org.apache.abdera.model.Entry;
 import org.apache.abdera.model.Feed;
 import org.apache.abdera.parser.Parser;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class VidalAPI {
    private String baseUrl;
@@ -25,13 +23,20 @@ public class VidalAPI {
 
 
    public APIProductResult searchProductsByName(String query) {
+      IRI iri = new IRI("/rest/api/products?q=" + query);
+      return this.searchProductsByURL(iri);
+   }
+
+
+   public APIProductResult searchProductsByURL(IRI iri) {
       APIProductResult apiProductResult = null;
 
       try {
-         URL url = new URL(this.baseUrl + "/products?q=" + query);
+         URL url = new URL(this.baseUrl + iri.toString());
          Document<Feed> doc = parser.parse(url.openStream(), url.toString());
          Feed feed = doc.getRoot();
          apiProductResult = new APIProductResult(feed);
+
       } catch (MalformedURLException e) {
          e.printStackTrace();
       } catch (IOException e) {

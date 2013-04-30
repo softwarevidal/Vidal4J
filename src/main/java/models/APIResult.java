@@ -26,8 +26,9 @@ public class APIResult {
       return this.feed.getSelfLink();
    }
 
-   public Link getNextPageLink() {
-      return this.feed.getLink(Link.REL_NEXT);
+   public IRI getNextPageLink() {
+      Link link = this.feed.getLink(Link.REL_NEXT);
+      return (link != null) ? link.getHref() : null;
    }
 
    public IRI getId() {
