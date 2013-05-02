@@ -66,12 +66,18 @@ public class APIResultTools {
       return new APIEqFrenchProductResult(feed);
    }
 
+   public static APIFullProductResult getAPIFullProductResultFromXMLResource(String xmlSource)
+           throws FileNotFoundException {
+      Feed feed = getFeedFromXML(xmlSource);
+      return new APIFullProductResult(feed);
+   }
+
 
    private static Feed getFeedFromXML(String xmlSource) throws FileNotFoundException {
       Parser parser = new Abdera().getParser();
       String path = Resources.getResource(xmlSource).getPath();
-      File productByNameResult = new File(path);
-      Document<Feed> doc = parser.parse(new FileInputStream(productByNameResult));
+      File file = new File(path);
+      Document<Feed> doc = parser.parse(new FileInputStream(file));
       return doc.getRoot();
    }
 }
