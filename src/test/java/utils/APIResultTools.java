@@ -1,6 +1,7 @@
 package utils;
 
 import com.google.common.io.Resources;
+import models.APIPaginatedResults;
 import models.APIProductResult;
 import models.APIResult;
 import org.apache.abdera.Abdera;
@@ -38,7 +39,8 @@ public class APIResultTools {
 //      return result;
 //   }
 
-   public static APIResult getAPIResultFromXMLResource(String xmlSource) throws FileNotFoundException {
+   public static APIResult getAPIResultFromXMLResource(String xmlSource)
+           throws FileNotFoundException {
       Parser parser = new Abdera().getParser();
       String path = Resources.getResource(xmlSource).getPath();
       File productByNameResult = new File(path);
@@ -50,15 +52,27 @@ public class APIResultTools {
       return result;
    }
 
-   public static APIProductResult getAPIProductResultFromXMLResource(String xmlSource) throws FileNotFoundException {
+   public static APIPaginatedResults getAPIPaginatedResultFromXMLResource(String xmlSource)
+           throws FileNotFoundException {
       Parser parser = new Abdera().getParser();
       String path = Resources.getResource(xmlSource).getPath();
       File productByNameResult = new File(path);
 
       Document<Feed> doc = parser.parse(new FileInputStream(productByNameResult));
       Feed feed = doc.getRoot();
-      APIProductResult result = new APIProductResult(feed);
 
-      return result;
+      return new APIPaginatedResults(feed);
+   }
+
+   public static APIProductResult getAPIProductResultFromXMLResource(String xmlSource)
+           throws FileNotFoundException {
+      Parser parser = new Abdera().getParser();
+      String path = Resources.getResource(xmlSource).getPath();
+      File productByNameResult = new File(path);
+
+      Document<Feed> doc = parser.parse(new FileInputStream(productByNameResult));
+      Feed feed = doc.getRoot();
+
+      return new APIProductResult(feed);
    }
 }

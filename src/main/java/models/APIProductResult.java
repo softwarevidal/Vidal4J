@@ -6,7 +6,7 @@ import org.apache.abdera.model.Feed;
 import java.util.ArrayList;
 import java.util.List;
 
-public class APIProductResult extends APIResult {
+public class APIProductResult extends APIPaginatedResults {
 
    public APIProductResult(Feed resultFeed) {
       super(resultFeed);
