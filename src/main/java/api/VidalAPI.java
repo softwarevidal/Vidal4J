@@ -1,5 +1,6 @@
 package api;
 
+import results.APIForeignProductResult;
 import results.APIProductResult;
 import org.apache.abdera.Abdera;
 import org.apache.abdera.i18n.iri.IRI;
@@ -49,5 +50,23 @@ public class VidalAPI {
       }
 
       return apiProductResult;
+   }
+
+   public APIForeignProductResult searchForeignProductsByProductId(int productId) {
+      APIForeignProductResult foreignProductResult = null;
+
+      try {
+         URL url = new URL(this.baseUrl + "/rest/api/product/" + productId + "/foreign-products");
+         Document<Feed> doc = parser.parse(url.openStream(), url.toString());
+         Feed feed = doc.getRoot();
+         foreignProductResult = new APIForeignProductResult(feed);
+
+      } catch (MalformedURLException e) {
+         e.printStackTrace();
+      } catch (IOException e) {
+         e.printStackTrace();
+      }
+
+      return foreignProductResult;
    }
 }
