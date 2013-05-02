@@ -3,10 +3,9 @@ package models;
 import org.apache.abdera.model.Element;
 import org.apache.abdera.model.Entry;
 
-import javax.xml.namespace.QName;
+import static utils.AtomTool.getVidalTagContent;
 
 public class Product {
-   private final String VIDAL_TAG_URL = "http://api.vidal.net/-/spec/vidal-api/1.0/";
    private Entry entry;
 
    public Product(Entry entry) {
@@ -19,12 +18,12 @@ public class Product {
    }
 
    public boolean shouldBeCarefull() {
-      String beCareful = this.getVidalTagContent("beCareful").getText();
+      String beCareful = getVidalTagContent("beCareful", this.entry).getText();
       return Boolean.parseBoolean(beCareful);
    }
 
    public Company getProvider() {
-      Element company = this.getVidalTagContent("company");
+      Element company = getVidalTagContent("company", this.entry);
       int vidalId = Integer.parseInt(company.getAttributeValue("vidalId"));
       String name = company.getText();
       String type = company.getAttributeValue("type");
@@ -33,53 +32,45 @@ public class Product {
    }
 
    public String getDispensationPlace() {
-      return this.getVidalTagContent("dispensationPlace").getText();
+      return getVidalTagContent("dispensationPlace", this.entry).getText();
    }
 
    public boolean isDopingProduct() {
-      String drugInSport = this.getVidalTagContent("drugInSport").getText();
+      String drugInSport = getVidalTagContent("drugInSport", this.entry).getText();
       return Boolean.parseBoolean(drugInSport);
    }
 
    public boolean isExceptional() {
-      String exceptional = this.getVidalTagContent("exceptional").getText();
+      String exceptional = getVidalTagContent("exceptional", this.entry).getText();
       return Boolean.parseBoolean(exceptional);
    }
 
    public boolean isOutOfGHS() {
-      String horsGHS = this.getVidalTagContent("horsGHS").getText();
+      String horsGHS = getVidalTagContent("horsGHS", this.entry).getText();
       return Boolean.parseBoolean(horsGHS);
    }
 
    public int getVidalId() {
-      String id = this.getVidalTagContent("id").getText();
+      String id = getVidalTagContent("id", this.entry).getText();
       return Integer.parseInt(id);
    }
 
    public String getMarketStatus() {
-      Element marketStatus = this.getVidalTagContent("marketStatus");
+      Element marketStatus = getVidalTagContent("marketStatus", this.entry);
       return marketStatus.getAttributeValue("name");
    }
 
    public boolean IsPrescriptivableByMidWife() {
-      String midwife = this.getVidalTagContent("midwife").getText();
+      String midwife = getVidalTagContent("midwife", this.entry).getText();
       return Boolean.parseBoolean(midwife);
    }
 
    public String getRefundRate() {
-      return this.getVidalTagContent("refundRate").getText();
+      return getVidalTagContent("refundRate", this.entry).getText();
    }
 
    public boolean isRetrocedable() {
-      String retrocession = this.getVidalTagContent("retrocession").getText();
+      String retrocession = getVidalTagContent("retrocession", this.entry).getText();
       return Boolean.parseBoolean(retrocession);
-   }
-
-
-
-   private Element getVidalTagContent(String tagName) {
-      QName name = new QName(VIDAL_TAG_URL, tagName, "vidal");
-      Element firstChild = this.entry.getFirstChild(name);
-      return firstChild;
    }
 }
