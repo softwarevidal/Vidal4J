@@ -31,6 +31,7 @@
         <vidal:hasPublishedDoc>false</vidal:hasPublishedDoc>
         <vidal:horsGHS>false</vidal:horsGHS>
         <vidal:id>1147</vidal:id>
+        <vidal:list name="I">Liste 1</vidal:list>
         <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
         <vidal:marketStatus name="AVAILABLE">Commercialisé</vidal:marketStatus>
         <vidal:midwife>false</vidal:midwife>

@@ -1,5 +1,8 @@
 package models;
 
+import models.key_values.DispensationPlace;
+import models.key_values.MarketStatus;
+import models.key_values.VidalList;
 import org.apache.abdera.model.Element;
 import org.apache.abdera.model.Entry;
 
@@ -31,8 +34,11 @@ public class Product {
       return new Company(vidalId, name, type);
    }
 
-   public String getDispensationPlace() {
-      return getVidalTagContent("dispensationPlace", this.entry).getText();
+   public DispensationPlace getDispensationPlace() {
+      Element element = getVidalTagContent("dispensationPlace", this.entry);
+      String name = element.getAttributeValue("name");
+      String text = element.getText();
+      return new DispensationPlace(name, text);
    }
 
    public boolean isDopingProduct() {
@@ -55,9 +61,19 @@ public class Product {
       return Integer.parseInt(id);
    }
 
-   public String getMarketStatus() {
-      Element marketStatus = getVidalTagContent("marketStatus", this.entry);
-      return marketStatus.getAttributeValue("name");
+   // Carefull: there might not be a "list" tag.
+   public VidalList getVidalList() {
+      Element element = getVidalTagContent("list", this.entry);
+      String name = element.getAttributeValue("name");
+      String text = element.getText();
+      return new VidalList(name, text);
+   }
+
+   public MarketStatus getMarketStatus() {
+      Element element = getVidalTagContent("marketStatus", this.entry);
+      String name = element.getAttributeValue("name");
+      String text = element.getText();
+      return new MarketStatus(name, text);
    }
 
    public boolean IsPrescriptivableByMidWife() {

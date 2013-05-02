@@ -37,7 +37,8 @@ public class ProductTest {
 
    @Test
    public void shouldReturnTheDispensationPlace() {
-      assertThat(this.product.getDispensationPlace()).isEqualTo("PHARMACY");
+      assertThat(this.product.getDispensationPlace().getName()).isEqualTo("PHARMACY");
+      assertThat(this.product.getDispensationPlace().getText()).isEqualTo("PHARMACY");
    }
 
    @Test
@@ -61,8 +62,15 @@ public class ProductTest {
    }
 
    @Test
+   public void shouldReturnTheList() {
+      assertThat(this.product.getVidalList().getName()).isEqualTo("I");
+      assertThat(this.product.getVidalList().getText()).isEqualTo("Liste 1");
+   }
+
+   @Test
    public void shouldReturnTheMarketStatus() {
-      assertThat(this.product.getMarketStatus()).isEqualTo("AVAILABLE");
+      assertThat(this.product.getMarketStatus().getName()).isEqualTo("AVAILABLE");
+      assertThat(this.product.getMarketStatus().getText()).isEqualTo("Commercialisé");
    }
 
    @Test
