@@ -1,10 +1,7 @@
 package utils;
 
 import com.google.common.io.Resources;
-import results.APIForeignProductResult;
-import results.APIPaginatedResults;
-import results.APIProductResult;
-import results.APIResult;
+import results.*;
 import org.apache.abdera.Abdera;
 import org.apache.abdera.model.Document;
 import org.apache.abdera.model.Feed;
@@ -41,50 +38,40 @@ public class APIResultTools {
 
    public static APIResult getAPIResultFromXMLResource(String xmlSource)
            throws FileNotFoundException {
-      Parser parser = new Abdera().getParser();
-      String path = Resources.getResource(xmlSource).getPath();
-      File productByNameResult = new File(path);
-
-      Document<Feed> doc = parser.parse(new FileInputStream(productByNameResult));
-      Feed feed = doc.getRoot();
-      APIResult result = new APIResult(feed);
-
-      return result;
+      Feed feed = getFeedFromXML(xmlSource);
+      return new APIResult(feed);
    }
 
    public static APIPaginatedResults getAPIPaginatedResultFromXMLResource(String xmlSource)
            throws FileNotFoundException {
-      Parser parser = new Abdera().getParser();
-      String path = Resources.getResource(xmlSource).getPath();
-      File productByNameResult = new File(path);
-
-      Document<Feed> doc = parser.parse(new FileInputStream(productByNameResult));
-      Feed feed = doc.getRoot();
-
+      Feed feed = getFeedFromXML(xmlSource);
       return new APIPaginatedResults(feed);
    }
 
    public static APIProductResult getAPIProductResultFromXMLResource(String xmlSource)
            throws FileNotFoundException {
-      Parser parser = new Abdera().getParser();
-      String path = Resources.getResource(xmlSource).getPath();
-      File productByNameResult = new File(path);
-
-      Document<Feed> doc = parser.parse(new FileInputStream(productByNameResult));
-      Feed feed = doc.getRoot();
-
+      Feed feed = getFeedFromXML(xmlSource);
       return new APIProductResult(feed);
    }
 
    public static APIForeignProductResult getAPIForeignProductResultFromXMLResource(String xmlSource)
            throws FileNotFoundException {
+      Feed feed = getFeedFromXML(xmlSource);
+      return new APIForeignProductResult(feed);
+   }
+
+   public static APIEqFrenchProductResult getAPIEqFrenchProductResultFromXMLResource(String xmlSource)
+           throws FileNotFoundException {
+      Feed feed = getFeedFromXML(xmlSource);
+      return new APIEqFrenchProductResult(feed);
+   }
+
+
+   private static Feed getFeedFromXML(String xmlSource) throws FileNotFoundException {
       Parser parser = new Abdera().getParser();
       String path = Resources.getResource(xmlSource).getPath();
       File productByNameResult = new File(path);
-
       Document<Feed> doc = parser.parse(new FileInputStream(productByNameResult));
-      Feed feed = doc.getRoot();
-
-      return new APIForeignProductResult(feed);
+      return doc.getRoot();
    }
 }

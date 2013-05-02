@@ -1,0 +1,34 @@
+package models;
+
+import models.key_values.AMMType;
+import org.apache.abdera.model.Element;
+import org.apache.abdera.model.Entry;
+
+import static utils.AtomTool.getVidalTagContent;
+
+public class EqFrenchProduct extends Product {
+   public EqFrenchProduct(Entry entry) {
+      super(entry);
+   }
+
+
+   public String getActivePrinciple() {
+      return getVidalTagContent("activePrinciples", this.entry).getText();
+   }
+
+   public AMMType getAMMType() {
+      Element element = getVidalTagContent("ammType", this.entry);
+      String vidalId = element.getAttributeValue("vidalId");
+      String text = element.getText();
+      return new AMMType(vidalId, text);
+   }
+
+   public boolean hasPublishedDoc() {
+      String hasPublishedDoc = getVidalTagContent("hasPublishedDoc", this.entry).getText();
+      return Boolean.parseBoolean(hasPublishedDoc);
+   }
+
+   public String getConcentration() {
+      return getVidalTagContent("perVolume", this.entry).getText();
+   }
+}

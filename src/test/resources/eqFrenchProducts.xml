@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:vidal="http://api.vidal.net/-/spec/vidal-api/1.0/">
+    <title>French equivalent Products for Foreign Product 11022</title>
+    <link rel="self" type="application/atom+xml" href="/rest/api/foreign-product/11022/products" />
+    <id>/rest/api/foreign-product/11022/products</id>
+    <updated>2013-02-21T00:00:00Z</updated>
+    <dc:date>2013-02-21T00:00:00Z</dc:date>
+    <entry>
+        <title>MINISINTROM 1 mg cp</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/11022/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/11022/molecules" title="MOLECULES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/11022/molecules/active-excipients" title="ACTIVE_EXCIPIENTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/11022/recos" title="RECOS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/11022/foreign-products" title="FOREIGN_PRODUCTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/11022/indications" title="INDICATIONS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/11022/documents" title="DOCUMENTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/11022/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="http://www.eurekasante.fr/medicaments/fromwidget.html?idvdf=OMINIS01.htm" title="EUREKA_SANTE" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/11022/atc-classification" title="ATC_CLASSIFICATION" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/11022/smr-asmr" title="SMR_ASMR" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/11022/smr-asmr.htm" title="SMR_ASMR_HTML" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/11022/ald" title="ALD_DETAIL" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/11022/vidal-classification" title="VIDAL_CLASSIFICATION" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product-range/40747" title="PRODUCT_RANGE" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product-range/40747/products" title="RANGE_PRODUCTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/vmp/2259" title="VMP" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/11022</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">MINISINTROM 1 mg cp</summary>
+        <vidal:activePrinciples>acénocoumarol</vidal:activePrinciples>
+        <vidal:ammType vidalId="20">AMM Française</vidal:ammType>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:bestDocType name="MONO">MONO</vidal:bestDocType>
+        <vidal:cis>62148714</vidal:cis>
+        <vidal:company vidalId="616" type="OWNER">Novartis Pharma SAS</vidal:company>
+        <vidal:dispensationPlace name="PHARMACY">PHARMACY</vidal:dispensationPlace>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:hasPublishedDoc>true</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>11022</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:list name="I">Liste 1</vidal:list>
+        <vidal:marketStatus name="AVAILABLE">Commercialisé</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:name>MINISINTROM 1 mg cp</vidal:name>
+        <vidal:onMarketDate format="yyyy-MM-dd">1994-11-30</vidal:onMarketDate>
+        <vidal:perVolume>1mg</vidal:perVolume>
+        <vidal:refundRate name="_65">65%</vidal:refundRate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:safetyAlert>true</vidal:safetyAlert>
+        <vidal:vmp vidalId="2259">acénocoumarol * 1 mg ; voie orale ; cp</vidal:vmp>
+        <vidal:withoutPrescription>false</vidal:withoutPrescription>
+    </entry>
+    <entry>
+        <title>SINTROM 4 mg cp quadriséc</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/15070/packages" title="PACKAGES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/15070/molecules" title="MOLECULES" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/15070/molecules/active-excipients" title="ACTIVE_EXCIPIENTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/15070/recos" title="RECOS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/15070/foreign-products" title="FOREIGN_PRODUCTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/15070/indications" title="INDICATIONS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/15070/documents" title="DOCUMENTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/15070/documents/opt" title="OPT_DOCUMENT" />
+        <link rel="related" type="application/atom+xml" href="http://www.eurekasante.fr/medicaments/fromwidget.html?idvdf=MSINTR01.htm" title="EUREKA_SANTE" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/15070/atc-classification" title="ATC_CLASSIFICATION" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/15070/smr-asmr" title="SMR_ASMR" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/15070/smr-asmr.htm" title="SMR_ASMR_HTML" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/15070/ald" title="ALD_DETAIL" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product/15070/vidal-classification" title="VIDAL_CLASSIFICATION" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product-range/9389" title="PRODUCT_RANGE" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/product-range/9389/products" title="RANGE_PRODUCTS" />
+        <link rel="related" type="application/atom+xml" href="/rest/api/vmp/627" title="VMP" />
+        <category term="PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://product/15070</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <summary type="text">SINTROM 4 mg cp quadriséc</summary>
+        <vidal:activePrinciples>acénocoumarol</vidal:activePrinciples>
+        <vidal:ammType vidalId="20">AMM Française</vidal:ammType>
+        <vidal:beCareful>false</vidal:beCareful>
+        <vidal:bestDocType name="MONO">MONO</vidal:bestDocType>
+        <vidal:cis>61510352</vidal:cis>
+        <vidal:company vidalId="616" type="OWNER">Novartis Pharma SAS</vidal:company>
+        <vidal:dispensationPlace name="PHARMACY">PHARMACY</vidal:dispensationPlace>
+        <vidal:drugInSport>false</vidal:drugInSport>
+        <vidal:exceptional>false</vidal:exceptional>
+        <vidal:galenicForm vidalId="135">comprimé quadrisécable</vidal:galenicForm>
+        <vidal:hasPublishedDoc>true</vidal:hasPublishedDoc>
+        <vidal:horsGHS>false</vidal:horsGHS>
+        <vidal:id>15070</vidal:id>
+        <vidal:itemType name="VIDAL">VIDAL</vidal:itemType>
+        <vidal:list name="I">Liste 1</vidal:list>
+        <vidal:marketStatus name="AVAILABLE">Commercialisé</vidal:marketStatus>
+        <vidal:midwife>false</vidal:midwife>
+        <vidal:name>SINTROM 4 mg cp quadriséc</vidal:name>
+        <vidal:onMarketDate format="yyyy-MM-dd">1959-09-15</vidal:onMarketDate>
+        <vidal:perVolume>4mg</vidal:perVolume>
+        <vidal:refundRate name="_65">65%</vidal:refundRate>
+        <vidal:retrocession>false</vidal:retrocession>
+        <vidal:safetyAlert>true</vidal:safetyAlert>
+        <vidal:vmp vidalId="627">acénocoumarol * 4 mg ; voie orale ; cp</vidal:vmp>
+        <vidal:withoutPrescription>false</vidal:withoutPrescription>
+    </entry>
+</feed>
+
