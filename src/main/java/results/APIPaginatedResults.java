@@ -1,4 +1,4 @@
-package models;
+package results;
 
 import org.apache.abdera.i18n.iri.IRI;
 import org.apache.abdera.model.Element;

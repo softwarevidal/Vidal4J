@@ -1,10 +1,10 @@
 package utils;
 
 import com.google.common.io.Resources;
-import models.APIForeignProductResult;
-import models.APIPaginatedResults;
-import models.APIProductResult;
-import models.APIResult;
+import results.APIForeignProductResult;
+import results.APIPaginatedResults;
+import results.APIProductResult;
+import results.APIResult;
 import org.apache.abdera.Abdera;
 import org.apache.abdera.model.Document;
 import org.apache.abdera.model.Feed;
@@ -13,7 +13,6 @@ import org.apache.abdera.parser.Parser;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.lang.reflect.InvocationTargetException;
 
 public class APIResultTools {
 

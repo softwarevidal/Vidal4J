@@ -1,5 +1,6 @@
-package models;
+package results;
 
+import models.Product;
 import org.apache.abdera.model.Entry;
 import org.apache.abdera.model.Feed;
 

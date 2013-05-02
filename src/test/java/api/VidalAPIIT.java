@@ -1,6 +1,6 @@
 package api;
 
-import models.APIProductResult;
+import results.APIProductResult;
 import org.apache.abdera.i18n.iri.IRI;
 import org.junit.Test;
 

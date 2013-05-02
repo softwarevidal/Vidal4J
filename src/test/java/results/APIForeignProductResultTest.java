@@ -1,6 +1,8 @@
-package models;
+package results;
 
+import models.ForeignProduct;
 import org.junit.Test;
+import results.APIForeignProductResult;
 
 import java.io.FileNotFoundException;
 import java.util.List;

@@ -1,8 +1,8 @@
-package models;
+package results;
 
 import org.joda.time.DateTime;
 import org.junit.Test;
-import utils.APIResultTools;
+import results.APIResult;
 
 import java.io.FileNotFoundException;
 

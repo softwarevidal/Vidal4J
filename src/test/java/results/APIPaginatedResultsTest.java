@@ -1,6 +1,7 @@
-package models;
+package results;
 
 import org.junit.Test;
+import results.APIPaginatedResults;
 
 import java.io.FileNotFoundException;
 
