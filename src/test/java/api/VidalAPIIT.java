@@ -1,5 +1,6 @@
 package api;
 
+import results.APIEqFrenchProductResult;
 import results.APIForeignProductResult;
 import results.APIProductResult;
 import org.apache.abdera.i18n.iri.IRI;
@@ -48,6 +49,21 @@ public class VidalAPIIT {
       VidalAPI vidalAPI = VidalAPIFactory.getDevInstance();
       APIForeignProductResult apiForeignProductResult = vidalAPI.searchForeignProductsByProductId(0);
       assertThat(apiForeignProductResult).isNull();
+   }
+
+   @Test
+   public void shouldSearchEqFrenchProducts() {
+      VidalAPI vidalAPI = VidalAPIFactory.getDevInstance();
+      APIEqFrenchProductResult apiEqFrenchProductResult = vidalAPI.searchEqFrenchProductsByProductId(11022);
+      assertThat(apiEqFrenchProductResult.getEqFrenchProducts().size()).isGreaterThan(1);
+      assertThat(apiEqFrenchProductResult.getTitle()).contains("French equivalent Products for Foreign Product ");
+   }
+
+   @Test
+   public void shouldReturnNullIfProductDoesntExistWhenSearchingEqFrenchProducts() {
+      VidalAPI vidalAPI = VidalAPIFactory.getDevInstance();
+      APIEqFrenchProductResult apiEqFrenchProductResult = vidalAPI.searchEqFrenchProductsByProductId(0);
+      assertThat(apiEqFrenchProductResult).isNull();
    }
 
    private void shouldSearchAProductByName(VidalAPI vidalAPI) {

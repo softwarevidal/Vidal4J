@@ -1,5 +1,6 @@
 package api;
 
+import results.APIEqFrenchProductResult;
 import results.APIForeignProductResult;
 import results.APIProductResult;
 import org.apache.abdera.Abdera;
@@ -35,38 +36,37 @@ public class VidalAPI {
 
 
    public APIProductResult searchProductsByURL(IRI iri) {
-      APIProductResult apiProductResult = null;
-
-      try {
-         URL url = new URL(this.baseUrl + iri.toString());
-         Document<Feed> doc = parser.parse(url.openStream(), url.toString());
-         Feed feed = doc.getRoot();
-         apiProductResult = new APIProductResult(feed);
-
-      } catch (MalformedURLException e) {
-         e.printStackTrace();
-      } catch (IOException e) {
-         e.printStackTrace();
-      }
-
-      return apiProductResult;
+      String searchUrl = this.baseUrl + iri.toString();
+      Feed feed = this.searchFeedFromURL(searchUrl);
+      return (feed != null) ? new APIProductResult(feed) : null;
    }
 
    public APIForeignProductResult searchForeignProductsByProductId(int productId) {
-      APIForeignProductResult foreignProductResult = null;
+      String searchUrl = this.baseUrl + "/rest/api/product/" + productId + "/foreign-products";
+      Feed feed = this.searchFeedFromURL(searchUrl);
+      return (feed != null) ? new APIForeignProductResult(feed) : null;
+   }
+
+   public APIEqFrenchProductResult searchEqFrenchProductsByProductId(int productId) {
+      String searchUrl = this.baseUrl + "/rest/api/foreign-product/" + productId + "/products";
+      Feed feed = this.searchFeedFromURL(searchUrl);
+      return (feed != null) ? new APIEqFrenchProductResult(feed) : null;
+   }
+
+
+   private Feed searchFeedFromURL(String searchUrl) {
+      Feed feed = null;
 
       try {
-         URL url = new URL(this.baseUrl + "/rest/api/product/" + productId + "/foreign-products");
+         URL url = new URL(searchUrl);
          Document<Feed> doc = parser.parse(url.openStream(), url.toString());
-         Feed feed = doc.getRoot();
-         foreignProductResult = new APIForeignProductResult(feed);
-
+         feed = doc.getRoot();
       } catch (MalformedURLException e) {
          e.printStackTrace();
       } catch (IOException e) {
          e.printStackTrace();
       }
 
-      return foreignProductResult;
+      return feed;
    }
 }
