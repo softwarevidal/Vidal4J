@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:vidal="http://api.vidal.net/-/spec/vidal-api/1.0/">
+    <title>ForeignProducts for Product 15070</title>
+    <link rel="self" type="application/atom+xml" href="/rest/api/product/15070/foreign-products" />
+    <id>/rest/api/product/15070/foreign-products</id>
+    <updated>2013-02-21T00:00:00Z</updated>
+    <dc:date>2013-02-21T00:00:00Z</dc:date>
+    <entry>
+        <title>SINTROM tablet 4 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/10004082/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/10004082</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="AT">Autriche</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>SINTROM tablet 4 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>SINTROM tablet 4 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/11007536/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/11007536</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="BE">Belgique</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>SINTROM tablet 4 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>SINTROM tablet 1 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/11007537/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/11007537</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="BE">Belgique</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>SINTROM tablet 1 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>ACEBRON tablet 4 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/16000039/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/16000039</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="CL">Chili</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>ACEBRON tablet 4 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>ACENOX tablet 4 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/16000040/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/16000040</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="CL">Chili</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>ACENOX tablet 4 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>COAROL tablet 4 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/16001138/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/16001138</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="CL">Chili</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>COAROL tablet 4 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>ISQUELIUM tablet 4 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/16004503/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/16004503</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="CL">Chili</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>ISQUELIUM tablet 4 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>NEO SINTROM tablet 4 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/16005192/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/16005192</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="CL">Chili</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>NEO SINTROM tablet 4 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>ROMBEKAN tablet 4 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/16006399/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/16006399</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="CL">Chili</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>ROMBEKAN tablet 4 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>ACENOCUMAROL BESTPHARMA tablet 4 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/16006400/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/16006400</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="CL">Chili</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>ACENOCUMAROL BESTPHARMA tablet 4 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>ACENOCUMAROL ALPES CHEMIE tablet 4 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/16006402/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/16006402</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="CL">Chili</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>ACENOCUMAROL ALPES CHEMIE tablet 4 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>SINTROM tablet 4 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/27003668/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/27003668</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="ES">Espagne</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>SINTROM tablet 4 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>SINTROM UNO tablet 1 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/27003669/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/27003669</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="ES">Espagne</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>SINTROM UNO tablet 1 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>SINTHROME tablet 1 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/31000960/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/31000960</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="GB">Grande-Bretagne</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>SINTHROME tablet 1 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>SINTROM tablet 4 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/32003916/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/32003916</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="GR">Grèce</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>SINTROM tablet 4 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>SYNCUMAR tablet 2 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/37001622/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/37001622</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="HU">Hongrie</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>SYNCUMAR tablet 2 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>SYNCUMAR tablet 1 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/37006450/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/37006450</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="HU">Hongrie</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>SYNCUMAR tablet 1 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>SINTROM tablet 1 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/43005210/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/43005210</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="IT">Italie</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>SINTROM tablet 1 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>SINTROM tablet 4 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/43005212/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/43005212</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="IT">Italie</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>SINTROM tablet 4 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>SINTROM tablet 4 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/45007536/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/45007536</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="LU">Luxembourg</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>SINTROM tablet 4 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>SINTROM tablet 1 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/45007537/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/45007537</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="LU">Luxembourg</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>SINTROM tablet 1 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>SINTROM tablet 4 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/48003342/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/48003342</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="MA">Maroc</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>SINTROM tablet 4 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>MOLL tablet 4 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/49002416/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/49002416</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="MX">Mexique</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>MOLL tablet 4 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>SINTROM tablet 4 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/49002417/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/49002417</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="MX">Mexique</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>SINTROM tablet 4 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>SINTROM tablet 1 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/56010015/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/56010015</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="NL">Pays-bas</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>SINTROM tablet 1 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>ACENOCOUMAROL tablet 1 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/56013340/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/56013340</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="NL">Pays-bas</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>ACENOCOUMAROL tablet 1 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>ACEBRON tablet 4 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/57000077/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/57000077</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="PE">Perou</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>ACEBRON tablet 4 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>ACENOCOUMAROL tablet 4 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/59000028/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/59000028</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="PL">Pologne</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>ACENOCOUMAROL tablet 4 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>ACENOCUMAROL tablet 4 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/59000029/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/59000029</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="PL">Pologne</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>ACENOCUMAROL tablet 4 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>SINTROM tablet 4 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/59004174/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/59004174</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="PL">Pologne</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>SINTROM tablet 4 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>SYNCUMAR tablet 4 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/59004333/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/59004333</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="PL">Pologne</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>SYNCUMAR tablet 4 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>SINTROM tablet 4 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/60002619/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/60002619</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="PO">Portugal</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>SINTROM tablet 4 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>SINTROM tablet 1 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/68004590/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/68004590</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="CH">Suisse</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>SINTROM tablet 1 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>SINTROM tablet 4 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/68004591/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/68004591</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="CH">Suisse</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>SINTROM tablet 4 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>SINTROM tablet 4 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/72001210/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/72001210</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AA07">ACENOCOUMAROL</vidal:atcClass>
+        <vidal:country countryCode="TN">Tunisie</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>SINTROM tablet 4 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+</feed>
+
