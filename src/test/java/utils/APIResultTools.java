@@ -1,6 +1,7 @@
 package utils;
 
 import com.google.common.io.Resources;
+import models.APIForeignProductResult;
 import models.APIPaginatedResults;
 import models.APIProductResult;
 import models.APIResult;
@@ -74,5 +75,17 @@ public class APIResultTools {
       Feed feed = doc.getRoot();
 
       return new APIProductResult(feed);
+   }
+
+   public static APIForeignProductResult getAPIForeignProductResultFromXMLResource(String xmlSource)
+           throws FileNotFoundException {
+      Parser parser = new Abdera().getParser();
+      String path = Resources.getResource(xmlSource).getPath();
+      File productByNameResult = new File(path);
+
+      Document<Feed> doc = parser.parse(new FileInputStream(productByNameResult));
+      Feed feed = doc.getRoot();
+
+      return new APIForeignProductResult(feed);
    }
 }
