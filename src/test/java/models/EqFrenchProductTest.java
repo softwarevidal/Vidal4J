@@ -40,6 +40,11 @@ public class EqFrenchProductTest {
       assertThat(this.eqFrenchProduct.getConcentration()).isEqualTo("1mg");
    }
 
+   @Test
+   public void shouldReturnTheName() {
+      assertThat(this.eqFrenchProduct.getName()).isEqualTo("MINISINTROM 1 mg cp");
+   }
+
 
    private EqFrenchProduct getFirstForeignProductFromXMLResource(String xmlSource)
            throws FileNotFoundException {

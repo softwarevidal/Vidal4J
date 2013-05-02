@@ -31,4 +31,8 @@ public class EqFrenchProduct extends Product {
    public String getConcentration() {
       return getVidalTagContent("perVolume", this.entry).getText();
    }
+
+   public String getName() {
+      return getVidalTagContent("name", this.entry).getText();
+   }
 }
