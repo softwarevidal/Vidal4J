@@ -27,8 +27,8 @@ public class VidalAPIIT {
    @Test
    public void shouldSearchTheNextPage() {
       VidalAPI vidalAPI = VidalAPIFactory.getDevInstance();
-      IRI nextPageLink = vidalAPI.searchProductsByName("asp").getNextPageLink();
-      APIProductResult nextPage = vidalAPI.searchProductsByURL(nextPageLink);
+      APIProductResult productResult = vidalAPI.searchProductsByName("asp");
+      APIProductResult nextPage = vidalAPI.searchProductsByNameNextPage(productResult);
 
       assertThat(nextPage.getCurrentPageNumber()).isEqualTo(2);
       assertThat(nextPage.getTotalResultsNumber()).isGreaterThan(0);
