@@ -21,14 +21,14 @@ public class APIResultTest {
    public void shouldReturnTheSelfLink() throws FileNotFoundException {
       APIResult apiResult = getAPIResultFromXMLResource("productByName_Long.xml");
       assertThat(apiResult.getSelfLink().getHref().toString())
-              .isEqualTo("/rest/api/products?q=asp&start-page=1&page-size=25");
+              .isEqualTo("/rest/api/products?q=asp&start-page=2&page-size=10");
    }
 
    @Test
    public void shouldReturnTheIdOftheFeed() throws FileNotFoundException {
       APIResult apiResult = getAPIResultFromXMLResource("productByName_Long.xml");
       assertThat(apiResult.getId().toString())
-              .isEqualTo("/rest/api/products?q=asp&start-page=1&page-size=25");
+              .isEqualTo("/rest/api/products?q=asp&start-page=2&page-size=10");
    }
 
    @Test

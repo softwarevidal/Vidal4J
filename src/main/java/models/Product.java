@@ -34,6 +34,7 @@ public class Product {
       return new Company(vidalId, name, type);
    }
 
+   // Carefull: there might not be a "dispensationPlace" tag.
    public DispensationPlace getDispensationPlace() {
       Element element = getVidalTagContent("dispensationPlace", this.entry);
       String name = element.getAttributeValue("name");
@@ -81,6 +82,7 @@ public class Product {
       return Boolean.parseBoolean(midwife);
    }
 
+   // Carefull: there might not be a "refund" tag.
    public String getRefundRate() {
       return getVidalTagContent("refundRate", this.entry).getText();
    }

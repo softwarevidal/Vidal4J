@@ -3,10 +3,12 @@ package api;
 import results.APIEqFrenchProductResult;
 import results.APIForeignProductResult;
 import results.APIProductResult;
-import org.apache.abdera.i18n.iri.IRI;
 import org.junit.Test;
 
+import java.io.FileNotFoundException;
+
 import static org.fest.assertions.Assertions.assertThat;
+import static utils.APIResultTools.getAPIProductResultFromXMLResource;
 
 
 public class VidalAPIIT {
@@ -27,13 +29,23 @@ public class VidalAPIIT {
    }
 
    @Test
-   public void shouldSearchTheNextPage() {
+   public void shouldSearchTheNextPage() throws FileNotFoundException {
       VidalAPI vidalAPI = VidalAPIFactory.getDevInstance();
-      APIProductResult productResult = vidalAPI.searchProductsByName("asp");
+      APIProductResult productResult = getAPIProductResultFromXMLResource("productByName_Long.xml");
       APIProductResult nextPage = vidalAPI.searchProductsByNameNextPage(productResult);
 
-      assertThat(nextPage.getCurrentPageNumber()).isEqualTo(2);
+      assertThat(nextPage.getCurrentPageNumber()).isEqualTo(3);
       assertThat(nextPage.getTotalResultsNumber()).isGreaterThan(0);
+   }
+
+   @Test
+   public void shouldSearchThePrevPage() throws FileNotFoundException {
+      VidalAPI vidalAPI = VidalAPIFactory.getDevInstance();
+      APIProductResult productResult = getAPIProductResultFromXMLResource("productByName_Long.xml");
+      APIProductResult prevPage = vidalAPI.searchProductsByNamePrevPage(productResult);
+
+      assertThat(prevPage.getCurrentPageNumber()).isEqualTo(1);
+      assertThat(prevPage.getTotalResultsNumber()).isGreaterThan(0);
    }
 
    @Test

@@ -16,7 +16,7 @@ public class APIProductResultTest {
    public void shouldReturnTheListOfProducts() throws FileNotFoundException {
       APIProductResult apiProductResult = getAPIProductResultFromXMLResource("productByName_Long.xml");
       List<Product> products = apiProductResult.getProducts();
-      assertThat(products.size()).isEqualTo(25);
+      assertThat(products.size()).isEqualTo(10);
    }
 
 }

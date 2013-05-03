@@ -9,6 +9,7 @@ import javax.xml.namespace.QName;
 
 public class APIPaginatedResults extends APIResult {
    private final String OPENSEARCH_TAG_URL = "http://a9.com/-/spec/opensearch/1.1/";
+   private final String REL_PREV = "prev";
 
    public APIPaginatedResults(Feed resultFeed) {
       super(resultFeed);
@@ -17,6 +18,11 @@ public class APIPaginatedResults extends APIResult {
 
    public IRI getNextPageLink() {
       Link link = this.feed.getLink(Link.REL_NEXT);
+      return (link != null) ? link.getHref() : null;
+   }
+
+   public IRI getPrevPageLink() {
+      Link link = this.feed.getLink(this.REL_PREV);
       return (link != null) ? link.getHref() : null;
    }
 
@@ -30,11 +36,11 @@ public class APIPaginatedResults extends APIResult {
       return Integer.parseInt(startIndex);
    }
 
+
    public int getCurrentPageNumber() {
       String startIndex = getOpensearchTagContent("startIndex");
       return Integer.parseInt(startIndex);
    }
-
 
    private String getOpensearchTagContent(String tagName) {
       QName name = new QName(this.OPENSEARCH_TAG_URL, tagName, "opensearch");

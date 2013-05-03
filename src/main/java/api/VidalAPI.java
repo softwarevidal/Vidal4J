@@ -34,6 +34,10 @@ public class VidalAPI {
       return (nextPageLink != null) ? this.searchProductsByURL(nextPageLink) : null;
    }
 
+   public APIProductResult searchProductsByNamePrevPage(APIProductResult apiProductResult) {
+      IRI prevPageLink = apiProductResult.getPrevPageLink();
+      return (prevPageLink != null) ? this.searchProductsByURL(prevPageLink) : null;
+   }
 
    public APIProductResult searchProductsByURL(IRI iri) {
       String searchUrl = this.baseUrl + iri.toString();

@@ -20,7 +20,7 @@ public class ProductTest {
 
    @Test
    public void shouldReturnTheNameOfTheProduct() {
-      assertThat(this.product.getName()).isEqualTo("ANTIGRIPPINE A L'ASPIRINE ETAT GRIPPAL cp");
+      assertThat(this.product.getName()).isEqualTo("ASPIRINE RATIOPHARM 500 mg cp séc");
    }
 
    @Test
@@ -30,8 +30,8 @@ public class ProductTest {
 
    @Test
    public void shouldReturnTheCharacteristicsOfTheProvider() {
-      assertThat(this.product.getProvider().getVidalId()).isEqualTo(2247);
-      assertThat(this.product.getProvider().getName()).isEqualTo("Omega Pharma");
+      assertThat(this.product.getProvider().getVidalId()).isEqualTo(751);
+      assertThat(this.product.getProvider().getName()).isEqualTo("Ratiopharm");
       assertThat(this.product.getProvider().getType()).isEqualTo("OWNER");
    }
 
@@ -58,7 +58,7 @@ public class ProductTest {
 
    @Test
    public void shouldReturnVidalId() {
-      assertThat(this.product.getVidalId()).isEqualTo(1147);
+      assertThat(this.product.getVidalId()).isEqualTo(1553);
    }
 
    @Test
@@ -69,8 +69,8 @@ public class ProductTest {
 
    @Test
    public void shouldReturnTheMarketStatus() {
-      assertThat(this.product.getMarketStatus().getName()).isEqualTo("AVAILABLE");
-      assertThat(this.product.getMarketStatus().getText()).isEqualTo("Commercialisé");
+      assertThat(this.product.getMarketStatus().getName()).isEqualTo("DELETED_ONEYEAR");
+      assertThat(this.product.getMarketStatus().getText()).isEqualTo("Supprimé");
    }
 
    @Test
@@ -80,7 +80,7 @@ public class ProductTest {
 
    @Test
    public void shouldReturnTheRefundRate() {
-      assertThat(this.product.getRefundRate()).isEqualTo("NR");
+      assertThat(this.product.getRefundRate()).isEqualTo("65%");
    }
 
    @Test

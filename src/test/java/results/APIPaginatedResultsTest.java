@@ -15,13 +15,26 @@ public class APIPaginatedResultsTest {
    public void shouldReturnNextLinkIfItExists() throws FileNotFoundException {
       APIPaginatedResults apiResult = getAPIPaginatedResultFromXMLResource("productByName_Long.xml");
       assertThat(apiResult.getNextPageLink().toString())
-              .isEqualTo("/rest/api/products?q=asp&start-page=2&page-size=25");
+              .isEqualTo("/rest/api/products?q=asp&start-page=3&page-size=10");
    }
 
    @Test
    public void shouldReturnNullIfNextLinkDoesntExist() throws FileNotFoundException {
       APIPaginatedResults apiResult = getAPIPaginatedResultFromXMLResource("aspegic_Short.xml");
       assertThat(apiResult.getNextPageLink()).isNull();
+   }
+
+   @Test
+   public void shouldReturnPrevLinkIfItExists() throws FileNotFoundException {
+      APIPaginatedResults apiResult = getAPIPaginatedResultFromXMLResource("productByName_Long.xml");
+      assertThat(apiResult.getPrevPageLink().toString())
+              .isEqualTo("/rest/api/products?q=asp&start-page=1&page-size=10");
+   }
+
+   @Test
+   public void shouldReturnNullIfPrevLinkDoesntExist() throws FileNotFoundException {
+      APIPaginatedResults apiResult = getAPIPaginatedResultFromXMLResource("aspegic_Short.xml");
+      assertThat(apiResult.getPrevPageLink()).isNull();
    }
 
    @Test
@@ -33,12 +46,12 @@ public class APIPaginatedResultsTest {
    @Test
    public void shouldReturnTheNumberOfResultsPerPage() throws FileNotFoundException {
       APIPaginatedResults apiResult = getAPIPaginatedResultFromXMLResource("productByName_Long.xml");
-      assertThat(apiResult.getResultsNumberPerPage()).isEqualTo(25);
+      assertThat(apiResult.getResultsNumberPerPage()).isEqualTo(10);
    }
 
    @Test
    public void shouldReturnTheCurrentPageNumber() throws FileNotFoundException {
       APIPaginatedResults apiResult = getAPIPaginatedResultFromXMLResource("productByName_Long.xml");
-      assertThat(apiResult.getCurrentPageNumber()).isEqualTo(1);
+      assertThat(apiResult.getCurrentPageNumber()).isEqualTo(2);
    }
 }
