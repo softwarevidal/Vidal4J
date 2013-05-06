@@ -4,11 +4,10 @@ import models.key_values.ATCClass;
 import models.key_values.Country;
 import models.key_values.GalenicForm;
 import models.key_values.Route;
-import org.apache.abdera.model.Element;
 import org.apache.abdera.model.Entry;
-import utils.AtomTool;
 
 import static utils.AtomTool.getVidalTagContent;
+
 
 public class EqFrenchProductOfNameQuery {
 
@@ -32,21 +31,18 @@ public class EqFrenchProductOfNameQuery {
    }
 
    public ATCClass getATCClass() {
-      Element atcClass = getVidalTagContent("atcClass", this.entry);
-      String code = atcClass.getAttributeValue("code");
-      String text = atcClass.getText();
-      return new ATCClass(code, text);
+      return new ATCClass(this.entry);
    }
 
    public Country getCountry() {
-      return AtomTool.getCountry(this.entry);
+      return new Country(this.entry);
    }
 
    public GalenicForm getGalenicForm() {
-      return AtomTool.getGalenicForm(this.entry);
+      return new GalenicForm(this.entry);
    }
 
    public Route getRoute() {
-      return AtomTool.getRoute(this.entry);
+      return new Route(this.entry);
    }
 }

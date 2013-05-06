@@ -8,4 +8,6 @@ public abstract class AbstractKeyValueItem {
       this.key = key;
       this.value = value;
    }
+
+   public AbstractKeyValueItem() {}
 }
