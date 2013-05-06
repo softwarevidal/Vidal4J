@@ -38,7 +38,7 @@ public class ForeignProductTest {
 
    @Test
    public void shouldReturnTheGalenicForm() {
-      assertThat(this.foreignProduct.getGalenicForm().getVidalId()).isEqualTo("59");
+      assertThat(this.foreignProduct.getGalenicForm().getVidalId()).isEqualTo(59);
       assertThat(this.foreignProduct.getGalenicForm().getName()).isEqualTo("comprimé");
    }
 

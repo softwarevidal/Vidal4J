@@ -1,0 +1,74 @@
+package models;
+
+import models.key_values.ATCClass;
+import models.key_values.Country;
+import models.key_values.GalenicForm;
+import models.key_values.Route;
+import org.junit.Before;
+import org.junit.Test;
+import results.APIEqFrenchProductByNameResult;
+
+import java.io.FileNotFoundException;
+
+import static org.fest.assertions.Assertions.assertThat;
+import static utils.APIResultTools.getAPIEqFrenchProductByNameResultFromXMLResource;
+
+public class EqFrenchProductOfNameQueryTest {
+
+   private EqFrenchProductOfNameQuery productOfNameQuery;
+
+   @Before
+   public void setUp() throws FileNotFoundException {
+      productOfNameQuery = getFirstProductFromXML("eqFrenchProductsByName.xml");
+   }
+
+   @Test
+   public void shouldReturnTheName() {
+      assertThat(this.productOfNameQuery.getName()).isEqualTo("ASPEGIC powder for oral solution 500 mg");
+   }
+
+   @Test
+   public void shouldReturnTheCategory() {
+      assertThat(this.productOfNameQuery.getCategory()).isEqualTo("FOREIGN_PRODUCT");
+   }
+
+   @Test
+   public void shouldReturnTheId() {
+      assertThat(this.productOfNameQuery.getId()).isEqualTo("vidal://foreign_product/2000031");
+   }
+
+   @Test
+   public void shouldReturnTheATCClass() {
+      ATCClass atcClass = this.productOfNameQuery.getATCClass();
+      assertThat(atcClass.getCode()).isEqualTo("N02BA01");
+      assertThat(atcClass.getName()).isEqualTo("ACETYLSALICYLIQUE ACIDE");
+   }
+
+   @Test
+   public void shouldReturnTheCountry() {
+      Country country = this.productOfNameQuery.getCountry();
+      assertThat(country.getCountryCode()).isEqualTo("DZ");
+      assertThat(country.getName()).isEqualTo("Algérie");
+   }
+
+   @Test
+   public void shouldReturnTheGalenicForm() {
+      GalenicForm galenicForm = this.productOfNameQuery.getGalenicForm();
+      assertThat(galenicForm.getName()).isEqualTo("poudre pour solution buvable");
+      assertThat(galenicForm.getVidalId()).isEqualTo(408);
+   }
+
+   @Test
+   public void shouldReturnTheRoute() {
+      Route route = this.productOfNameQuery.getRoute();
+      assertThat(route.getId()).isEqualTo(38);
+      assertThat(route.getName()).isEqualTo("orale");
+   }
+
+
+   private EqFrenchProductOfNameQuery getFirstProductFromXML(String xmlSource) throws FileNotFoundException {
+      APIEqFrenchProductByNameResult byNameResult =
+              getAPIEqFrenchProductByNameResultFromXMLResource(xmlSource);
+      return byNameResult.getEqFrenchProducts().get(0);
+   }
+}

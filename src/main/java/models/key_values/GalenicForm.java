@@ -5,8 +5,8 @@ public class GalenicForm extends AbstractKeyValueItem {
       super(key, value);
    }
 
-   public String getVidalId() {
-      return this.key;
+   public int getVidalId() {
+      return Integer.parseInt(this.key);
    }
 
    public String getName() {
