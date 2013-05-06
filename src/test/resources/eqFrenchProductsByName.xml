@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:vidal="http://api.vidal.net/-/spec/vidal-api/1.0/" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">
+    <title>Search Foreign Products - Query :asp</title>
+    <link rel="self" type="application/atom+xml" href="/rest/api/foreign-products?q=asp&amp;start-page=1&amp;page-size=25" />
+    <link rel="next" type="application/atom+xml" href="/rest/api/foreign-products?q=asp&amp;start-page=2&amp;page-size=25" title="Next page" />
+    <id>/rest/api/foreign-products?q=asp&amp;start-page=1&amp;page-size=25</id>
+    <updated>2013-02-21T00:00:00Z</updated>
+    <dc:date>2013-02-21T00:00:00Z</dc:date>
+    <opensearch:itemsPerPage>25</opensearch:itemsPerPage>
+    <opensearch:totalResults>431</opensearch:totalResults>
+    <opensearch:startIndex>1</opensearch:startIndex>
+    <entry>
+        <title>ASPEGIC powder for oral solution 500 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/2000031/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/2000031</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="N02BA01">ACETYLSALICYLIQUE ACIDE</vidal:atcClass>
+        <vidal:country countryCode="DZ">Algérie</vidal:country>
+        <vidal:galenicForm vidalId="408">poudre pour solution buvable</vidal:galenicForm>
+        <vidal:name>ASPEGIC powder for oral solution 500 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>ASPEGIC powder for oral solution 100 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/2000032/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/2000032</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="N02BA01">ACETYLSALICYLIQUE ACIDE</vidal:atcClass>
+        <vidal:country countryCode="DZ">Algérie</vidal:country>
+        <vidal:galenicForm vidalId="408">poudre pour solution buvable</vidal:galenicForm>
+        <vidal:name>ASPEGIC powder for oral solution 100 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>ASPEGIC powder and solvent for solution for injection 500 mg+5 ml</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/2000033/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/2000033</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="N02BA01">ACETYLSALICYLIQUE ACIDE</vidal:atcClass>
+        <vidal:country countryCode="DZ">Algérie</vidal:country>
+        <vidal:galenicForm vidalId="369">poudre et solvant p solution injectable</vidal:galenicForm>
+        <vidal:name>ASPEGIC powder and solvent for solution for injection 500 mg+5 ml</vidal:name>
+        <vidal:route id="32">intraveineuse</vidal:route>
+        <vidal:route id="27">intramusculaire</vidal:route>
+    </entry>
+    <entry>
+        <title>ASPEGIC powder and solvent for solution for injection 1 g+5 ml</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/2000034/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/2000034</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="N02BA01">ACETYLSALICYLIQUE ACIDE</vidal:atcClass>
+        <vidal:country countryCode="DZ">Algérie</vidal:country>
+        <vidal:galenicForm vidalId="369">poudre et solvant p solution injectable</vidal:galenicForm>
+        <vidal:name>ASPEGIC powder and solvent for solution for injection 1 g+5 ml</vidal:name>
+        <vidal:route id="32">intraveineuse</vidal:route>
+        <vidal:route id="27">intramusculaire</vidal:route>
+    </entry>
+    <entry>
+        <title>ASPIREFF effervescent tablet 500 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/2000035/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/2000035</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="N02BA01">ACETYLSALICYLIQUE ACIDE</vidal:atcClass>
+        <vidal:country countryCode="DZ">Algérie</vidal:country>
+        <vidal:galenicForm vidalId="83">comprimé effervescent</vidal:galenicForm>
+        <vidal:name>ASPIREFF effervescent tablet 500 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>ASPIRINE UPSA effervescent tablet 500 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/2000036/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/2000036</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="N02BA01">ACETYLSALICYLIQUE ACIDE</vidal:atcClass>
+        <vidal:country countryCode="DZ">Algérie</vidal:country>
+        <vidal:galenicForm vidalId="83">comprimé effervescent</vidal:galenicForm>
+        <vidal:name>ASPIRINE UPSA effervescent tablet 500 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>ASPIRINE UPSA VITAMINEE C effervescent tablet 330 mg+200 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/2000037/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/2000037</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="N02BA51">ACETYLSALICYLIQUE ACIDE EN ASSOCIATION SAUF AUX PSYCHOLEPTIQUES</vidal:atcClass>
+        <vidal:country countryCode="DZ">Algérie</vidal:country>
+        <vidal:galenicForm vidalId="83">comprimé effervescent</vidal:galenicForm>
+        <vidal:name>ASPIRINE UPSA VITAMINEE C effervescent tablet 330 mg+200 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>ASPEGIC powder for oral solution 250 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/2000822/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/2000822</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="N02BA01">ACETYLSALICYLIQUE ACIDE</vidal:atcClass>
+        <vidal:country countryCode="DZ">Algérie</vidal:country>
+        <vidal:galenicForm vidalId="408">poudre pour solution buvable</vidal:galenicForm>
+        <vidal:name>ASPEGIC powder for oral solution 250 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>ASPEGIC powder for oral solution 1 g</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/2000823/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/2000823</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="N02BA01">ACETYLSALICYLIQUE ACIDE</vidal:atcClass>
+        <vidal:country countryCode="DZ">Algérie</vidal:country>
+        <vidal:galenicForm vidalId="408">poudre pour solution buvable</vidal:galenicForm>
+        <vidal:name>ASPEGIC powder for oral solution 1 g</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>ASPIRINE PH8 gastro-resistant tablet 500 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/2000824/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/2000824</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="N02BA01">ACETYLSALICYLIQUE ACIDE</vidal:atcClass>
+        <vidal:country countryCode="DZ">Algérie</vidal:country>
+        <vidal:galenicForm vidalId="106">comprimé gastrorésistant</vidal:galenicForm>
+        <vidal:name>ASPIRINE PH8 gastro-resistant tablet 500 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>ASPIRINE BIOTIC tablet 100 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/2000825/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/2000825</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="N02BA01">ACETYLSALICYLIQUE ACIDE</vidal:atcClass>
+        <vidal:country countryCode="DZ">Algérie</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>ASPIRINE BIOTIC tablet 100 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>ASPIRINE CARDIO tablet 100 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/2000826/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/2000826</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="B01AC06">ACETYLSALICYLIQUE ACIDE</vidal:atcClass>
+        <vidal:country countryCode="DZ">Algérie</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>ASPIRINE CARDIO tablet 100 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>ASPIRINE BIOTIC tablet 160 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/2000827/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/2000827</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="N02BA01">ACETYLSALICYLIQUE ACIDE</vidal:atcClass>
+        <vidal:country countryCode="DZ">Algérie</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>ASPIRINE BIOTIC tablet 160 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>ASPIRINE BEKER tablet 500 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/2000828/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/2000828</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="N02BA01">ACETYLSALICYLIQUE ACIDE</vidal:atcClass>
+        <vidal:country countryCode="DZ">Algérie</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>ASPIRINE BEKER tablet 500 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>ASPARTAM LPCK tablet 20 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/2001201/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/2001201</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="A16AX">DIVERS MEDICAMENTS DES VOIES DIGESTIVES ET DU METABOLISME</vidal:atcClass>
+        <vidal:country countryCode="DZ">Algérie</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>ASPARTAM LPCK tablet 20 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>ASPIRIN film-coated tablet 500 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/3006434/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/3006434</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="N02BA01">ACETYLSALICYLIQUE ACIDE</vidal:atcClass>
+        <vidal:country countryCode="DE">Allemagne</vidal:country>
+        <vidal:galenicForm vidalId="112">comprimé pelliculé</vidal:galenicForm>
+        <vidal:name>ASPIRIN film-coated tablet 500 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>ASPIRIN C effervescent tablet 400 mg+240 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/3006439/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/3006439</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="N02BA51">ACETYLSALICYLIQUE ACIDE EN ASSOCIATION SAUF AUX PSYCHOLEPTIQUES</vidal:atcClass>
+        <vidal:country countryCode="DE">Allemagne</vidal:country>
+        <vidal:galenicForm vidalId="83">comprimé effervescent</vidal:galenicForm>
+        <vidal:name>ASPIRIN C effervescent tablet 400 mg+240 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>ASPISOL powder for solution for injection 500 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/3006443/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/3006443</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="N02BA01">ACETYLSALICYLIQUE ACIDE</vidal:atcClass>
+        <vidal:country countryCode="DE">Allemagne</vidal:country>
+        <vidal:galenicForm vidalId="411">poudre pour solution injectable</vidal:galenicForm>
+        <vidal:name>ASPISOL powder for solution for injection 500 mg</vidal:name>
+        <vidal:route id="32">intraveineuse</vidal:route>
+    </entry>
+    <entry>
+        <title>LITHIUM ASPARTAT film-coated tablet 500 mg (22 mg Li)</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/3012932/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/3012932</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="N05AN01">LITHIUM</vidal:atcClass>
+        <vidal:country countryCode="DE">Allemagne</vidal:country>
+        <vidal:galenicForm vidalId="112">comprimé pelliculé</vidal:galenicForm>
+        <vidal:name>LITHIUM ASPARTAT film-coated tablet 500 mg (22 mg Li)</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>ASPECTONETTEN lozenge 2 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/3012985/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/3012985</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="R02A">PREPARATIONS POUR LA GORGE</vidal:atcClass>
+        <vidal:country countryCode="DE">Allemagne</vidal:country>
+        <vidal:galenicForm vidalId="595">tablette</vidal:galenicForm>
+        <vidal:name>ASPECTONETTEN lozenge 2 mg</vidal:name>
+        <vidal:route id="2">buccale</vidal:route>
+    </entry>
+    <entry>
+        <title>MUCO ASPECTON tablet 30 mg</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/3013037/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/3013037</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="R05CB06">AMBROXOL</vidal:atcClass>
+        <vidal:country countryCode="DE">Allemagne</vidal:country>
+        <vidal:galenicForm vidalId="59">comprimé</vidal:galenicForm>
+        <vidal:name>MUCO ASPECTON tablet 30 mg</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>MUCO ASPECTON oral solution 0.3%</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/3013041/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/3013041</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="R05CB06">AMBROXOL</vidal:atcClass>
+        <vidal:country countryCode="DE">Allemagne</vidal:country>
+        <vidal:galenicForm vidalId="461">solution buvable</vidal:galenicForm>
+        <vidal:name>MUCO ASPECTON oral solution 0.3%</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>MUCO ASPECTON oral drops, solution 7.5 mg/ml</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/3013042/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/3013042</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="R05CB06">AMBROXOL</vidal:atcClass>
+        <vidal:country countryCode="DE">Allemagne</vidal:country>
+        <vidal:galenicForm vidalId="462">solution buvable en gouttes</vidal:galenicForm>
+        <vidal:name>MUCO ASPECTON oral drops, solution 7.5 mg/ml</vidal:name>
+        <vidal:route id="38">orale</vidal:route>
+    </entry>
+    <entry>
+        <title>ASPARAGINASE powder for solution for injection 5 000 IU</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/3013961/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/3013961</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="L01XX02">ASPARAGINASE</vidal:atcClass>
+        <vidal:country countryCode="DE">Allemagne</vidal:country>
+        <vidal:galenicForm vidalId="411">poudre pour solution injectable</vidal:galenicForm>
+        <vidal:name>ASPARAGINASE powder for solution for injection 5 000 IU</vidal:name>
+        <vidal:route id="32">intraveineuse</vidal:route>
+        <vidal:route id="27">intramusculaire</vidal:route>
+    </entry>
+    <entry>
+        <title>ASPARAGINASE powder for solution for injection 10 000 IU</title>
+        <link rel="related" type="application/atom+xml" href="/rest/api/foreign-product/3013962/products" title="PRODUCTS" />
+        <category term="FOREIGN_PRODUCT" />
+        <author>
+            <name>VIDAL</name>
+        </author>
+        <id>vidal://foreign_product/3013962</id>
+        <updated>2013-02-21T00:00:00Z</updated>
+        <vidal:atcClass code="L01XX02">ASPARAGINASE</vidal:atcClass>
+        <vidal:country countryCode="DE">Allemagne</vidal:country>
+        <vidal:galenicForm vidalId="411">poudre pour solution injectable</vidal:galenicForm>
+        <vidal:name>ASPARAGINASE powder for solution for injection 10 000 IU</vidal:name>
+        <vidal:route id="32">intraveineuse</vidal:route>
+        <vidal:route id="27">intramusculaire</vidal:route>
+    </entry>
+</feed>
+
