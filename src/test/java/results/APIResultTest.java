@@ -1,13 +1,13 @@
 package results;
 
+import org.apache.abdera.model.Feed;
 import org.joda.time.DateTime;
 import org.junit.Test;
-import results.APIResult;
 
 import java.io.FileNotFoundException;
 
 import static org.fest.assertions.Assertions.assertThat;
-import static utils.APIResultTools.getAPIResultFromXMLResource;
+import static utils.APIResultTools.getFeedFromXML;
 
 public class APIResultTest {
 
@@ -36,5 +36,17 @@ public class APIResultTest {
       APIResult apiResult = getAPIResultFromXMLResource("productByName_Long.xml");
       DateTime lastUpdate = apiResult.getLastUpdate();
       assertThat(lastUpdate.getMillis()).isEqualTo(1361404800000L);
+   }
+
+
+   private class APIResultImpl extends APIResult {
+      public APIResultImpl(Feed resultFeed) {
+         super(resultFeed);
+      }
+   }
+
+   private APIResult getAPIResultFromXMLResource(String xmlSource) throws FileNotFoundException {
+      Feed feed = getFeedFromXML(xmlSource);
+      return new APIResultImpl(feed);
    }
 }

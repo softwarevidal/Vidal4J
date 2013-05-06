@@ -9,7 +9,7 @@ import org.joda.time.DateTime;
 import javax.xml.namespace.QName;
 import java.util.Date;
 
-public class APIResult {
+public abstract class APIResult {
    protected Feed feed;
 
    public APIResult(Feed resultFeed) {

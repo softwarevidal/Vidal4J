@@ -36,12 +36,6 @@ public class APIResultTools {
 //      return result;
 //   }
 
-   public static APIResult getAPIResultFromXMLResource(String xmlSource)
-           throws FileNotFoundException {
-      Feed feed = getFeedFromXML(xmlSource);
-      return new APIResult(feed);
-   }
-
    public static APIPaginatedResults getAPIPaginatedResultFromXMLResource(String xmlSource)
            throws FileNotFoundException {
       Feed feed = getFeedFromXML(xmlSource);
@@ -79,7 +73,7 @@ public class APIResultTools {
    }
 
 
-   private static Feed getFeedFromXML(String xmlSource) throws FileNotFoundException {
+   public static Feed getFeedFromXML(String xmlSource) throws FileNotFoundException {
       Parser parser = new Abdera().getParser();
       String path = Resources.getResource(xmlSource).getPath();
       File file = new File(path);
