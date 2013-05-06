@@ -1,5 +1,6 @@
 package api;
 
+import results.APIEqFrenchProductByNameResult;
 import results.APIEqFrenchProductResult;
 import results.APIForeignProductResult;
 import results.APIProductResult;
@@ -55,6 +56,12 @@ public class VidalAPI {
       String searchUrl = this.baseUrl + "/rest/api/foreign-product/" + productId + "/products";
       Feed feed = this.searchFeedFromURL(searchUrl);
       return (feed != null) ? new APIEqFrenchProductResult(feed) : null;
+   }
+
+   public APIEqFrenchProductByNameResult searchEqFrenchProductByName(String name) {
+      String searchUrl = this.baseUrl + "/rest/api/foreign-products?q=" + name;
+      Feed feed = this.searchFeedFromURL(searchUrl);
+      return (feed != null) ? new APIEqFrenchProductByNameResult(feed) : null;
    }
 
 
