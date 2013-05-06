@@ -2,6 +2,11 @@ package queries;
 
 public abstract class PaginatedQuery<T> extends Query<T> {
 
+   public PaginatedQuery(String baseUrl) {
+      super(baseUrl);
+   }
+
+
    public T setStartPage(int pageNb) {
       return this.addParam("start-page",  Integer.toString(pageNb));
    }

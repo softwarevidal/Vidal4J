@@ -1,9 +1,12 @@
 package queries;
 
+import org.apache.abdera.model.Feed;
 import results.APIResult;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import static utils.AtomTool.searchFeedFromURL;
 
 public abstract class Query<T> {
    protected String baseUrl;
@@ -26,9 +29,9 @@ public abstract class Query<T> {
       return (T) this;
    }
 
-   protected abstract String buildUrl();
+   protected abstract StringBuilder buildUrl();
 
-   protected String buildParams() {
+   protected StringBuilder buildParams() {
       StringBuilder builder = new StringBuilder();
 
       if(! this.params.isEmpty()) {
@@ -42,6 +45,11 @@ public abstract class Query<T> {
          builder.deleteCharAt(length - 1);
       }
 
-      return builder.toString();
+      return builder;
+   }
+
+   protected Feed fetchResults() {
+      StringBuilder searchUrl = this.buildUrl().append(this.buildParams());
+      return searchFeedFromURL(searchUrl.toString());
    }
 }
