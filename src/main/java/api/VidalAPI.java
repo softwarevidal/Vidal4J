@@ -2,7 +2,7 @@ package api;
 
 import queries.EqFrenchProductSearch;
 import results.APIEqFrenchProductByNameResult;
-import results.APIEqFrenchProductResult;
+import results.APIEqFrenchProductByIdResult;
 import results.APIForeignProductResult;
 import results.APIProductResult;
 import org.apache.abdera.i18n.iri.IRI;
@@ -47,10 +47,10 @@ public class VidalAPI {
       return (feed != null) ? new APIForeignProductResult(feed) : null;
    }
 
-   public APIEqFrenchProductResult searchEqFrenchProductsByProductId(int productId) {
+   public APIEqFrenchProductByIdResult searchEqFrenchProductsByProductId(int productId) {
       String searchUrl = this.baseUrl + "/rest/api/foreign-product/" + productId + "/products";
       Feed feed = searchFeedFromURL(searchUrl);
-      return (feed != null) ? new APIEqFrenchProductResult(feed) : null;
+      return (feed != null) ? new APIEqFrenchProductByIdResult(feed) : null;
    }
 
    public APIEqFrenchProductByNameResult searchEqFrenchProductByName(String name) {

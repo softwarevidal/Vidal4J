@@ -12,7 +12,18 @@ import static org.fest.assertions.Assertions.assertThat;
 public class EqFrenchProductByNameQueryIT {
 
    @Test
-   public void shouldReturnANonEmptyResult() {
+   public void withoutParamsShouldReturnANonEmptyResult() {
+      EqFrenchProductByNameQuery byNameQuery = VidalAPIFactory.getDevInstance()
+              .searchEqFrenchProduct()
+              .byName("asp");
+
+      APIEqFrenchProductByNameResult byNameResult = byNameQuery.execQuery();
+      List<EqFrenchProductOfNameQuery> eqFrenchProducts = byNameResult.getEqFrenchProducts();
+      assertThat(eqFrenchProducts.size()).isGreaterThan(1);
+   }
+
+   @Test
+   public void withParamsShouldReturnANonEmptyResult() {
       EqFrenchProductByNameQuery byNameQuery = VidalAPIFactory.getDevInstance()
                                                               .searchEqFrenchProduct()
                                                               .byName("asp");

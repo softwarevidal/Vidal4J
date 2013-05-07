@@ -1,7 +1,7 @@
 package api;
 
 import results.APIEqFrenchProductByNameResult;
-import results.APIEqFrenchProductResult;
+import results.APIEqFrenchProductByIdResult;
 import results.APIForeignProductResult;
 import results.APIProductResult;
 import org.junit.Test;
@@ -67,16 +67,16 @@ public class VidalAPIIT {
    @Test
    public void shouldSearchEqFrenchProducts() {
       VidalAPI vidalAPI = VidalAPIFactory.getDevInstance();
-      APIEqFrenchProductResult apiEqFrenchProductResult = vidalAPI.searchEqFrenchProductsByProductId(11022);
-      assertThat(apiEqFrenchProductResult.getEqFrenchProducts().size()).isGreaterThan(1);
-      assertThat(apiEqFrenchProductResult.getTitle()).contains("French equivalent Products for Foreign Product ");
+      APIEqFrenchProductByIdResult apiEqFrenchProductByIdResult = vidalAPI.searchEqFrenchProductsByProductId(11022);
+      assertThat(apiEqFrenchProductByIdResult.getEqFrenchProducts().size()).isGreaterThan(1);
+      assertThat(apiEqFrenchProductByIdResult.getTitle()).contains("French equivalent Products for Foreign Product ");
    }
 
    @Test
    public void shouldReturnNullIfProductDoesntExistWhenSearchingEqFrenchProducts() {
       VidalAPI vidalAPI = VidalAPIFactory.getDevInstance();
-      APIEqFrenchProductResult apiEqFrenchProductResult = vidalAPI.searchEqFrenchProductsByProductId(0);
-      assertThat(apiEqFrenchProductResult).isNull();
+      APIEqFrenchProductByIdResult apiEqFrenchProductByIdResult = vidalAPI.searchEqFrenchProductsByProductId(0);
+      assertThat(apiEqFrenchProductByIdResult).isNull();
    }
 
    @Test

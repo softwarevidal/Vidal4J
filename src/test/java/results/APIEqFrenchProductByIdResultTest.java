@@ -1,6 +1,6 @@
 package results;
 
-import models.EqFrenchProduct;
+import models.EqFrenchOfIdProduct;
 import org.junit.Test;
 
 import java.io.FileNotFoundException;
@@ -9,15 +9,15 @@ import java.util.List;
 import static org.fest.assertions.Assertions.assertThat;
 import static utils.APIResultTools.getAPIEqFrenchProductResultFromXMLResource;
 
-public class APIEqFrenchProductResultTest {
+public class APIEqFrenchProductByIdResultTest {
 
    @Test
    public void shouldReturnTheListOdEqFrenchProducts() throws FileNotFoundException {
-      APIEqFrenchProductResult eqFrenchProductResult =
+      APIEqFrenchProductByIdResult eqFrenchProductResult =
               getAPIEqFrenchProductResultFromXMLResource("eqFrenchProducts.xml");
 
-      List<EqFrenchProduct> eqFrenchProducts = eqFrenchProductResult.getEqFrenchProducts();
+      List<EqFrenchOfIdProduct> eqFrenchOfIdProducts = eqFrenchProductResult.getEqFrenchProducts();
 
-      assertThat(eqFrenchProducts.size()).isEqualTo(2);
+      assertThat(eqFrenchOfIdProducts.size()).isEqualTo(2);
    }
 }

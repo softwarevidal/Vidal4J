@@ -14,6 +14,6 @@ public class EqFrenchProductSearch {
    }
 
    public EqFrenchProductByIdQuery byId(int id) {
-      return null;
+      return new EqFrenchProductByIdQuery(this.baseUrl, id);
    }
 }

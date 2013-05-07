@@ -54,10 +54,10 @@ public class APIResultTools {
       return new APIForeignProductResult(feed);
    }
 
-   public static APIEqFrenchProductResult getAPIEqFrenchProductResultFromXMLResource(String xmlSource)
+   public static APIEqFrenchProductByIdResult getAPIEqFrenchProductResultFromXMLResource(String xmlSource)
            throws FileNotFoundException {
       Feed feed = getFeedFromXML(xmlSource);
-      return new APIEqFrenchProductResult(feed);
+      return new APIEqFrenchProductByIdResult(feed);
    }
 
    public static APIEqFrenchProductByNameResult getAPIEqFrenchProductByNameResultFromXMLResource(String xmlSource)
