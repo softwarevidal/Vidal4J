@@ -8,15 +8,17 @@ import queries.EqFrenchProductByNameQuery;
 import java.util.ArrayList;
 import java.util.List;
 
-public class APIEqFrenchProductByNameResult extends APIPaginatedResults<EqFrenchProductByNameQuery> {
+public class APIEqFrenchProductByNameResult
+        extends APIPaginatedResults<EqFrenchProductByNameQuery, APIEqFrenchProductByNameResult> {
 
    public APIEqFrenchProductByNameResult(Feed resultFeed) {
       super(resultFeed);
    }
 
    public APIEqFrenchProductByNameResult(Feed resultFeed, EqFrenchProductByNameQuery query) {
-      super(resultFeed, query);
+      super(resultFeed, query, APIEqFrenchProductByNameResult.class, EqFrenchProductByNameQuery.class);
    }
+
 
    public List<EqFrenchOfNameProduct> getEqFrenchProducts() {
       List<Entry> entries = this.feed.getEntries();

@@ -1,5 +1,6 @@
 package queries;
 
+import org.apache.abdera.i18n.iri.IRI;
 import org.apache.abdera.model.Feed;
 import results.APIResult;
 
@@ -51,5 +52,14 @@ public abstract class Query<T> {
    protected Feed fetchResults() {
       StringBuilder searchUrl = this.buildUrl().append(this.buildParams());
       return searchFeedFromURL(searchUrl.toString());
+   }
+
+   public Feed openPage(IRI uri) {
+      String url = null;
+      if(uri != null) {
+         url = this.baseUrl + uri.toString();
+      }
+
+      return (url != null) ? searchFeedFromURL(url) : null;
    }
 }
