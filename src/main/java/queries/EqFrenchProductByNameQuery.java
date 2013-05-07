@@ -14,7 +14,7 @@ public class EqFrenchProductByNameQuery extends PaginatedQuery<EqFrenchProductBy
    @Override
    public APIEqFrenchProductByNameResult execQuery() {
       Feed feed = this.fetchResults();
-      return new APIEqFrenchProductByNameResult(feed);
+      return new APIEqFrenchProductByNameResult(feed, this);
    }
 
    @Override

@@ -5,15 +5,22 @@ import org.apache.abdera.model.Element;
 import org.apache.abdera.model.Feed;
 import org.apache.abdera.model.Link;
 import org.joda.time.DateTime;
+import queries.Query;
 
 import javax.xml.namespace.QName;
 import java.util.Date;
 
-public abstract class APIResult {
+public abstract class APIResult<T extends Query> {
    protected Feed feed;
+   protected T query;
 
    public APIResult(Feed resultFeed) {
       this.feed = resultFeed;
+   }
+
+   public APIResult(Feed resultFeed, T query) {
+      this.feed = resultFeed;
+      this.query = query;
    }
 
 

@@ -4,15 +4,21 @@ import org.apache.abdera.i18n.iri.IRI;
 import org.apache.abdera.model.Element;
 import org.apache.abdera.model.Feed;
 import org.apache.abdera.model.Link;
+import queries.PaginatedQuery;
+import queries.Query;
 
 import javax.xml.namespace.QName;
 
-public abstract class APIPaginatedResults extends APIResult {
+public abstract class APIPaginatedResults<T extends PaginatedQuery> extends APIResult<T> {
    private final String OPENSEARCH_TAG_URL = "http://a9.com/-/spec/opensearch/1.1/";
    private final String REL_PREV = "prev";
 
    public APIPaginatedResults(Feed resultFeed) {
       super(resultFeed);
+   }
+
+   public APIPaginatedResults(Feed resultFeed, T query) {
+      super(resultFeed, query);
    }
 
 
