@@ -1,6 +1,6 @@
 package results;
 
-import models.EqFrenchProductOfNameQuery;
+import models.EqFrenchOfNameProduct;
 import org.apache.abdera.model.Entry;
 import org.apache.abdera.model.Feed;
 
@@ -12,12 +12,12 @@ public class APIEqFrenchProductByNameResult extends APIPaginatedResults {
       super(resultFeed);
    }
 
-   public List<EqFrenchProductOfNameQuery> getEqFrenchProducts() {
+   public List<EqFrenchOfNameProduct> getEqFrenchProducts() {
       List<Entry> entries = this.feed.getEntries();
-      ArrayList<EqFrenchProductOfNameQuery> eqFrenchProductsByName = new ArrayList<EqFrenchProductOfNameQuery>();
+      ArrayList<EqFrenchOfNameProduct> eqFrenchProductsByName = new ArrayList<EqFrenchOfNameProduct>();
 
       for(Entry entry : entries) {
-         eqFrenchProductsByName.add(new EqFrenchProductOfNameQuery(entry));
+         eqFrenchProductsByName.add(new EqFrenchOfNameProduct(entry));
       }
 
       return eqFrenchProductsByName;

@@ -1,6 +1,6 @@
 package results;
 
-import models.EqFrenchProductOfNameQuery;
+import models.EqFrenchOfNameProduct;
 import org.junit.Test;
 
 import java.io.FileNotFoundException;
@@ -16,7 +16,7 @@ public class APIEqFrenchProductByNameResultTest {
       APIEqFrenchProductByNameResult byNameResult =
               getAPIEqFrenchProductByNameResultFromXMLResource("eqFrenchProductsByName.xml");
 
-      List<EqFrenchProductOfNameQuery> eqFrenchProducts = byNameResult.getEqFrenchProducts();
+      List<EqFrenchOfNameProduct> eqFrenchProducts = byNameResult.getEqFrenchProducts();
 
       assertThat(eqFrenchProducts.size()).isEqualTo(25);
    }

@@ -13,9 +13,9 @@ import java.io.FileNotFoundException;
 import static org.fest.assertions.Assertions.assertThat;
 import static utils.APIResultTools.getAPIEqFrenchProductByNameResultFromXMLResource;
 
-public class EqFrenchProductOfNameQueryTest {
+public class EqFrenchOfNameProductTest {
 
-   private EqFrenchProductOfNameQuery productOfNameQuery;
+   private EqFrenchOfNameProduct productOfNameQuery;
 
    @Before
    public void setUp() throws FileNotFoundException {
@@ -66,7 +66,7 @@ public class EqFrenchProductOfNameQueryTest {
    }
 
 
-   private EqFrenchProductOfNameQuery getFirstProductFromXML(String xmlSource) throws FileNotFoundException {
+   private EqFrenchOfNameProduct getFirstProductFromXML(String xmlSource) throws FileNotFoundException {
       APIEqFrenchProductByNameResult byNameResult =
               getAPIEqFrenchProductByNameResultFromXMLResource(xmlSource);
       return byNameResult.getEqFrenchProducts().get(0);

@@ -9,11 +9,11 @@ import org.apache.abdera.model.Entry;
 import static utils.AtomTool.getVidalTagContent;
 
 
-public class EqFrenchProductOfNameQuery {
+public class EqFrenchOfNameProduct {
 
    private final Entry entry;
 
-   public EqFrenchProductOfNameQuery(Entry entry) {
+   public EqFrenchOfNameProduct(Entry entry) {
       this.entry = entry;
    }
 
