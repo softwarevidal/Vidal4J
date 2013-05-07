@@ -7,7 +7,7 @@ import org.apache.abdera.model.Link;
 
 import javax.xml.namespace.QName;
 
-public class APIPaginatedResults extends APIResult {
+public abstract class APIPaginatedResults extends APIResult {
    private final String OPENSEARCH_TAG_URL = "http://a9.com/-/spec/opensearch/1.1/";
    private final String REL_PREV = "prev";
 

@@ -36,11 +36,6 @@ public class APIResultTools {
 //      return result;
 //   }
 
-   public static APIPaginatedResults getAPIPaginatedResultFromXMLResource(String xmlSource)
-           throws FileNotFoundException {
-      Feed feed = getFeedFromXML(xmlSource);
-      return new APIPaginatedResults(feed);
-   }
 
    public static APIProductResult getAPIProductResultFromXMLResource(String xmlSource)
            throws FileNotFoundException {

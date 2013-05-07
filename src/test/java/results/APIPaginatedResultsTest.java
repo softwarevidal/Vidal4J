@@ -1,12 +1,13 @@
 package results;
 
+import org.apache.abdera.model.Feed;
 import org.junit.Test;
 import results.APIPaginatedResults;
 
 import java.io.FileNotFoundException;
 
 import static org.fest.assertions.Assertions.assertThat;
-import static utils.APIResultTools.getAPIPaginatedResultFromXMLResource;
+import static utils.APIResultTools.getFeedFromXML;
 
 
 public class APIPaginatedResultsTest {
@@ -53,5 +54,18 @@ public class APIPaginatedResultsTest {
    public void shouldReturnTheCurrentPageNumber() throws FileNotFoundException {
       APIPaginatedResults apiResult = getAPIPaginatedResultFromXMLResource("productByName_Long.xml");
       assertThat(apiResult.getCurrentPageNumber()).isEqualTo(2);
+   }
+
+
+   private APIPaginatedResults getAPIPaginatedResultFromXMLResource(String xmlSource)
+           throws FileNotFoundException {
+      Feed feed = getFeedFromXML(xmlSource);
+      return new PaginatedResultsImpl(feed);
+   }
+
+   private class PaginatedResultsImpl extends APIPaginatedResults {
+      public PaginatedResultsImpl(Feed resultFeed) {
+         super(resultFeed);
+      }
    }
 }
