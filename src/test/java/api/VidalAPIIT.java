@@ -1,5 +1,6 @@
 package api;
 
+import queries.ForeignProductByIdQuery;
 import results.APIForeignProductResult;
 import results.APIProductResult;
 import org.junit.Test;
@@ -61,6 +62,17 @@ public class VidalAPIIT {
       APIForeignProductResult apiForeignProductResult = vidalAPI.searchForeignProductsByProductId(0);
       assertThat(apiForeignProductResult).isNull();
    }
+
+
+   @Test
+   public void shouldReturnForeignProductsFromFrenchId() {
+      VidalAPI vidalAPI = VidalAPIFactory.getDevInstance();
+      ForeignProductByIdQuery byIdQuery = vidalAPI.searchForeignProduct().byFrenchProductId(15070);
+      APIForeignProductResult result = byIdQuery.execQuery();
+      assertThat(result.getTitle()).contains("ForeignProducts for Product ");
+      assertThat(result.getForeignProducts().size()).isGreaterThan(1);
+   }
+
 
    private void shouldSearchAProductByName(VidalAPI vidalAPI) {
       APIProductResult apiProductResult = vidalAPI.searchProductsByName("asp");

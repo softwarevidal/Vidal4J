@@ -1,12 +1,11 @@
 package api;
 
-import queries.EqFrenchProductSearch;
-import results.APIEqFrenchProductByNameResult;
-import results.APIEqFrenchProductByIdResult;
+import searches.EqFrenchProductSearch;
 import results.APIForeignProductResult;
 import results.APIProductResult;
 import org.apache.abdera.i18n.iri.IRI;
 import org.apache.abdera.model.Feed;
+import searches.ForeignProductSearch;
 
 import static utils.AtomTool.searchFeedFromURL;
 
@@ -41,10 +40,8 @@ public class VidalAPI {
       return (feed != null) ? new APIProductResult(feed) : null;
    }
 
-   public APIForeignProductResult searchForeignProductsByProductId(int productId) {
-      String searchUrl = this.baseUrl + "/rest/api/product/" + productId + "/foreign-products";
-      Feed feed = searchFeedFromURL(searchUrl);
-      return (feed != null) ? new APIForeignProductResult(feed) : null;
+   public ForeignProductSearch searchForeignProduct() {
+      return new ForeignProductSearch(this.baseUrl);
    }
 
    public EqFrenchProductSearch searchEqFrenchProduct() {

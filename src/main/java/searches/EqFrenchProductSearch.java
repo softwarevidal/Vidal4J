@@ -1,4 +1,7 @@
-package queries;
+package searches;
+
+import queries.EqFrenchProductByIdQuery;
+import queries.EqFrenchProductByNameQuery;
 
 public class EqFrenchProductSearch {
 

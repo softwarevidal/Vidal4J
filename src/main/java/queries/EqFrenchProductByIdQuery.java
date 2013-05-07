@@ -6,11 +6,10 @@ import results.APIEqFrenchProductByIdResult;
 
 public class EqFrenchProductByIdQuery extends Query<EqFrenchProductByIdQuery> {
 
-   private final String baseUrl;
    private final int id;
 
    public EqFrenchProductByIdQuery(String baseUrl, int id) {
-      this.baseUrl = baseUrl;
+      super(baseUrl);
       this.id = id;
    }
 
