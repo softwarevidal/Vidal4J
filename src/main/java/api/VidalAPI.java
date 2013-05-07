@@ -47,18 +47,6 @@ public class VidalAPI {
       return (feed != null) ? new APIForeignProductResult(feed) : null;
    }
 
-   public APIEqFrenchProductByIdResult searchEqFrenchProductsByProductId(int productId) {
-      String searchUrl = this.baseUrl + "/rest/api/foreign-product/" + productId + "/products";
-      Feed feed = searchFeedFromURL(searchUrl);
-      return (feed != null) ? new APIEqFrenchProductByIdResult(feed) : null;
-   }
-
-   public APIEqFrenchProductByNameResult searchEqFrenchProductByName(String name) {
-      String searchUrl = this.baseUrl + "/rest/api/foreign-products?q=" + name;
-      Feed feed = searchFeedFromURL(searchUrl);
-      return (feed != null) ? new APIEqFrenchProductByNameResult(feed) : null;
-   }
-
    public EqFrenchProductSearch searchEqFrenchProduct() {
       return new EqFrenchProductSearch(this.baseUrl);
    }

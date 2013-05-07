@@ -1,7 +1,5 @@
 package api;
 
-import results.APIEqFrenchProductByNameResult;
-import results.APIEqFrenchProductByIdResult;
 import results.APIForeignProductResult;
 import results.APIProductResult;
 import org.junit.Test;
@@ -62,29 +60,6 @@ public class VidalAPIIT {
       VidalAPI vidalAPI = VidalAPIFactory.getDevInstance();
       APIForeignProductResult apiForeignProductResult = vidalAPI.searchForeignProductsByProductId(0);
       assertThat(apiForeignProductResult).isNull();
-   }
-
-   @Test
-   public void shouldSearchEqFrenchProducts() {
-      VidalAPI vidalAPI = VidalAPIFactory.getDevInstance();
-      APIEqFrenchProductByIdResult apiEqFrenchProductByIdResult = vidalAPI.searchEqFrenchProductsByProductId(11022);
-      assertThat(apiEqFrenchProductByIdResult.getEqFrenchProducts().size()).isGreaterThan(1);
-      assertThat(apiEqFrenchProductByIdResult.getTitle()).contains("French equivalent Products for Foreign Product ");
-   }
-
-   @Test
-   public void shouldReturnNullIfProductDoesntExistWhenSearchingEqFrenchProducts() {
-      VidalAPI vidalAPI = VidalAPIFactory.getDevInstance();
-      APIEqFrenchProductByIdResult apiEqFrenchProductByIdResult = vidalAPI.searchEqFrenchProductsByProductId(0);
-      assertThat(apiEqFrenchProductByIdResult).isNull();
-   }
-
-   @Test
-   public void shouldSearchEqFrenchProductByName() {
-      VidalAPI vidalAPI = VidalAPIFactory.getDevInstance();
-      APIEqFrenchProductByNameResult byNameResult = vidalAPI.searchEqFrenchProductByName("asp");
-      assertThat(byNameResult.getEqFrenchProducts().size()).isGreaterThan(1);
-      assertThat(byNameResult.getTitle()).contains("Search Foreign Products - Query :");
    }
 
    private void shouldSearchAProductByName(VidalAPI vidalAPI) {
