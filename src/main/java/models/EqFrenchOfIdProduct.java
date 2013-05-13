@@ -1,5 +1,6 @@
 package models;
 
+import api.VidalAPI;
 import models.key_values.AMMType;
 import org.apache.abdera.model.Element;
 import org.apache.abdera.model.Entry;
@@ -8,8 +9,8 @@ import static utils.AtomTool.getVidalTagContent;
 
 public class EqFrenchOfIdProduct extends OfNameProduct {
 
-   public EqFrenchOfIdProduct(Entry entry) {
-      super(entry);
+   public EqFrenchOfIdProduct(Entry entry, VidalAPI vidalAPI) {
+      super(entry, vidalAPI);
    }
 
 

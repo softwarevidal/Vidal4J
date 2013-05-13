@@ -7,10 +7,6 @@ import queries.ProductByIdQuery;
 
 public class APIProductByIdResult extends APIResult {
 
-   public APIProductByIdResult(Feed resultFeed) {
-      super(resultFeed);
-   }
-
    public APIProductByIdResult(Feed feed, ProductByIdQuery productByIdQuery) {
       super(feed, productByIdQuery);
    }

@@ -16,10 +16,6 @@ import java.util.List;
  */
 public class OfIdProduct extends OfNameProduct {
 
-   public OfIdProduct(Entry entry) {
-      super(entry);
-   }
-
    public OfIdProduct(Entry entry, VidalAPI vidalAPI) {
       super(entry, vidalAPI);
    }

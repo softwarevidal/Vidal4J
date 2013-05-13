@@ -12,10 +12,6 @@ import static utils.AtomTool.getVidalTagContent;
 
 public class OfNameProduct extends EntryWithLinks {
 
-   public OfNameProduct(Entry entry) {
-      super(entry);
-   }
-
    public OfNameProduct(Entry entry, VidalAPI vidalAPI) {
       super(entry, vidalAPI);
    }

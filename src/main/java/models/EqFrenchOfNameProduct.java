@@ -1,5 +1,6 @@
 package models;
 
+import api.VidalAPI;
 import models.key_values.ATCClass;
 import models.key_values.Country;
 import models.key_values.GalenicForm;
@@ -9,12 +10,10 @@ import org.apache.abdera.model.Entry;
 import static utils.AtomTool.getVidalTagContent;
 
 
-public class EqFrenchOfNameProduct {
+public class EqFrenchOfNameProduct extends EntryWithLinks {
 
-   private final Entry entry;
-
-   public EqFrenchOfNameProduct(Entry entry) {
-      this.entry = entry;
+   public EqFrenchOfNameProduct(Entry entry, VidalAPI vidalAPI) {
+      super(entry, vidalAPI);
    }
 
 

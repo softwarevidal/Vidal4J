@@ -19,10 +19,10 @@ public class VidalAPI {
    }
 
    public ForeignProductSearch searchForeignProduct() {
-      return new ForeignProductSearch(this.baseUrl);
+      return new ForeignProductSearch(this.baseUrl, this);
    }
 
    public EqFrenchProductSearch searchEqFrenchProduct() {
-      return new EqFrenchProductSearch(this.baseUrl);
+      return new EqFrenchProductSearch(this.baseUrl, this);
    }
 }

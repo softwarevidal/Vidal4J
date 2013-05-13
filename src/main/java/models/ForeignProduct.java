@@ -1,5 +1,6 @@
 package models;
 
+import api.VidalAPI;
 import models.key_values.ATCClass;
 import models.key_values.Country;
 import models.key_values.GalenicForm;
@@ -9,11 +10,10 @@ import org.apache.abdera.model.Entry;
 import static utils.AtomTool.getVidalTagContent;
 
 
-public class ForeignProduct {
-   private Entry entry;
+public class ForeignProduct extends EntryWithLinks {
 
-   public ForeignProduct(Entry entry) {
-      this.entry = entry;
+   public ForeignProduct(Entry entry, VidalAPI vidalAPI) {
+      super(entry, vidalAPI);
    }
 
    public String getId() {

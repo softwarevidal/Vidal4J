@@ -1,13 +1,14 @@
 package queries;
 
+import api.VidalAPI;
 import org.apache.abdera.model.Feed;
 import results.APIEqFrenchProductByNameResult;
 
 
 public class EqFrenchProductByNameQuery extends PaginatedQuery<EqFrenchProductByNameQuery> {
 
-   public EqFrenchProductByNameQuery(String baseUrl, String name) {
-      super(baseUrl);
+   public EqFrenchProductByNameQuery(String baseUrl, String name, VidalAPI vidalAPI) {
+      super(baseUrl, vidalAPI);
       this.addParam("q", name);
    }
 

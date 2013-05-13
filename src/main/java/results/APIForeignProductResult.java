@@ -10,10 +10,6 @@ import java.util.List;
 
 public class APIForeignProductResult extends APIResult {
 
-   public APIForeignProductResult(Feed resultFeed) {
-      super(resultFeed);
-   }
-
    public APIForeignProductResult(Feed feed, ForeignProductByIdQuery query) {
       super(feed, query);
    }
@@ -24,7 +20,7 @@ public class APIForeignProductResult extends APIResult {
       List<ForeignProduct> foreignProducts = new ArrayList<ForeignProduct>();
 
       for(Entry entry : entries) {
-         foreignProducts.add(new ForeignProduct(entry));
+         foreignProducts.add(new ForeignProduct(entry, this.query.getVidalAPI()));
       }
 
       return foreignProducts;

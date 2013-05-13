@@ -10,10 +10,6 @@ import java.util.List;
 
 public class APIProductByNameResult extends APIPaginatedResults<ProductByNameQuery, APIProductByNameResult> {
 
-   public APIProductByNameResult(Feed resultFeed) {
-      super(resultFeed);
-   }
-
    public APIProductByNameResult(Feed feed, ProductByNameQuery query) {
       super(feed, query, APIProductByNameResult.class, ProductByNameQuery.class);
    }

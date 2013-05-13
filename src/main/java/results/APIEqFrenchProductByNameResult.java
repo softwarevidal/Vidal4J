@@ -11,10 +11,6 @@ import java.util.List;
 public class APIEqFrenchProductByNameResult
         extends APIPaginatedResults<EqFrenchProductByNameQuery, APIEqFrenchProductByNameResult> {
 
-   public APIEqFrenchProductByNameResult(Feed resultFeed) {
-      super(resultFeed);
-   }
-
    public APIEqFrenchProductByNameResult(Feed resultFeed, EqFrenchProductByNameQuery query) {
       super(resultFeed, query, APIEqFrenchProductByNameResult.class, EqFrenchProductByNameQuery.class);
    }
@@ -25,7 +21,7 @@ public class APIEqFrenchProductByNameResult
       ArrayList<EqFrenchOfNameProduct> eqFrenchProductsByName = new ArrayList<EqFrenchOfNameProduct>();
 
       for(Entry entry : entries) {
-         eqFrenchProductsByName.add(new EqFrenchOfNameProduct(entry));
+         eqFrenchProductsByName.add(new EqFrenchOfNameProduct(entry, this.query.getVidalAPI()));
       }
 
       return eqFrenchProductsByName;

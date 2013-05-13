@@ -2,8 +2,7 @@ package utils;
 
 import api.VidalAPI;
 import com.google.common.io.Resources;
-import queries.ProductByIdQuery;
-import queries.ProductByNameQuery;
+import queries.*;
 import results.*;
 import org.apache.abdera.Abdera;
 import org.apache.abdera.model.Document;
@@ -43,26 +42,29 @@ public class APIResultTools {
    public static APIProductByNameResult getAPIProductResultFromXMLResource(String xmlSource)
            throws FileNotFoundException {
       Feed feed = getFeedFromXML(xmlSource);
-      ProductByNameQuery productByNameQuery = new ProductByNameQuery("", new VidalAPI(""));
-      return new APIProductByNameResult(feed, productByNameQuery);
+      ProductByNameQuery byNameQuery = new ProductByNameQuery("", new VidalAPI(""));
+      return new APIProductByNameResult(feed, byNameQuery);
    }
 
    public static APIForeignProductResult getAPIForeignProductResultFromXMLResource(String xmlSource)
            throws FileNotFoundException {
       Feed feed = getFeedFromXML(xmlSource);
-      return new APIForeignProductResult(feed);
+      ForeignProductByIdQuery byIdQuery = new ForeignProductByIdQuery("", 0);
+      return new APIForeignProductResult(feed, byIdQuery);
    }
 
    public static APIEqFrenchProductByIdResult getAPIEqFrenchProductResultFromXMLResource(String xmlSource)
            throws FileNotFoundException {
       Feed feed = getFeedFromXML(xmlSource);
-      return new APIEqFrenchProductByIdResult(feed);
+      EqFrenchProductByIdQuery byIdQuery = new EqFrenchProductByIdQuery("", 0, new VidalAPI(""));
+      return new APIEqFrenchProductByIdResult(feed, byIdQuery);
    }
 
    public static APIEqFrenchProductByNameResult getAPIEqFrenchProductByNameResultFromXMLResource(String xmlSource)
            throws FileNotFoundException {
       Feed feed = getFeedFromXML(xmlSource);
-      return new APIEqFrenchProductByNameResult(feed);
+      EqFrenchProductByNameQuery byNameQuery = new EqFrenchProductByNameQuery("", "", new VidalAPI(""));
+      return new APIEqFrenchProductByNameResult(feed, byNameQuery);
    }
 
    public static APIProductByIdResult getAPIFullProductResultFromXMLResource(String xmlSource)

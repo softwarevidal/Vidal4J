@@ -1,17 +1,16 @@
 package searches;
 
+import api.VidalAPI;
 import queries.ForeignProductByIdQuery;
 
-public class ForeignProductSearch {
+public class ForeignProductSearch extends Search {
 
-   private final String baseUrl;
-
-   public ForeignProductSearch(String baseUrl) {
-      this.baseUrl = baseUrl;
+   public ForeignProductSearch(String baseUrl, VidalAPI vidalAPI) {
+      super(baseUrl, vidalAPI);
    }
 
 
    public ForeignProductByIdQuery byFrenchProductId(int id) {
-      return new ForeignProductByIdQuery(this.baseUrl, id);
+      return new ForeignProductByIdQuery(this.baseUrl, id, this.vidalAPI);
    }
 }
