@@ -14,54 +14,11 @@ import static utils.APIResultTools.getAPIProductResultFromXMLResource;
 public class VidalAPIIT {
 
    @Test
-   public void shouldSearchAProductByNameOnDev() {
-      this.shouldSearchAProductByName(VidalAPIFactory.getDevInstance());
-   }
-
-   @Test
-   public void shouldSearchAProductByNameOnBeta() {
-      this.shouldSearchAProductByName(VidalAPIFactory.getBetaInstance());
-   }
-
-   @Test
-   public void shouldSearchAProductByNameOnProd() {
-      this.shouldSearchAProductByName(VidalAPIFactory.getProdInstance());
-   }
-
-   @Test
-   public void shouldSearchTheNextPage() throws FileNotFoundException {
-      VidalAPI vidalAPI = VidalAPIFactory.getDevInstance();
-      APIProductByNameResult productResult = getAPIProductResultFromXMLResource("productByName_Long.xml");
-      APIProductByNameResult nextPage = vidalAPI.searchProductsByNameNextPage(productResult);
-
-      assertThat(nextPage.getCurrentPageNumber()).isEqualTo(3);
-      assertThat(nextPage.getTotalResultsNumber()).isGreaterThan(0);
-   }
-
-   @Test
-   public void shouldSearchThePrevPage() throws FileNotFoundException {
-      VidalAPI vidalAPI = VidalAPIFactory.getDevInstance();
-      APIProductByNameResult productResult = getAPIProductResultFromXMLResource("productByName_Long.xml");
-      APIProductByNameResult prevPage = vidalAPI.searchProductsByNamePrevPage(productResult);
-
-      assertThat(prevPage.getCurrentPageNumber()).isEqualTo(1);
-      assertThat(prevPage.getTotalResultsNumber()).isGreaterThan(0);
-   }
-
-
-   @Test
    public void shouldReturnForeignProductsFromFrenchId() {
       VidalAPI vidalAPI = VidalAPIFactory.getDevInstance();
       ForeignProductByIdQuery byIdQuery = vidalAPI.searchForeignProduct().byFrenchProductId(15070);
       APIForeignProductResult result = byIdQuery.execQuery();
       assertThat(result.getTitle()).contains("ForeignProducts for Product ");
       assertThat(result.getForeignProducts().size()).isGreaterThan(1);
-   }
-
-
-   private void shouldSearchAProductByName(VidalAPI vidalAPI) {
-      APIProductByNameResult apiProductByNameResult = vidalAPI.searchProductsByName("asp");
-      assertThat(apiProductByNameResult.getTotalResultsNumber()).isGreaterThan(5);
-      assertThat(apiProductByNameResult.getTitle()).contains("Search Products - Query :");
    }
 }

@@ -5,6 +5,7 @@ import results.APIProductByNameResult;
 import org.apache.abdera.i18n.iri.IRI;
 import org.apache.abdera.model.Feed;
 import searches.ForeignProductSearch;
+import searches.ProductSearch;
 
 import static utils.AtomTool.searchFeedFromURL;
 
@@ -18,25 +19,8 @@ public class VidalAPI {
    }
 
 
-   public APIProductByNameResult searchProductsByName(String query) {
-      IRI iri = new IRI("/rest/api/products?q=" + query);
-      return this.searchProductsByURL(iri);
-   }
-
-   public APIProductByNameResult searchProductsByNameNextPage(APIProductByNameResult apiProductByNameResult) {
-      IRI nextPageLink = apiProductByNameResult.getNextPageLink();
-      return (nextPageLink != null) ? this.searchProductsByURL(nextPageLink) : null;
-   }
-
-   public APIProductByNameResult searchProductsByNamePrevPage(APIProductByNameResult apiProductByNameResult) {
-      IRI prevPageLink = apiProductByNameResult.getPrevPageLink();
-      return (prevPageLink != null) ? this.searchProductsByURL(prevPageLink) : null;
-   }
-
-   public APIProductByNameResult searchProductsByURL(IRI iri) {
-      String searchUrl = this.baseUrl + iri.toString();
-      Feed feed = searchFeedFromURL(searchUrl);
-      return (feed != null) ? new APIProductByNameResult(feed) : null;
+   public ProductSearch searchProduct() {
+      return new ProductSearch(this.baseUrl);
    }
 
    public ForeignProductSearch searchForeignProduct() {
