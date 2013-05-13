@@ -1,8 +1,7 @@
 package results;
 
-import models.Product;
+import models.OfNameProduct;
 import org.junit.Test;
-import results.APIProductResult;
 
 import java.io.FileNotFoundException;
 import java.util.List;
@@ -10,13 +9,13 @@ import java.util.List;
 import static org.fest.assertions.Assertions.assertThat;
 import static utils.APIResultTools.getAPIProductResultFromXMLResource;
 
-public class APIProductResultTest {
+public class APIProductByNameResultTest {
 
    @Test
    public void shouldReturnTheListOfProducts() throws FileNotFoundException {
-      APIProductResult apiProductResult = getAPIProductResultFromXMLResource("productByName_Long.xml");
-      List<Product> products = apiProductResult.getProducts();
-      assertThat(products.size()).isEqualTo(10);
+      APIProductByNameResult apiProductByNameResult = getAPIProductResultFromXMLResource("productByName_Long.xml");
+      List<OfNameProduct> ofNameProducts = apiProductByNameResult.getProducts();
+      assertThat(ofNameProducts.size()).isEqualTo(10);
    }
 
 }

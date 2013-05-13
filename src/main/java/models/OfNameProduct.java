@@ -8,10 +8,10 @@ import org.apache.abdera.model.Entry;
 
 import static utils.AtomTool.getVidalTagContent;
 
-public class Product {
+public class OfNameProduct {
    protected Entry entry;
 
-   public Product(Entry entry) {
+   public OfNameProduct(Entry entry) {
       this.entry = entry;
    }
 

@@ -6,7 +6,7 @@ import org.apache.abdera.model.Entry;
 
 import static utils.AtomTool.getVidalTagContent;
 
-public class EqFrenchOfIdProduct extends Product {
+public class EqFrenchOfIdProduct extends OfNameProduct {
    public EqFrenchOfIdProduct(Entry entry) {
       super(entry);
    }

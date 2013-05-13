@@ -37,10 +37,10 @@ public class APIResultTools {
 //   }
 
 
-   public static APIProductResult getAPIProductResultFromXMLResource(String xmlSource)
+   public static APIProductByNameResult getAPIProductResultFromXMLResource(String xmlSource)
            throws FileNotFoundException {
       Feed feed = getFeedFromXML(xmlSource);
-      return new APIProductResult(feed);
+      return new APIProductByNameResult(feed);
    }
 
    public static APIForeignProductResult getAPIForeignProductResultFromXMLResource(String xmlSource)

@@ -1,8 +1,7 @@
 package api;
 
 import searches.EqFrenchProductSearch;
-import results.APIForeignProductResult;
-import results.APIProductResult;
+import results.APIProductByNameResult;
 import org.apache.abdera.i18n.iri.IRI;
 import org.apache.abdera.model.Feed;
 import searches.ForeignProductSearch;
@@ -19,25 +18,25 @@ public class VidalAPI {
    }
 
 
-   public APIProductResult searchProductsByName(String query) {
+   public APIProductByNameResult searchProductsByName(String query) {
       IRI iri = new IRI("/rest/api/products?q=" + query);
       return this.searchProductsByURL(iri);
    }
 
-   public APIProductResult searchProductsByNameNextPage(APIProductResult apiProductResult) {
-      IRI nextPageLink = apiProductResult.getNextPageLink();
+   public APIProductByNameResult searchProductsByNameNextPage(APIProductByNameResult apiProductByNameResult) {
+      IRI nextPageLink = apiProductByNameResult.getNextPageLink();
       return (nextPageLink != null) ? this.searchProductsByURL(nextPageLink) : null;
    }
 
-   public APIProductResult searchProductsByNamePrevPage(APIProductResult apiProductResult) {
-      IRI prevPageLink = apiProductResult.getPrevPageLink();
+   public APIProductByNameResult searchProductsByNamePrevPage(APIProductByNameResult apiProductByNameResult) {
+      IRI prevPageLink = apiProductByNameResult.getPrevPageLink();
       return (prevPageLink != null) ? this.searchProductsByURL(prevPageLink) : null;
    }
 
-   public APIProductResult searchProductsByURL(IRI iri) {
+   public APIProductByNameResult searchProductsByURL(IRI iri) {
       String searchUrl = this.baseUrl + iri.toString();
       Feed feed = searchFeedFromURL(searchUrl);
-      return (feed != null) ? new APIProductResult(feed) : null;
+      return (feed != null) ? new APIProductByNameResult(feed) : null;
    }
 
    public ForeignProductSearch searchForeignProduct() {

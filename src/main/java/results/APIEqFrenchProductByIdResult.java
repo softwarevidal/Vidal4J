@@ -1,7 +1,6 @@
 package results;
 
 import models.EqFrenchOfIdProduct;
-import models.ForeignProduct;
 import org.apache.abdera.model.Entry;
 import org.apache.abdera.model.Feed;
 
