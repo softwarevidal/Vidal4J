@@ -1,6 +1,9 @@
 package utils;
 
+import api.VidalAPI;
 import com.google.common.io.Resources;
+import queries.ProductByIdQuery;
+import queries.ProductByNameQuery;
 import results.*;
 import org.apache.abdera.Abdera;
 import org.apache.abdera.model.Document;
@@ -40,7 +43,8 @@ public class APIResultTools {
    public static APIProductByNameResult getAPIProductResultFromXMLResource(String xmlSource)
            throws FileNotFoundException {
       Feed feed = getFeedFromXML(xmlSource);
-      return new APIProductByNameResult(feed);
+      ProductByNameQuery productByNameQuery = new ProductByNameQuery("", new VidalAPI(""));
+      return new APIProductByNameResult(feed, productByNameQuery);
    }
 
    public static APIForeignProductResult getAPIForeignProductResultFromXMLResource(String xmlSource)
@@ -64,7 +68,8 @@ public class APIResultTools {
    public static APIProductByIdResult getAPIFullProductResultFromXMLResource(String xmlSource)
            throws FileNotFoundException {
       Feed feed = getFeedFromXML(xmlSource);
-      return new APIProductByIdResult(feed);
+      ProductByIdQuery productByIdQuery = new ProductByIdQuery("", 0, new VidalAPI(""));
+      return new APIProductByIdResult(feed, productByIdQuery);
    }
 
 

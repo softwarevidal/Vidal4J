@@ -1,22 +1,21 @@
 package searches;
 
+import api.VidalAPI;
 import queries.ProductByIdQuery;
 import queries.ProductByNameQuery;
 
-public class ProductSearch {
+public class ProductSearch extends Search {
 
-   private final String baseUrl;
-
-   public ProductSearch(String baseUrl) {
-      this.baseUrl = baseUrl;
+   public ProductSearch(String baseUrl, VidalAPI vidalAPI) {
+      super(baseUrl, vidalAPI);
    }
 
 
    public ProductByIdQuery byId(int id) {
-      return new ProductByIdQuery(this.baseUrl, id);
+      return new ProductByIdQuery(this.baseUrl, id, this.vidalAPI);
    }
 
    public ProductByNameQuery byName() {
-      return new ProductByNameQuery(this.baseUrl);
+      return new ProductByNameQuery(this.baseUrl, this.vidalAPI);
    }
 }

@@ -5,6 +5,7 @@ import org.apache.abdera.model.Element;
 import org.apache.abdera.model.Feed;
 import org.apache.abdera.model.Link;
 import queries.PaginatedQuery;
+import queries.Query;
 
 import javax.xml.namespace.QName;
 import java.lang.reflect.InvocationTargetException;

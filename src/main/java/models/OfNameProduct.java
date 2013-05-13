@@ -1,18 +1,23 @@
 package models;
 
+import api.VidalAPI;
 import models.key_values.DispensationPlace;
 import models.key_values.MarketStatus;
 import models.key_values.VidalList;
 import org.apache.abdera.model.Element;
 import org.apache.abdera.model.Entry;
+import results.APIProductByIdResult;
 
 import static utils.AtomTool.getVidalTagContent;
 
-public class OfNameProduct {
-   protected Entry entry;
+public class OfNameProduct extends EntryWithLinks {
 
    public OfNameProduct(Entry entry) {
-      this.entry = entry;
+      super(entry);
+   }
+
+   public OfNameProduct(Entry entry, VidalAPI vidalAPI) {
+      super(entry, vidalAPI);
    }
 
 
@@ -90,5 +95,10 @@ public class OfNameProduct {
    public boolean isRetrocedable() {
       String retrocession = getVidalTagContent("retrocession", this.entry).getText();
       return Boolean.parseBoolean(retrocession);
+   }
+
+   public APIProductByIdResult openProduct() {
+      int vidalId = this.getVidalId();
+      return this.vidalAPI.searchProduct().byId(vidalId).execQuery();
    }
 }

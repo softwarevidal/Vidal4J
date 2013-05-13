@@ -15,7 +15,7 @@ public class VidalAPI {
 
 
    public ProductSearch searchProduct() {
-      return new ProductSearch(this.baseUrl);
+      return new ProductSearch(this.baseUrl, this);
    }
 
    public ForeignProductSearch searchForeignProduct() {

@@ -1,5 +1,6 @@
 package queries;
 
+import api.VidalAPI;
 import org.apache.abdera.model.Feed;
 import results.APIProductByNameResult;
 
@@ -9,14 +10,14 @@ public class ProductByNameQuery extends PaginatedQuery<ProductByNameQuery> {
    public static final String Q_PARAM = "q";
    public static final String STARTWITH_PARAM = "startwith";
 
-   public ProductByNameQuery(String baseUrl) {
-      super(baseUrl);
+   public ProductByNameQuery(String baseUrl, VidalAPI vidalAPI) {
+      super(baseUrl, vidalAPI);
    }
 
    @Override
    public APIProductByNameResult execQuery() {
       Feed feed = this.fetchResults();
-      return new APIProductByNameResult(feed);
+      return new APIProductByNameResult(feed, this);
    }
 
    @Override

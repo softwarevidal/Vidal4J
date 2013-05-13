@@ -1,5 +1,6 @@
 package queries;
 
+import api.VidalAPI;
 import org.apache.abdera.i18n.iri.IRI;
 import org.apache.abdera.model.Feed;
 import results.APIResult;
@@ -12,6 +13,7 @@ import static utils.AtomTool.searchFeedFromURL;
 public abstract class Query<T> {
    protected String baseUrl;
    protected Map<String, String> params;
+   protected VidalAPI vidalAPI;
 
    public Query() {
       this.params = new HashMap<String, String>();
@@ -22,6 +24,10 @@ public abstract class Query<T> {
       this.params = new HashMap<String, String>();
    }
 
+   public Query(String baseUrl, VidalAPI vidalAPI) {
+      this(baseUrl);
+      this.vidalAPI = vidalAPI;
+   }
 
    public abstract APIResult execQuery();
 
@@ -62,5 +68,9 @@ public abstract class Query<T> {
       }
 
       return (url != null) ? searchFeedFromURL(url) : null;
+   }
+
+   public VidalAPI getVidalAPI() {
+      return this.vidalAPI;
    }
 }

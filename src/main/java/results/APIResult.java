@@ -1,13 +1,11 @@
 package results;
 
 import org.apache.abdera.i18n.iri.IRI;
-import org.apache.abdera.model.Element;
 import org.apache.abdera.model.Feed;
 import org.apache.abdera.model.Link;
 import org.joda.time.DateTime;
 import queries.Query;
 
-import javax.xml.namespace.QName;
 import java.util.Date;
 
 public abstract class APIResult<T extends Query> {

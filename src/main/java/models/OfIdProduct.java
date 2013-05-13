@@ -1,5 +1,6 @@
 package models;
 
+import api.VidalAPI;
 import org.apache.abdera.model.Entry;
 import org.apache.abdera.model.Link;
 
@@ -14,8 +15,13 @@ import java.util.List;
  * This class is not complete with all the properties of a full product.
  */
 public class OfIdProduct extends OfNameProduct {
+
    public OfIdProduct(Entry entry) {
       super(entry);
+   }
+
+   public OfIdProduct(Entry entry, VidalAPI vidalAPI) {
+      super(entry, vidalAPI);
    }
 
    public URL getEurekaSanteURL() throws MalformedURLException, URISyntaxException {
