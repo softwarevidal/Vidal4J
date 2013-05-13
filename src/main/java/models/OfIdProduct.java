@@ -13,8 +13,8 @@ import java.util.List;
  * CAREFUL
  * This class is not complete with all the properties of a full product.
  */
-public class FullProduct extends OfNameProduct {
-   public FullProduct(Entry entry) {
+public class OfIdProduct extends OfNameProduct {
+   public OfIdProduct(Entry entry) {
       super(entry);
    }
 

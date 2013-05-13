@@ -61,10 +61,10 @@ public class APIResultTools {
       return new APIEqFrenchProductByNameResult(feed);
    }
 
-   public static APIFullProductResult getAPIFullProductResultFromXMLResource(String xmlSource)
+   public static APIProductByIdResult getAPIFullProductResultFromXMLResource(String xmlSource)
            throws FileNotFoundException {
       Feed feed = getFeedFromXML(xmlSource);
-      return new APIFullProductResult(feed);
+      return new APIProductByIdResult(feed);
    }
 
 

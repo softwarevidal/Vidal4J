@@ -1,6 +1,6 @@
 package results;
 
-import models.FullProduct;
+import models.OfIdProduct;
 import org.junit.Test;
 
 import java.io.FileNotFoundException;
@@ -8,15 +8,15 @@ import java.io.FileNotFoundException;
 import static org.fest.assertions.Assertions.assertThat;
 import static utils.APIResultTools.getAPIFullProductResultFromXMLResource;
 
-public class APIFullProductResultTest {
+public class APIProductByIdResultTest {
 
    @Test
    public void shouldReturnTheFullProduct() throws FileNotFoundException {
-      APIFullProductResult fullProductResult = getAPIFullProductResultFromXMLResource("fullProduct.xml");
+      APIProductByIdResult fullProductResult = getAPIFullProductResultFromXMLResource("fullProduct.xml");
 
-      FullProduct fullProduct = fullProductResult.getFullProduct();
+      OfIdProduct ofIdProduct = fullProductResult.getFullProduct();
 
       assertThat(fullProductResult.getTitle()).contains("Product ");
-      assertThat(fullProduct).isNotNull();
+      assertThat(ofIdProduct).isNotNull();
    }
 }

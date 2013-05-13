@@ -22,15 +22,16 @@ public abstract class Query<T> {
       this.params = new HashMap<String, String>();
    }
 
+
    public abstract APIResult execQuery();
+
+   protected abstract StringBuilder buildUrl();
 
 
    protected T addParam(String key, String value) {
       this.params.put(key, value);
       return (T) this;
    }
-
-   protected abstract StringBuilder buildUrl();
 
    protected StringBuilder buildParams() {
       StringBuilder builder = new StringBuilder();

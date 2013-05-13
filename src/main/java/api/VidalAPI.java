@@ -1,13 +1,8 @@
 package api;
 
 import searches.EqFrenchProductSearch;
-import results.APIProductByNameResult;
-import org.apache.abdera.i18n.iri.IRI;
-import org.apache.abdera.model.Feed;
 import searches.ForeignProductSearch;
 import searches.ProductSearch;
-
-import static utils.AtomTool.searchFeedFromURL;
 
 
 public class VidalAPI {
@@ -30,6 +25,4 @@ public class VidalAPI {
    public EqFrenchProductSearch searchEqFrenchProduct() {
       return new EqFrenchProductSearch(this.baseUrl);
    }
-
-
 }
