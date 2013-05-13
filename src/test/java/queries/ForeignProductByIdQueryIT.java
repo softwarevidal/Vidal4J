@@ -1,17 +1,13 @@
-package api;
+package queries;
 
-import queries.ForeignProductByIdQuery;
-import results.APIForeignProductResult;
-import results.APIProductByNameResult;
+import api.VidalAPI;
+import api.VidalAPIFactory;
 import org.junit.Test;
-
-import java.io.FileNotFoundException;
+import results.APIForeignProductResult;
 
 import static org.fest.assertions.Assertions.assertThat;
-import static utils.APIResultTools.getAPIProductResultFromXMLResource;
 
-
-public class VidalAPIIT {
+public class ForeignProductByIdQueryIT {
 
    @Test
    public void shouldReturnForeignProductsFromFrenchId() {
