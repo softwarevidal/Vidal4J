@@ -3,6 +3,7 @@ package items;
 import org.junit.Before;
 import org.junit.Test;
 import results.APIProductByNameResult;
+import utils.DispensationPlace;
 
 import java.io.FileNotFoundException;
 
@@ -37,8 +38,7 @@ public class OfNameProductTest {
 
    @Test
    public void shouldReturnTheDispensationPlace() {
-      assertThat(this.ofNameProduct.getDispensationPlace().getName()).isEqualTo("PHARMACY");
-      assertThat(this.ofNameProduct.getDispensationPlace().getText()).isEqualTo("PHARMACY");
+      assertThat(this.ofNameProduct.getDispensationPlace()).isEqualTo(DispensationPlace.PHARMACY);
    }
 
    @Test

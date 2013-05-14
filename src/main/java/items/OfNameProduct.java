@@ -1,12 +1,12 @@
 package items;
 
 import api.VidalAPI;
-import items.key_values.DispensationPlace;
 import items.key_values.MarketStatus;
 import items.key_values.VidalList;
 import org.apache.abdera.model.Element;
 import org.apache.abdera.model.Entry;
 import results.APIProductByIdResult;
+import utils.DispensationPlace;
 
 import static utils.AtomTool.getVidalTagContent;
 
@@ -39,8 +39,7 @@ public class OfNameProduct extends Item {
    public DispensationPlace getDispensationPlace() {
       Element element = getVidalTagContent("dispensationPlace", this.entry);
       String name = element.getAttributeValue("name");
-      String text = element.getText();
-      return new DispensationPlace(name, text);
+      return DispensationPlace.valueOf(name);
    }
 
    public boolean isDopingProduct() {
