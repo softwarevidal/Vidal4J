@@ -5,7 +5,6 @@ import org.apache.abdera.model.Element;
 import org.apache.abdera.model.Feed;
 import org.apache.abdera.model.Link;
 import queries.PaginatedQuery;
-import queries.Query;
 
 import javax.xml.namespace.QName;
 import java.lang.reflect.InvocationTargetException;
@@ -31,13 +30,13 @@ public abstract class APIPaginatedResults<T extends PaginatedQuery, P extends AP
 
    public P openNextPage() {
       IRI link = getNextPageLink();
-      Feed feed = this.query.openPage(link);
+      Feed feed = this.query.getVidalAPI().openPage(link);
       return this.newChildInstance(feed, this.query);
    }
 
    public P openPrevPage() {
       IRI link = getPrevPageLink();
-      Feed feed = this.query.openPage(link);
+      Feed feed = this.query.getVidalAPI().openPage(link);
       return this.newChildInstance(feed, this.query);
    }
 
