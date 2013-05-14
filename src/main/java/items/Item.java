@@ -3,6 +3,8 @@ package items;
 import api.VidalAPI;
 import org.apache.abdera.i18n.iri.IRI;
 import org.apache.abdera.model.Entry;
+import utils.Category;
+
 
 public abstract class Item {
 
@@ -16,5 +18,10 @@ public abstract class Item {
 
    public IRI getEntryId() {
       return this.entry.getId();
+   }
+
+   public Category getCategory() {
+      String str = this.entry.getCategories().get(0).getTerm();
+      return Category.valueOf(str);
    }
 }

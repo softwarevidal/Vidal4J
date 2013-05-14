@@ -21,10 +21,6 @@ public class EqFrenchOfNameProduct extends Item {
       return getVidalTagContent("name", this.entry).getText();
    }
 
-   public String getCategory() {
-      return this.entry.getCategories().get(0).getTerm();
-   }
-
    public String getId() {
       return this.entry.getId().toString();
    }

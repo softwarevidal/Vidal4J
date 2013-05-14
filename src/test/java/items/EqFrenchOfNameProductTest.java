@@ -7,6 +7,7 @@ import items.key_values.Route;
 import org.junit.Before;
 import org.junit.Test;
 import results.APIEqFrenchProductByNameResult;
+import utils.Category;
 
 import java.io.FileNotFoundException;
 
@@ -29,7 +30,7 @@ public class EqFrenchOfNameProductTest {
 
    @Test
    public void shouldReturnTheCategory() {
-      assertThat(this.productOfNameQuery.getCategory()).isEqualTo("FOREIGN_PRODUCT");
+      assertThat(this.productOfNameQuery.getCategory()).isEqualTo(Category.FOREIGN_PRODUCT);
    }
 
    @Test
