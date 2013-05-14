@@ -26,8 +26,13 @@ public class ItemTest {
    }
 
    @Test
-   public void shouldReturnTheEntryId() throws FileNotFoundException {
+   public void shouldReturnTheEntryId() {
       assertThat(item.getEntryId().toString()).isEqualTo("vidal://product/15070");
+   }
+
+   @Test
+   public void shouldReturnTheLastUpdatedDate() {
+      assertThat(item.getLastUpdate().getMillis()).isEqualTo(1361404800000L);
    }
 
    @Test
