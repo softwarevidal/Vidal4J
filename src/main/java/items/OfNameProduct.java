@@ -1,12 +1,12 @@
 package items;
 
 import api.VidalAPI;
-import items.key_values.MarketStatus;
 import items.key_values.VidalList;
 import org.apache.abdera.model.Element;
 import org.apache.abdera.model.Entry;
 import results.APIProductByIdResult;
 import utils.DispensationPlace;
+import utils.MarketStatus;
 
 import static utils.AtomTool.getVidalTagContent;
 
@@ -73,8 +73,7 @@ public class OfNameProduct extends Item {
    public MarketStatus getMarketStatus() {
       Element element = getVidalTagContent("marketStatus", this.entry);
       String name = element.getAttributeValue("name");
-      String text = element.getText();
-      return new MarketStatus(name, text);
+      return MarketStatus.valueOf(name);
    }
 
    public boolean IsPrescriptivableByMidWife() {

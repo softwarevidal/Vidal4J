@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 import results.APIProductByNameResult;
 import utils.DispensationPlace;
+import utils.MarketStatus;
 
 import java.io.FileNotFoundException;
 
@@ -69,8 +70,7 @@ public class OfNameProductTest {
 
    @Test
    public void shouldReturnTheMarketStatus() {
-      assertThat(this.ofNameProduct.getMarketStatus().getName()).isEqualTo("DELETED_ONEYEAR");
-      assertThat(this.ofNameProduct.getMarketStatus().getText()).isEqualTo("Supprimé");
+      assertThat(this.ofNameProduct.getMarketStatus()).isEqualTo(MarketStatus.DELETED_ONEYEAR);
    }
 
    @Test
