@@ -1,6 +1,6 @@
 package results;
 
-import models.ForeignProduct;
+import items.ForeignProduct;
 import org.apache.abdera.model.Entry;
 import org.apache.abdera.model.Feed;
 import queries.ForeignProductByIdQuery;

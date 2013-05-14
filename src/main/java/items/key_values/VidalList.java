@@ -1,7 +1,7 @@
-package models.key_values;
+package items.key_values;
 
-public class MarketStatus extends AbstractKeyValueItem {
-   public MarketStatus(String key, String value) {
+public class VidalList extends AbstractKeyValueItem {
+   public VidalList(String key, String value) {
       super(key, value);
    }
 

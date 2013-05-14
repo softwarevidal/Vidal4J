@@ -1,6 +1,6 @@
 package results;
 
-import models.OfNameProduct;
+import items.OfNameProduct;
 import org.junit.Test;
 
 import java.io.FileNotFoundException;

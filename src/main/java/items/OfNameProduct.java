@@ -1,9 +1,9 @@
-package models;
+package items;
 
 import api.VidalAPI;
-import models.key_values.DispensationPlace;
-import models.key_values.MarketStatus;
-import models.key_values.VidalList;
+import items.key_values.DispensationPlace;
+import items.key_values.MarketStatus;
+import items.key_values.VidalList;
 import org.apache.abdera.model.Element;
 import org.apache.abdera.model.Entry;
 import results.APIProductByIdResult;

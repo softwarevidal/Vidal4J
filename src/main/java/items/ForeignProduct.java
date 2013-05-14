@@ -1,10 +1,10 @@
-package models;
+package items;
 
 import api.VidalAPI;
-import models.key_values.ATCClass;
-import models.key_values.Country;
-import models.key_values.GalenicForm;
-import models.key_values.Route;
+import items.key_values.ATCClass;
+import items.key_values.Country;
+import items.key_values.GalenicForm;
+import items.key_values.Route;
 import org.apache.abdera.model.Entry;
 
 import static utils.AtomTool.getVidalTagContent;

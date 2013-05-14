@@ -1,4 +1,4 @@
-package models.key_values;
+package items.key_values;
 
 import org.apache.abdera.model.Element;
 import org.apache.abdera.model.Entry;

@@ -1,6 +1,6 @@
 package results;
 
-import models.EqFrenchOfIdProduct;
+import items.EqFrenchOfIdProduct;
 import org.junit.Test;
 
 import java.io.FileNotFoundException;

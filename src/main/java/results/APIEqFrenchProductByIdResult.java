@@ -1,6 +1,6 @@
 package results;
 
-import models.EqFrenchOfIdProduct;
+import items.EqFrenchOfIdProduct;
 import org.apache.abdera.model.Entry;
 import org.apache.abdera.model.Feed;
 import queries.EqFrenchProductByIdQuery;

@@ -1,8 +1,7 @@
 package results;
 
-import models.ForeignProduct;
+import items.ForeignProduct;
 import org.junit.Test;
-import results.APIForeignProductResult;
 
 import java.io.FileNotFoundException;
 import java.util.List;

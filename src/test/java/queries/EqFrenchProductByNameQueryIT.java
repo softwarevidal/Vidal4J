@@ -1,7 +1,7 @@
 package queries;
 
 import api.VidalAPIFactory;
-import models.EqFrenchOfNameProduct;
+import items.EqFrenchOfNameProduct;
 import org.junit.Test;
 import results.APIEqFrenchProductByNameResult;
 

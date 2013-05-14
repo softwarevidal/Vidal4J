@@ -1,4 +1,4 @@
-package models.key_values;
+package items.key_values;
 
 public class AMMType extends AbstractKeyValueItem {
    public AMMType(String key, String value) {

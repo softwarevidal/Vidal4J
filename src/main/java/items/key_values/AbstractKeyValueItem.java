@@ -1,4 +1,4 @@
-package models.key_values;
+package items.key_values;
 
 public abstract class AbstractKeyValueItem {
    protected String key;

@@ -1,7 +1,7 @@
-package models;
+package items;
 
 import api.VidalAPI;
-import models.key_values.AMMType;
+import items.key_values.AMMType;
 import org.apache.abdera.model.Element;
 import org.apache.abdera.model.Entry;
 

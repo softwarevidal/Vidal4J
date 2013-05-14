@@ -1,4 +1,4 @@
-package models.key_values;
+package items.key_values;
 
 public class DispensationPlace extends AbstractKeyValueItem {
    public DispensationPlace(String key, String value) {

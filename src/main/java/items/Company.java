@@ -1,4 +1,4 @@
-package models;
+package items;
 
 public class Company {
    private int vidalId;

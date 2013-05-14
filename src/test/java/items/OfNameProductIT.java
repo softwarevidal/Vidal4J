@@ -1,4 +1,4 @@
-package models;
+package items;
 
 import api.VidalAPI;
 import api.VidalAPIFactory;
