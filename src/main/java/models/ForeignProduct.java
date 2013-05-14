@@ -10,7 +10,7 @@ import org.apache.abdera.model.Entry;
 import static utils.AtomTool.getVidalTagContent;
 
 
-public class ForeignProduct extends EntryWithLinks {
+public class ForeignProduct extends Item {
 
    public ForeignProduct(Entry entry, VidalAPI vidalAPI) {
       super(entry, vidalAPI);

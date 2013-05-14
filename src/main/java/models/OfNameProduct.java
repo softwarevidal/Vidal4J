@@ -10,7 +10,7 @@ import results.APIProductByIdResult;
 
 import static utils.AtomTool.getVidalTagContent;
 
-public class OfNameProduct extends EntryWithLinks {
+public class OfNameProduct extends Item {
 
    public OfNameProduct(Entry entry, VidalAPI vidalAPI) {
       super(entry, vidalAPI);

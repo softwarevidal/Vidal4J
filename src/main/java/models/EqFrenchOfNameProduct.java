@@ -10,7 +10,7 @@ import org.apache.abdera.model.Entry;
 import static utils.AtomTool.getVidalTagContent;
 
 
-public class EqFrenchOfNameProduct extends EntryWithLinks {
+public class EqFrenchOfNameProduct extends Item {
 
    public EqFrenchOfNameProduct(Entry entry, VidalAPI vidalAPI) {
       super(entry, vidalAPI);
