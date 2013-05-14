@@ -66,7 +66,6 @@ public abstract class Query<T> {
       if(uri != null) {
          url = this.baseUrl + uri.toString();
       }
-
       return (url != null) ? searchFeedFromURL(url) : null;
    }
 

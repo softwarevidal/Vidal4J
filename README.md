@@ -4,48 +4,113 @@ Vidal4J
 Welcome to the Vidal4J project. It is a wrapper around the Vidal REST API in
  order to use it without bothering about the URLs, and XML parsing.
 
-Make a query
+Structure
 --------------------------------------------------------------------------------
 
-Get a instance of the VidalAPI using the VidalAPIFactory. This will enable you
- to choose between the production, beta or development version.
+### VidalAPI
+
+The workflow starts with a `VidalAPI`. It connects to the development, beta or
+ production version of the APIs. With the `VidalAPI` you will choose what kind of
+ research you want to do : products, foreign-products... It returns you a
+ `Search`.
+
+### Search
+
+With the `Search` you will choose how you want to search : by name, by id...
+ It is at this moment that the URL of the search is selected. For example, if
+ you want to search :
+
+*   products by name : /products?q=XXX
+*   product by id : /product/ID
+
+It returns a `Query`.
+
+### Query
+
+The `Query` represents... the real query. That means you can configure your
+ query by setting parameters before calling `execQuery()`.
+
+It returns you a `Result`.
+
+### Result
+
+The `Result` represents the entire *feed*. That means you will have access to
+ the header, and the list of entries.
+
+### Item
+
+An `Item` represents an *entry*. You will then have access to all the content
+ of the entry, and you can fluently open the links.
+
+Example
+--------------------------------------------------------------------------------
+
+Here is an example to search products by name.
+
+Get an instance of `VidalAPI` :
 
 ``` java
 VidalAPI vidalAPI = VidalAPIFactory.getDevInstance();
 ```
 
-Queries are methods of the VidalAPI. So for instance, to search products by
- name :
+We want to search for products, right ? So :
 
 ``` java
-APIProductResult productResult = vidalAPI.searchProductsByName("asp");
+ProductSearch search = vidalAPI.searchProduct();
 ```
 
-This will send a request on the URL :
-
-> http://apirest-dev.vidal.fr/rest/api/products?q=asp
-
-Structure of the results
---------------------------------------------------------------------------------
-
-### The returned type
-
-Each query will return a specific `API***Result` type extending `APIResult`. It
- represents the whole ATOM XML returned. Thus, you will have access to the
- headers, and the entries.
-
-### Structure of the entries
-
-The entries are also specificaly typed in each result, so you will have a nice
- semantic access to its attributes.
-
-Handling pagination
--------------------------------------------------------------------------------- 
-
-If the `API***Result` supports pagination, it will contain the link to the
- previous and next page, and the VidalAPI will make the query. So you must pass
- your `API***Result` to the VidalAPI. For instance :
+And we said we want to search for products by name. All right then :
 
 ``` java
-APIProductResult nextPage = vidalAPI.searchProductsByNameNextPage(productResult);
+ProductByNameQuery query = search.byName();
+```
+
+Now we can configure our request :
+
+``` java
+ProductByNameQuery readyQuery = query.setQuery("asp").setPageSize(10);
+```
+
+It's time to execute it !
+
+``` java
+APIProductByNameResult result = readyQuery.execQuery();
+```
+
+So we have a result, we can then explore the header :
+
+``` java
+DateTime lastUpdate = result.getLastUpdate();
+int currentPageNumber = result.getCurrentPageNumber();
+String title = result.getTitle();
+```
+
+Since this request has pagination, we can also explore the other pages :
+
+``` java
+APIProductByNameResult nextPageResult = result.openNextPage();
+```
+
+But probably the most important part is to get the list of products, so :
+
+``` java
+List<OfNameProduct> products = result.getProducts();
+```
+
+Like the `Result`, we have access to all the attributes of the entries :
+
+``` java
+OfNameProduct product = products.get(0);
+
+String name = product.getName();
+MarketStatus marketStatus = product.getMarketStatus();
+String refundRate = product.getRefundRate();
+```
+
+And since the products returned from a research by name are an incomplete
+ representation of the product, we can open the full product fetched from a
+ research by id :
+
+``` java
+APIProductByIdResult byIdResult = product.openProduct();
 ```
