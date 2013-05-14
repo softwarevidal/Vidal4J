@@ -35,7 +35,7 @@ public class EqFrenchOfNameProductTest {
 
    @Test
    public void shouldReturnTheId() {
-      assertThat(this.productOfNameQuery.getId()).isEqualTo("vidal://foreign_product/2000031");
+      assertThat(this.productOfNameQuery.getEntryId().toString()).isEqualTo("vidal://foreign_product/2000031");
    }
 
    @Test

@@ -21,7 +21,7 @@ public class ForeignProductTest {
 
    @Test
    public void shouldReturnTheId() {
-      assertThat(this.foreignProduct.getId()).isEqualTo("vidal://foreign_product/10004082");
+      assertThat(this.foreignProduct.getEntryId().toString()).isEqualTo("vidal://foreign_product/10004082");
    }
 
    @Test

@@ -4,6 +4,7 @@ import api.VidalAPI;
 import items.key_values.AMMType;
 import org.apache.abdera.model.Element;
 import org.apache.abdera.model.Entry;
+import utils.EntryTool;
 
 import static utils.AtomTool.getVidalTagContent;
 
@@ -15,26 +16,22 @@ public class EqFrenchOfIdProduct extends OfNameProduct {
 
 
    public String getActivePrinciple() {
-      return getVidalTagContent("activePrinciples", this.entry).getText();
+      return EntryTool.getActivePrinciple(this.entry);
    }
 
    public AMMType getAMMType() {
-      Element element = getVidalTagContent("ammType", this.entry);
-      String vidalId = element.getAttributeValue("vidalId");
-      String text = element.getText();
-      return new AMMType(vidalId, text);
+      return EntryTool.getAMMType(this.entry);
    }
 
    public boolean hasPublishedDoc() {
-      String hasPublishedDoc = getVidalTagContent("hasPublishedDoc", this.entry).getText();
-      return Boolean.parseBoolean(hasPublishedDoc);
+      return EntryTool.hasPublishedDoc(this.entry);
    }
 
    public String getConcentration() {
-      return getVidalTagContent("perVolume", this.entry).getText();
+      return EntryTool.getConcentration(this.entry);
    }
 
    public String getName() {
-      return getVidalTagContent("name", this.entry).getText();
+      return EntryTool.getNameFromVidalTag(this.entry);
    }
 }
