@@ -1,18 +1,18 @@
 package searches;
 
-import api.VidalAPI;
+import api.FullVidalAPI;
 
 public abstract class Search {
 
    protected String baseUrl;
-   protected VidalAPI vidalAPI;
+   protected FullVidalAPI fullVidalAPI;
 
    public Search(String baseUrl) {
       this.baseUrl = baseUrl;
    }
 
-   public Search(String baseUrl, VidalAPI vidalAPI) {
+   public Search(String baseUrl, FullVidalAPI fullVidalAPI) {
       this.baseUrl = baseUrl;
-      this.vidalAPI = vidalAPI;
+      this.fullVidalAPI = fullVidalAPI;
    }
 }

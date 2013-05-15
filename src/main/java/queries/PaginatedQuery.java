@@ -1,11 +1,11 @@
 package queries;
 
-import api.VidalAPI;
+import api.FullVidalAPI;
 
 public abstract class PaginatedQuery<T> extends Query<T> {
 
-   public PaginatedQuery(VidalAPI vidalAPI) {
-      super(vidalAPI);
+   public PaginatedQuery(FullVidalAPI fullVidalAPI) {
+      super(fullVidalAPI);
    }
 
 

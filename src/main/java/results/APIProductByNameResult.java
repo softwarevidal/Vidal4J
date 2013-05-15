@@ -1,6 +1,6 @@
 package results;
 
-import api.VidalAPI;
+import api.FullVidalAPI;
 import items.FromNameProduct;
 import org.apache.abdera.model.Entry;
 import org.apache.abdera.model.Feed;
@@ -10,8 +10,8 @@ import java.util.List;
 
 public class APIProductByNameResult extends APIPaginatedResults<APIProductByNameResult> {
 
-   public APIProductByNameResult(Feed feed, VidalAPI vidalAPI) {
-      super(feed, vidalAPI, APIProductByNameResult.class);
+   public APIProductByNameResult(Feed feed, FullVidalAPI fullVidalAPI) {
+      super(feed, fullVidalAPI, APIProductByNameResult.class);
    }
 
 
@@ -20,7 +20,7 @@ public class APIProductByNameResult extends APIPaginatedResults<APIProductByName
       List<FromNameProduct> fromNameProducts = new ArrayList<FromNameProduct>();
 
       for(Entry entry : entries) {
-         fromNameProducts.add(new FromNameProduct(entry, this.vidalAPI));
+         fromNameProducts.add(new FromNameProduct(entry, this.fullVidalAPI));
       }
 
       return fromNameProducts;

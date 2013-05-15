@@ -1,6 +1,6 @@
 package items;
 
-import api.VidalAPI;
+import api.FullVidalAPI;
 import org.apache.abdera.i18n.iri.IRI;
 import org.apache.abdera.model.Entry;
 import org.apache.abdera.model.Feed;
@@ -17,8 +17,8 @@ import java.net.URL;
  */
 public class FullProduct extends FromNameProduct {
 
-   public FullProduct(Entry entry, VidalAPI vidalAPI) {
-      super(entry, vidalAPI);
+   public FullProduct(Entry entry, FullVidalAPI fullVidalAPI) {
+      super(entry, fullVidalAPI);
    }
 
    public URL getEurekaSanteURL() throws MalformedURLException, URISyntaxException {
@@ -32,7 +32,7 @@ public class FullProduct extends FromNameProduct {
 
    public APIForeignProductByIdResult openFullForeignProduct() {
       IRI link = this.getForeignProductsLink();
-      Feed feed = this.vidalAPI.openPage(link);
-      return new APIForeignProductByIdResult(feed, this.vidalAPI);
+      Feed feed = this.fullVidalAPI.openPage(link);
+      return new APIForeignProductByIdResult(feed, this.fullVidalAPI);
    }
 }

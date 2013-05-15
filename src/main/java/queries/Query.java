@@ -1,6 +1,6 @@
 package queries;
 
-import api.VidalAPI;
+import api.FullVidalAPI;
 import items.key_values.AbstractKeyValueItem;
 import org.apache.abdera.model.Feed;
 import results.APIResult;
@@ -12,10 +12,10 @@ import static utils.AtomTool.searchFeedFromURL;
 
 public abstract class Query<T> {
    protected List<GETParam> params;
-   protected VidalAPI vidalAPI;
+   protected FullVidalAPI fullVidalAPI;
 
-   public Query(VidalAPI vidalAPI) {
-      this.vidalAPI = vidalAPI;
+   public Query(FullVidalAPI fullVidalAPI) {
+      this.fullVidalAPI = fullVidalAPI;
       this.params = new LinkedList<GETParam>();
    }
 
@@ -62,8 +62,8 @@ public abstract class Query<T> {
       return searchFeedFromURL(searchUrl.toString());
    }
 
-   public VidalAPI getVidalAPI() {
-      return this.vidalAPI;
+   public FullVidalAPI getFullVidalAPI() {
+      return this.fullVidalAPI;
    }
 
    private class GETParam extends AbstractKeyValueItem {

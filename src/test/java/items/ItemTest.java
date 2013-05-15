@@ -1,6 +1,6 @@
 package items;
 
-import api.VidalAPI;
+import api.FullVidalAPI;
 import org.apache.abdera.model.Entry;
 import org.apache.abdera.model.Feed;
 import org.junit.BeforeClass;
@@ -20,9 +20,9 @@ public class ItemTest {
    public static void setUp() throws FileNotFoundException {
       Feed feed = getFeedFromXML("fullProduct.xml");
       Entry entry = feed.getEntries().get(0);
-      VidalAPI vidalAPI = new VidalAPI("");
+      FullVidalAPI fullVidalAPI = new FullVidalAPI("");
 
-      item = new ItemImpl(entry, vidalAPI);
+      item = new ItemImpl(entry, fullVidalAPI);
    }
 
    @Test
@@ -42,8 +42,8 @@ public class ItemTest {
 
 
    private static class ItemImpl extends Item {
-      public ItemImpl(Entry entry, VidalAPI vidalAPI) {
-         super(entry, vidalAPI);
+      public ItemImpl(Entry entry, FullVidalAPI fullVidalAPI) {
+         super(entry, fullVidalAPI);
       }
    }
 }

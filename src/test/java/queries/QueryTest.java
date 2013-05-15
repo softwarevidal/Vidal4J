@@ -1,6 +1,6 @@
 package queries;
 
-import api.VidalAPI;
+import api.FullVidalAPI;
 import org.junit.Before;
 import org.junit.Test;
 import results.APIResult;
@@ -13,7 +13,7 @@ public class QueryTest {
 
    @Before
    public void setUp() {
-      query = new QueryTestImpl(new VidalAPI(""));
+      query = new QueryTestImpl(new FullVidalAPI(""));
    }
 
    @Test
@@ -67,8 +67,8 @@ public class QueryTest {
 
 
    private class QueryTestImpl extends Query<QueryTestImpl> {
-      public QueryTestImpl(VidalAPI vidalAPI) {
-         super(vidalAPI);
+      public QueryTestImpl(FullVidalAPI fullVidalAPI) {
+         super(fullVidalAPI);
       }
       @Override
       public APIResult execQuery() {

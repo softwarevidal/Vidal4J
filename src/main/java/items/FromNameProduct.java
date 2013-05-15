@@ -1,6 +1,6 @@
 package items;
 
-import api.VidalAPI;
+import api.FullVidalAPI;
 import items.key_values.MarketStatus;
 import items.key_values.VidalList;
 import org.apache.abdera.model.Entry;
@@ -11,8 +11,8 @@ import utils.EntryTool;
 
 public class FromNameProduct extends Item {
 
-   public FromNameProduct(Entry entry, VidalAPI vidalAPI) {
-      super(entry, vidalAPI);
+   public FromNameProduct(Entry entry, FullVidalAPI fullVidalAPI) {
+      super(entry, fullVidalAPI);
    }
 
 
@@ -77,6 +77,6 @@ public class FromNameProduct extends Item {
 
    public APIProductByIdResult openFullProduct() {
       int vidalId = this.getVidalId();
-      return this.vidalAPI.searchProduct().byId(vidalId).execQuery();
+      return this.fullVidalAPI.searchProduct().byId(vidalId).execQuery();
    }
 }

@@ -1,11 +1,10 @@
 package results;
 
-import api.VidalAPI;
+import api.FullVidalAPI;
 import org.apache.abdera.i18n.iri.IRI;
 import org.apache.abdera.model.Element;
 import org.apache.abdera.model.Feed;
 import org.apache.abdera.model.Link;
-import queries.PaginatedQuery;
 
 import javax.xml.namespace.QName;
 import java.lang.reflect.InvocationTargetException;
@@ -17,21 +16,21 @@ public abstract class APIPaginatedResults<P extends APIPaginatedResults>
    private final String REL_PREV = "prev";
    private Class<P> pClass;
 
-   public APIPaginatedResults(Feed resultFeed, VidalAPI vidalAPI1, Class<P> pClass) {
-      super(resultFeed, vidalAPI1);
+   public APIPaginatedResults(Feed resultFeed, FullVidalAPI fullVidalAPI1, Class<P> pClass) {
+      super(resultFeed, fullVidalAPI1);
       this.pClass = pClass;
    }
 
 
    public P openNextPage() {
       IRI link = getNextPageLink();
-      Feed feed = this.vidalAPI.openPage(link);
+      Feed feed = this.fullVidalAPI.openPage(link);
       return this.newChildInstance(feed);
    }
 
    public P openPrevPage() {
       IRI link = getPrevPageLink();
-      Feed feed = this.vidalAPI.openPage(link);
+      Feed feed = this.fullVidalAPI.openPage(link);
       return this.newChildInstance(feed);
    }
 
@@ -64,7 +63,7 @@ public abstract class APIPaginatedResults<P extends APIPaginatedResults>
    private P newChildInstance(Feed feed) {
       P instance = null;
       try {
-         instance = this.pClass.getConstructor(Feed.class, VidalAPI.class).newInstance(feed, this.vidalAPI);
+         instance = this.pClass.getConstructor(Feed.class, FullVidalAPI.class).newInstance(feed, this.fullVidalAPI);
       } catch (NoSuchMethodException e) {
          e.printStackTrace();
       } catch (InvocationTargetException e) {

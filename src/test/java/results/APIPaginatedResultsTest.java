@@ -1,9 +1,8 @@
 package results;
 
-import api.VidalAPI;
+import api.FullVidalAPI;
 import org.apache.abdera.model.Feed;
 import org.junit.Test;
-import results.APIPaginatedResults;
 
 import java.io.FileNotFoundException;
 
@@ -66,7 +65,7 @@ public class APIPaginatedResultsTest {
 
    private class PaginatedResultsImpl extends APIPaginatedResults {
       public PaginatedResultsImpl(Feed resultFeed) {
-         super(resultFeed, new VidalAPI(""), PaginatedResultsImpl.class);
+         super(resultFeed, new FullVidalAPI(""), PaginatedResultsImpl.class);
       }
    }
 }

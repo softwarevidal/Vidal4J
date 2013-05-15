@@ -1,6 +1,6 @@
 package items;
 
-import api.VidalAPI;
+import api.FullVidalAPI;
 import items.key_values.ATCClass;
 import items.key_values.Country;
 import items.key_values.GalenicForm;
@@ -11,8 +11,8 @@ import utils.EntryTool;
 
 public class ForeignProduct extends Item {
 
-   public ForeignProduct(Entry entry, VidalAPI vidalAPI) {
-      super(entry, vidalAPI);
+   public ForeignProduct(Entry entry, FullVidalAPI fullVidalAPI) {
+      super(entry, fullVidalAPI);
    }
 
    public ATCClass getATCClass() {

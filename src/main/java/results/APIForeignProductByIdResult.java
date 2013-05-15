@@ -1,6 +1,6 @@
 package results;
 
-import api.VidalAPI;
+import api.FullVidalAPI;
 import items.ForeignProduct;
 import org.apache.abdera.model.Entry;
 import org.apache.abdera.model.Feed;
@@ -10,8 +10,8 @@ import java.util.List;
 
 public class APIForeignProductByIdResult extends APIResult {
 
-   public APIForeignProductByIdResult(Feed feed, VidalAPI vidalAPI) {
-      super(feed, vidalAPI);
+   public APIForeignProductByIdResult(Feed feed, FullVidalAPI fullVidalAPI) {
+      super(feed, fullVidalAPI);
    }
 
 
@@ -20,7 +20,7 @@ public class APIForeignProductByIdResult extends APIResult {
       List<ForeignProduct> foreignProducts = new ArrayList<ForeignProduct>();
 
       for(Entry entry : entries) {
-         foreignProducts.add(new ForeignProduct(entry, this.vidalAPI));
+         foreignProducts.add(new ForeignProduct(entry, this.fullVidalAPI));
       }
 
       return foreignProducts;

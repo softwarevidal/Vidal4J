@@ -1,5 +1,6 @@
 package queries;
 
+import api.FullVidalAPIFactory;
 import api.VidalAPIFactory;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -15,7 +16,7 @@ public class ProductByNameQueryIT {
 
    @BeforeClass
    public static void setUpOnce() {
-      productSearch = VidalAPIFactory.getDevInstance().searchProduct();
+      productSearch = FullVidalAPIFactory.getDevInstance().searchProduct();
    }
 
    @Test

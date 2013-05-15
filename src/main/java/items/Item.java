@@ -1,6 +1,6 @@
 package items;
 
-import api.VidalAPI;
+import api.FullVidalAPI;
 import org.apache.abdera.i18n.iri.IRI;
 import org.apache.abdera.model.Entry;
 import org.apache.abdera.model.Link;
@@ -13,11 +13,11 @@ import java.util.List;
 public abstract class Item {
 
    protected final Entry entry;
-   protected final VidalAPI vidalAPI;
+   protected final FullVidalAPI fullVidalAPI;
 
-   public Item(Entry entry, VidalAPI vidalAPI) {
+   public Item(Entry entry, FullVidalAPI fullVidalAPI) {
       this.entry = entry;
-      this.vidalAPI = vidalAPI;
+      this.fullVidalAPI = fullVidalAPI;
    }
 
    public IRI getEntryId() {

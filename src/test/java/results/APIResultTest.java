@@ -1,6 +1,6 @@
 package results;
 
-import api.VidalAPI;
+import api.FullVidalAPI;
 import org.apache.abdera.model.Feed;
 import org.joda.time.DateTime;
 import org.junit.Test;
@@ -42,7 +42,7 @@ public class APIResultTest {
 
    private class APIResultImpl extends APIResult {
       public APIResultImpl(Feed resultFeed) {
-         super(resultFeed, new VidalAPI(""));
+         super(resultFeed, new FullVidalAPI(""));
       }
    }
 

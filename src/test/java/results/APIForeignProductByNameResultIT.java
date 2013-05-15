@@ -1,6 +1,7 @@
 package results;
 
-import api.VidalAPI;
+import api.FullVidalAPI;
+import api.FullVidalAPIFactory;
 import api.VidalAPIFactory;
 import org.junit.Test;
 
@@ -13,8 +14,8 @@ public class APIForeignProductByNameResultIT {
 
    @Test
    public void shouldLoadTheNextPage() throws FileNotFoundException {
-      VidalAPI vidalAPI = VidalAPIFactory.getDevInstance();
-      APIForeignProductByNameResult byNameResult = vidalAPI.searchForeignProduct().byName("asp")
+      FullVidalAPI fullVidalAPI = FullVidalAPIFactory.getDevInstance();
+      APIForeignProductByNameResult byNameResult = fullVidalAPI.searchForeignProduct().byName("asp")
               .setPageSize(10).setStartPage(2).execQuery();
 
       APIForeignProductByNameResult nextPage = byNameResult.openNextPage();
@@ -26,8 +27,8 @@ public class APIForeignProductByNameResultIT {
 
    @Test
    public void shouldLoadThePrevPage() throws FileNotFoundException {
-      VidalAPI vidalAPI = VidalAPIFactory.getDevInstance();
-      APIForeignProductByNameResult byNameResult = vidalAPI.searchForeignProduct().byName("asp")
+      FullVidalAPI fullVidalAPI = FullVidalAPIFactory.getDevInstance();
+      APIForeignProductByNameResult byNameResult = fullVidalAPI.searchForeignProduct().byName("asp")
               .setPageSize(10).setStartPage(2).execQuery();
 
       APIForeignProductByNameResult prevPage = byNameResult.openPrevPage();

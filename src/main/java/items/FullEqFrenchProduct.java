@@ -1,14 +1,14 @@
 package items;
 
-import api.VidalAPI;
+import api.FullVidalAPI;
 import items.key_values.AMMType;
 import org.apache.abdera.model.Entry;
 import utils.EntryTool;
 
 public class FullEqFrenchProduct extends FromNameProduct {
 
-   public FullEqFrenchProduct(Entry entry, VidalAPI vidalAPI) {
-      super(entry, vidalAPI);
+   public FullEqFrenchProduct(Entry entry, FullVidalAPI fullVidalAPI) {
+      super(entry, fullVidalAPI);
    }
 
 

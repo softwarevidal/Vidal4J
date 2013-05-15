@@ -1,7 +1,7 @@
 package items;
 
-import api.VidalAPI;
-import api.VidalAPIFactory;
+import api.FullVidalAPI;
+import api.FullVidalAPIFactory;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import results.APIForeignProductByIdResult;
@@ -16,8 +16,8 @@ public class FullProductIT {
 
    @BeforeClass
    public static void setUpOnce() {
-      VidalAPI vidalAPI = VidalAPIFactory.getDevInstance();
-      APIProductByIdResult idResult = vidalAPI.searchProduct().byId(1147).execQuery();
+      FullVidalAPI fullVidalAPI = FullVidalAPIFactory.getDevInstance();
+      APIProductByIdResult idResult = fullVidalAPI.searchProduct().byId(1147).execQuery();
       fullProduct = idResult.getFullProduct();
    }
 

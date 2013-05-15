@@ -1,6 +1,6 @@
 package queries;
 
-import api.VidalAPI;
+import api.FullVidalAPI;
 import org.apache.abdera.model.Feed;
 import results.APIProductByNameResult;
 import utils.MarketStatusEnum;
@@ -11,20 +11,20 @@ public class ProductByNameQuery extends PaginatedQuery<ProductByNameQuery> {
    public static final String Q_PARAM = "q";
    public static final String STARTWITH_PARAM = "startwith";
 
-   public ProductByNameQuery(VidalAPI vidalAPI) {
-      super(vidalAPI);
+   public ProductByNameQuery(FullVidalAPI fullVidalAPI) {
+      super(fullVidalAPI);
    }
 
    @Override
    public APIProductByNameResult execQuery() {
       Feed feed = this.fetchResults();
-      return new APIProductByNameResult(feed, this.vidalAPI);
+      return new APIProductByNameResult(feed, this.fullVidalAPI);
    }
 
    @Override
    protected StringBuilder buildUrl() {
       return new StringBuilder()
-              .append(this.vidalAPI.getBaseUrl())
+              .append(this.fullVidalAPI.getBaseUrl())
               .append("/rest/api/products");
    }
 

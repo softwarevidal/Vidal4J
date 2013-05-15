@@ -1,6 +1,6 @@
 package queries;
 
-import api.VidalAPIFactory;
+import api.FullVidalAPIFactory;
 import items.ForeignProduct;
 import org.junit.Test;
 import results.APIForeignProductByNameResult;
@@ -13,7 +13,7 @@ public class ForeignProductByNameQueryIT {
 
    @Test
    public void withoutParamsShouldReturnANonEmptyResult() {
-      ForeignProductByNameQuery byNameQuery = VidalAPIFactory.getDevInstance()
+      ForeignProductByNameQuery byNameQuery = FullVidalAPIFactory.getDevInstance()
               .searchForeignProduct()
               .byName("asp");
 
@@ -24,7 +24,7 @@ public class ForeignProductByNameQueryIT {
 
    @Test
    public void withParamsShouldReturnANonEmptyResult() {
-      ForeignProductByNameQuery byNameQuery = VidalAPIFactory.getDevInstance()
+      ForeignProductByNameQuery byNameQuery = FullVidalAPIFactory.getDevInstance()
                                                               .searchForeignProduct()
                                                               .byName("asp");
 

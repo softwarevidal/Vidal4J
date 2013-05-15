@@ -1,8 +1,7 @@
 package utils;
 
-import api.VidalAPI;
+import api.FullVidalAPI;
 import com.google.common.io.Resources;
-import queries.*;
 import results.*;
 import org.apache.abdera.Abdera;
 import org.apache.abdera.model.Document;
@@ -42,31 +41,31 @@ public class APIResultTools {
    public static APIProductByNameResult getAPIProductResultFromXMLResource(String xmlSource)
            throws FileNotFoundException {
       Feed feed = getFeedFromXML(xmlSource);
-      return new APIProductByNameResult(feed, new VidalAPI(""));
+      return new APIProductByNameResult(feed, new FullVidalAPI(""));
    }
 
    public static APIForeignProductByIdResult getAPIForeignProductResultFromXMLResource(String xmlSource)
            throws FileNotFoundException {
       Feed feed = getFeedFromXML(xmlSource);
-      return new APIForeignProductByIdResult(feed, new VidalAPI(""));
+      return new APIForeignProductByIdResult(feed, new FullVidalAPI(""));
    }
 
    public static APIEqFrenchProductByIdResult getAPIEqFrenchProductResultFromXMLResource(String xmlSource)
            throws FileNotFoundException {
       Feed feed = getFeedFromXML(xmlSource);
-      return new APIEqFrenchProductByIdResult(feed, new VidalAPI(""));
+      return new APIEqFrenchProductByIdResult(feed, new FullVidalAPI(""));
    }
 
    public static APIForeignProductByNameResult getAPIEqFrenchProductByNameResultFromXMLResource(String xmlSource)
            throws FileNotFoundException {
       Feed feed = getFeedFromXML(xmlSource);
-      return new APIForeignProductByNameResult(feed, new VidalAPI(""));
+      return new APIForeignProductByNameResult(feed, new FullVidalAPI(""));
    }
 
    public static APIProductByIdResult getAPIFullProductResultFromXMLResource(String xmlSource)
            throws FileNotFoundException {
       Feed feed = getFeedFromXML(xmlSource);
-      return new APIProductByIdResult(feed, new VidalAPI(""));
+      return new APIProductByIdResult(feed, new FullVidalAPI(""));
    }
 
 

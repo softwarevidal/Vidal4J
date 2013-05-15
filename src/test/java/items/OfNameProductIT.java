@@ -1,7 +1,7 @@
 package items;
 
-import api.VidalAPI;
-import api.VidalAPIFactory;
+import api.FullVidalAPI;
+import api.FullVidalAPIFactory;
 import org.junit.Test;
 import results.APIProductByIdResult;
 import results.APIProductByNameResult;
@@ -13,8 +13,8 @@ public class OfNameProductIT {
 
    @Test
    public void shouldOpenTheProduct() {
-      VidalAPI vidalAPI = VidalAPIFactory.getDevInstance();
-      APIProductByNameResult byNameResult = vidalAPI.searchProduct().byName().setQuery("asp").execQuery();
+      FullVidalAPI fullVidalAPI = FullVidalAPIFactory.getDevInstance();
+      APIProductByNameResult byNameResult = fullVidalAPI.searchProduct().byName().setQuery("asp").execQuery();
       FromNameProduct nameProduct = byNameResult.getProducts().get(0);
       APIProductByIdResult byIdResult = nameProduct.openFullProduct();
 

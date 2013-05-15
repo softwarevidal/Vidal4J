@@ -1,7 +1,7 @@
 package queries;
 
-import api.VidalAPI;
-import api.VidalAPIFactory;
+import api.FullVidalAPI;
+import api.FullVidalAPIFactory;
 import org.junit.Test;
 import results.APIEqFrenchProductByIdResult;
 
@@ -11,15 +11,15 @@ public class EqFrenchProductByIdQueryIT {
    
    @Test
    public void withoutParamsShouldReturnMoreThanOneResult() {
-      VidalAPI vidalAPI = VidalAPIFactory.getDevInstance();
-      APIEqFrenchProductByIdResult byIdResult = vidalAPI.searchEqFrenchProduct().byId(11022).execQuery();
+      FullVidalAPI fullVidalAPI = FullVidalAPIFactory.getDevInstance();
+      APIEqFrenchProductByIdResult byIdResult = fullVidalAPI.searchEqFrenchProduct().byId(11022).execQuery();
       assertThat(byIdResult.getEqFrenchProducts().size()).isGreaterThan(1);
    }
 
    @Test
    public void withParamsShouldReturnMoreThanOneResult() {
-      VidalAPI vidalAPI = VidalAPIFactory.getDevInstance();
-      EqFrenchProductByIdQuery byIdQuery = vidalAPI.searchEqFrenchProduct()
+      FullVidalAPI fullVidalAPI = FullVidalAPIFactory.getDevInstance();
+      EqFrenchProductByIdQuery byIdQuery = fullVidalAPI.searchEqFrenchProduct()
                                                    .byId(11022)
                                                    .setSameForm(false)
                                                    .setSameRoutes(true);

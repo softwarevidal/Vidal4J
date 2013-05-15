@@ -1,6 +1,6 @@
 package results;
 
-import api.VidalAPI;
+import api.FullVidalAPI;
 import org.apache.abdera.i18n.iri.IRI;
 import org.apache.abdera.model.Feed;
 import org.apache.abdera.model.Link;
@@ -10,11 +10,11 @@ import java.util.Date;
 
 public abstract class APIResult {
    protected final Feed feed;
-   protected final VidalAPI vidalAPI;
+   protected final FullVidalAPI fullVidalAPI;
 
-   public APIResult(Feed resultFeed, VidalAPI vidalAPI) {
+   public APIResult(Feed resultFeed, FullVidalAPI fullVidalAPI) {
       this.feed = resultFeed;
-      this.vidalAPI = vidalAPI;
+      this.fullVidalAPI = fullVidalAPI;
    }
 
 
