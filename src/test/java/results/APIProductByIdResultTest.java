@@ -1,6 +1,6 @@
 package results;
 
-import items.OfIdProduct;
+import items.FullProduct;
 import org.junit.Test;
 
 import java.io.FileNotFoundException;
@@ -14,9 +14,9 @@ public class APIProductByIdResultTest {
    public void shouldReturnTheFullProduct() throws FileNotFoundException {
       APIProductByIdResult fullProductResult = getAPIFullProductResultFromXMLResource("fullProduct.xml");
 
-      OfIdProduct ofIdProduct = fullProductResult.getFullProduct();
+      FullProduct fullProduct = fullProductResult.getFullProduct();
 
       assertThat(fullProductResult.getTitle()).contains("Product ");
-      assertThat(ofIdProduct).isNotNull();
+      assertThat(fullProduct).isNotNull();
    }
 }

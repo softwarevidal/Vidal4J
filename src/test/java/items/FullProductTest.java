@@ -11,24 +11,24 @@ import java.net.URISyntaxException;
 import static org.fest.assertions.Assertions.assertThat;
 import static utils.APIResultTools.getAPIFullProductResultFromXMLResource;
 
-public class OfIdProductTest {
+public class FullProductTest {
 
-   private OfIdProduct ofIdProduct;
+   private FullProduct fullProduct;
 
    @Before
    public void setUp() throws FileNotFoundException {
-      ofIdProduct = this.getFullProductFromXMLResource("fullProduct.xml");
+      fullProduct = this.getFullProductFromXMLResource("fullProduct.xml");
    }
 
 
    @Test
    public void shouldReturnURLToEurekaSante() throws MalformedURLException, URISyntaxException {
-      assertThat(this.ofIdProduct.getEurekaSanteURL().toString())
+      assertThat(this.fullProduct.getEurekaSanteURL().toString())
               .isEqualTo("http://www.eurekasante.fr/medicaments/fromwidget.html?idvdf=MSINTR01.htm");
    }
 
 
-   private OfIdProduct getFullProductFromXMLResource(String xmlSource)
+   private FullProduct getFullProductFromXMLResource(String xmlSource)
            throws FileNotFoundException {
       APIProductByIdResult fullProductResult = getAPIFullProductResultFromXMLResource(xmlSource);
       return fullProductResult.getFullProduct();

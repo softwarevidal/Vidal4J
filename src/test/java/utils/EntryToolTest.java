@@ -1,6 +1,6 @@
 package utils;
 
-import items.OfIdProduct;
+import items.FullProduct;
 import org.junit.Before;
 import org.junit.Test;
 import results.APIProductByIdResult;
@@ -12,79 +12,79 @@ import static utils.APIResultTools.getAPIFullProductResultFromXMLResource;
 
 public class EntryToolTest {
 
-   private OfIdProduct ofIdProduct;
+   private FullProduct fullProduct;
 
    @Before
    public void setUp() throws FileNotFoundException {
-      ofIdProduct = this.getFullProductFromXMLResource("fullProduct.xml");
+      fullProduct = this.getFullProductFromXMLResource("fullProduct.xml");
    }
 
 
    @Test
    public void shouldReturnIfShouldBeCarefullWithTheProduct() {
-      assertThat(this.ofIdProduct.shouldBeCarefull()).isFalse();
+      assertThat(this.fullProduct.shouldBeCarefull()).isFalse();
    }
 
    @Test
    public void shouldReturnTheCharacteristicsOfTheProvider() {
-      assertThat(this.ofIdProduct.getProvider().getVidalId()).isEqualTo(616);
-      assertThat(this.ofIdProduct.getProvider().getName()).isEqualTo("Novartis Pharma SAS");
-      assertThat(this.ofIdProduct.getProvider().getType()).isEqualTo("OWNER");
+      assertThat(this.fullProduct.getProvider().getVidalId()).isEqualTo(616);
+      assertThat(this.fullProduct.getProvider().getName()).isEqualTo("Novartis Pharma SAS");
+      assertThat(this.fullProduct.getProvider().getType()).isEqualTo("OWNER");
    }
 
    @Test
    public void shouldReturnTheDispensationPlace() {
-      assertThat(this.ofIdProduct.getDispensationPlace()).isEqualTo(DispensationPlace.PHARMACY);
+      assertThat(this.fullProduct.getDispensationPlace()).isEqualTo(DispensationPlace.PHARMACY);
    }
 
    @Test
    public void shouldReturnWhetherItIsADopingProduct() {
-      assertThat(this.ofIdProduct.isDopingProduct()).isFalse();
+      assertThat(this.fullProduct.isDopingProduct()).isFalse();
    }
 
    @Test
    public void shouldReturnWhetherTheProductIsExceptional() {
-      assertThat(this.ofIdProduct.isExceptional()).isFalse();
+      assertThat(this.fullProduct.isExceptional()).isFalse();
    }
 
    @Test
    public void shouldReturnWhetherItIsOutOfGHS() {
-      assertThat(this.ofIdProduct.isOutOfGHS()).isFalse();
+      assertThat(this.fullProduct.isOutOfGHS()).isFalse();
    }
 
    @Test
    public void shouldReturnVidalId() {
-      assertThat(this.ofIdProduct.getVidalId()).isEqualTo(15070);
+      assertThat(this.fullProduct.getVidalId()).isEqualTo(15070);
    }
 
    @Test
    public void shouldReturnTheList() {
-      assertThat(this.ofIdProduct.getVidalList().getName()).isEqualTo("I");
-      assertThat(this.ofIdProduct.getVidalList().getText()).isEqualTo("Liste 1");
+      assertThat(this.fullProduct.getVidalList().getName()).isEqualTo("I");
+      assertThat(this.fullProduct.getVidalList().getText()).isEqualTo("Liste 1");
    }
 
    @Test
    public void shouldReturnTheMarketStatus() {
-      assertThat(this.ofIdProduct.getMarketStatus().asEnum()).isEqualTo(MarketStatusEnum.AVAILABLE);
+      assertThat(this.fullProduct.getMarketStatus().asEnum()).isEqualTo(MarketStatusEnum.AVAILABLE);
    }
 
    @Test
    public void shouldReturnWheterItIsPrescriptivableByMidWife() {
-      assertThat(this.ofIdProduct.IsPrescriptivableByMidWife()).isFalse();
+      assertThat(this.fullProduct.IsPrescriptivableByMidWife()).isFalse();
    }
 
    @Test
    public void shouldReturnTheRefundRate() {
-      assertThat(this.ofIdProduct.getRefundRate()).isEqualTo("65%");
+      assertThat(this.fullProduct.getRefundRate()).isEqualTo("65%");
    }
 
    @Test
    public void shouldReturnWhetherItIsRetrocedable() {
-      assertThat(this.ofIdProduct.isRetrocedable()).isFalse();
+      assertThat(this.fullProduct.isRetrocedable()).isFalse();
    }
 
 
-   private OfIdProduct getFullProductFromXMLResource(String xmlSource)
+   private FullProduct getFullProductFromXMLResource(String xmlSource)
            throws FileNotFoundException {
       APIProductByIdResult fullProductResult = getAPIFullProductResultFromXMLResource(xmlSource);
       return fullProductResult.getFullProduct();
