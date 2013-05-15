@@ -14,14 +14,7 @@ The workflow starts with a `VidalAPI`. It connects to the development, beta or
  research you want to do : products, foreign-products... It returns you a
  `Search`.
 
-### Search
-
-With the `Search` you will choose how you want to search : by name, by id...
- It is at this moment that the URL of the search is selected. For example, if
- you want to search :
-
-*   products by name : /products?q=XXX
-*   product by id : /product/ID
+The start points of the APIs are only researches by name.
 
 It returns a `Query`.
 
@@ -30,7 +23,7 @@ It returns a `Query`.
 The `Query` represents... the real query. That means you can configure your
  query by setting parameters before calling `execQuery()`.
 
-It returns you a `Result`.
+It returns a `Result`.
 
 ### Result
 
@@ -56,13 +49,7 @@ VidalAPI vidalAPI = VidalAPIFactory.getDevInstance();
 We want to search for products, right ? So :
 
 ``` java
-ProductSearch search = vidalAPI.searchProduct();
-```
-
-And we said we want to search for products by name. All right then :
-
-``` java
-ProductByNameQuery query = search.byName();
+ProductByNameQuery byNameQuery = vidalAPI.searchProductsByName();
 ```
 
 Now we can configure our request :
