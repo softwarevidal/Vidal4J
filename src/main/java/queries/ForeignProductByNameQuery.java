@@ -7,8 +7,8 @@ import results.APIForeignProductByNameResult;
 
 public class ForeignProductByNameQuery extends PaginatedQuery<ForeignProductByNameQuery> {
 
-   public ForeignProductByNameQuery(String baseUrl, String name, VidalAPI vidalAPI) {
-      super(baseUrl, vidalAPI);
+   public ForeignProductByNameQuery(String name, VidalAPI vidalAPI) {
+      super(vidalAPI);
       this.addParam("q", name);
    }
 
@@ -20,7 +20,9 @@ public class ForeignProductByNameQuery extends PaginatedQuery<ForeignProductByNa
 
    @Override
    protected StringBuilder buildUrl() {
-      return new StringBuilder().append(this.baseUrl).append("/rest/api/foreign-products");
+      return new StringBuilder()
+              .append(this.vidalAPI.getBaseUrl())
+              .append("/rest/api/foreign-products");
    }
 
 

@@ -9,8 +9,8 @@ public class EqFrenchProductByIdQuery extends Query<EqFrenchProductByIdQuery> {
 
    private final int id;
 
-   public EqFrenchProductByIdQuery(String baseUrl, int id, VidalAPI vidalAPI) {
-      super(baseUrl, vidalAPI);
+   public EqFrenchProductByIdQuery(int id, VidalAPI vidalAPI) {
+      super(vidalAPI);
       this.id = id;
    }
 
@@ -24,7 +24,7 @@ public class EqFrenchProductByIdQuery extends Query<EqFrenchProductByIdQuery> {
    @Override
    protected StringBuilder buildUrl() {
       StringBuilder stringBuilder = new StringBuilder();
-      stringBuilder.append(this.baseUrl)
+      stringBuilder.append(this.vidalAPI.getBaseUrl())
                    .append("/rest/api/foreign-product/")
                    .append(this.id)
                    .append("/products");

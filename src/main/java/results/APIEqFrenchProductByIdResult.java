@@ -8,7 +8,7 @@ import queries.EqFrenchProductByIdQuery;
 import java.util.ArrayList;
 import java.util.List;
 
-public class APIEqFrenchProductByIdResult extends APIResult {
+public class APIEqFrenchProductByIdResult extends APIResult<EqFrenchProductByIdQuery> {
 
    public APIEqFrenchProductByIdResult(Feed feed, EqFrenchProductByIdQuery eqFrenchProductByIdQuery) {
       super(feed, eqFrenchProductByIdQuery);

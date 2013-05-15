@@ -1,13 +1,12 @@
 package items;
 
 import api.VidalAPI;
+import org.apache.abdera.i18n.iri.IRI;
 import org.apache.abdera.model.Entry;
-import org.apache.abdera.model.Link;
 
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 import java.net.URL;
-import java.util.List;
 
 
 /**
@@ -21,16 +20,7 @@ public class FullProduct extends FromNameProduct {
    }
 
    public URL getEurekaSanteURL() throws MalformedURLException, URISyntaxException {
-      List<Link> links = this.entry.getLinks();
-      Link eureka = null;
-
-      for (Link link : links) {
-         boolean isEureka = link.getAttributeValue("title").equals("EUREKA_SANTE");
-         if(isEureka) {
-            eureka = link;
-         }
-      }
-
-      return (eureka != null) ? eureka.getHref().toURL() : null;
+      IRI iri = this.getLinkFromTitleAttr("EUREKA_SANTE");
+      return (iri != null) ? iri.toURL() : null;
    }
 }

@@ -11,23 +11,14 @@ import java.util.List;
 import static utils.AtomTool.searchFeedFromURL;
 
 public abstract class Query<T> {
-   protected String baseUrl;
    protected List<GETParam> params;
    protected VidalAPI vidalAPI;
 
-   public Query() {
-      this.params = new LinkedList<GETParam>();
-   }
-
-   public Query(String baseUrl) {
-      this.baseUrl = baseUrl;
-      this.params = new LinkedList<GETParam>();
-   }
-
-   public Query(String baseUrl, VidalAPI vidalAPI) {
-      this(baseUrl);
+   public Query(VidalAPI vidalAPI) {
       this.vidalAPI = vidalAPI;
+      this.params = new LinkedList<GETParam>();
    }
+
 
    public abstract APIResult execQuery();
 

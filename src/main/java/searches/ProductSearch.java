@@ -12,10 +12,10 @@ public class ProductSearch extends Search {
 
 
    public ProductByIdQuery byId(int id) {
-      return new ProductByIdQuery(this.baseUrl, id, this.vidalAPI);
+      return new ProductByIdQuery(id, this.vidalAPI);
    }
 
    public ProductByNameQuery byName() {
-      return new ProductByNameQuery(this.baseUrl, this.vidalAPI);
+      return new ProductByNameQuery(this.vidalAPI);
    }
 }

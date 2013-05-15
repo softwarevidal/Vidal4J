@@ -11,10 +11,10 @@ public class ForeignProductSearch extends Search {
    }
 
    public ForeignProductByNameQuery byName(String name) {
-      return new ForeignProductByNameQuery(this.baseUrl, name, this.vidalAPI);
+      return new ForeignProductByNameQuery(name, this.vidalAPI);
    }
 
    public ForeignProductByIdQuery byFrenchProductId(int id) {
-      return new ForeignProductByIdQuery(this.baseUrl, id, this.vidalAPI);
+      return new ForeignProductByIdQuery(id, this.vidalAPI);
    }
 }

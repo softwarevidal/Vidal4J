@@ -11,6 +11,6 @@ public class EqFrenchProductSearch extends Search {
 
 
    public EqFrenchProductByIdQuery byId(int id) {
-      return new EqFrenchProductByIdQuery(this.baseUrl, id, this.vidalAPI);
+      return new EqFrenchProductByIdQuery(id, this.vidalAPI);
    }
 }

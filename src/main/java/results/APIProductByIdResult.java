@@ -5,7 +5,7 @@ import org.apache.abdera.model.Entry;
 import org.apache.abdera.model.Feed;
 import queries.ProductByIdQuery;
 
-public class APIProductByIdResult extends APIResult {
+public class APIProductByIdResult extends APIResult<ProductByIdQuery> {
 
    public APIProductByIdResult(Feed feed, ProductByIdQuery productByIdQuery) {
       super(feed, productByIdQuery);

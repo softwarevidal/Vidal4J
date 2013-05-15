@@ -37,4 +37,8 @@ public class VidalAPI {
       }
       return (url != null) ? searchFeedFromURL(url) : null;
    }
+
+   public String getBaseUrl() {
+      return this.baseUrl;
+   }
 }

@@ -11,8 +11,8 @@ public class ProductByNameQuery extends PaginatedQuery<ProductByNameQuery> {
    public static final String Q_PARAM = "q";
    public static final String STARTWITH_PARAM = "startwith";
 
-   public ProductByNameQuery(String baseUrl, VidalAPI vidalAPI) {
-      super(baseUrl, vidalAPI);
+   public ProductByNameQuery(VidalAPI vidalAPI) {
+      super(vidalAPI);
    }
 
    @Override
@@ -23,7 +23,9 @@ public class ProductByNameQuery extends PaginatedQuery<ProductByNameQuery> {
 
    @Override
    protected StringBuilder buildUrl() {
-      return new StringBuilder().append(this.baseUrl).append("/rest/api/products");
+      return new StringBuilder()
+              .append(this.vidalAPI.getBaseUrl())
+              .append("/rest/api/products");
    }
 
    public ProductByNameQuery setQuery(String query) {

@@ -1,5 +1,6 @@
 package queries;
 
+import api.VidalAPI;
 import org.junit.Before;
 import org.junit.Test;
 import results.APIResult;
@@ -12,7 +13,7 @@ public class QueryTest {
 
    @Before
    public void setUp() {
-      query = new QueryTestImpl();
+      query = new QueryTestImpl(new VidalAPI(""));
    }
 
    @Test
@@ -64,12 +65,15 @@ public class QueryTest {
       assertThat(noParam.removeParam("toto")).isNotNull();
    }
 
+
    private class QueryTestImpl extends Query<QueryTestImpl> {
+      public QueryTestImpl(VidalAPI vidalAPI) {
+         super(vidalAPI);
+      }
       @Override
       public APIResult execQuery() {
          return null;  //To change body of implemented methods use File | Settings | File Templates.
       }
-
       @Override
       protected StringBuilder buildUrl() {
          return null;

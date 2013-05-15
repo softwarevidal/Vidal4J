@@ -3,14 +3,17 @@ package items;
 import api.VidalAPI;
 import org.apache.abdera.i18n.iri.IRI;
 import org.apache.abdera.model.Entry;
+import org.apache.abdera.model.Link;
 import org.joda.time.DateTime;
 import utils.Category;
+
+import java.util.List;
 
 
 public abstract class Item {
 
-   protected Entry entry;
-   protected VidalAPI vidalAPI;
+   protected final Entry entry;
+   protected final VidalAPI vidalAPI;
 
    public Item(Entry entry, VidalAPI vidalAPI) {
       this.entry = entry;
@@ -29,5 +32,19 @@ public abstract class Item {
    public DateTime getLastUpdate() {
       long time = this.entry.getUpdated().getTime();
       return new DateTime(time);
+   }
+
+   protected IRI getLinkFromTitleAttr(String titleAttr) {
+      List<Link> links = this.entry.getLinks();
+      Link res = null;
+
+      for (Link link : links) {
+         boolean isRes = link.getAttributeValue("title").equals(titleAttr);
+         if(isRes) {
+            res = link;
+         }
+      }
+
+      return (res != null) ? res.getHref() : null;
    }
 }

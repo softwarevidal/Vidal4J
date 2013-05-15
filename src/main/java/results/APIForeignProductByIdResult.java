@@ -4,11 +4,12 @@ import items.FullForeignProduct;
 import org.apache.abdera.model.Entry;
 import org.apache.abdera.model.Feed;
 import queries.ForeignProductByIdQuery;
+import queries.Query;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class APIForeignProductByIdResult extends APIResult {
+public class APIForeignProductByIdResult extends APIResult<ForeignProductByIdQuery> {
 
    public APIForeignProductByIdResult(Feed feed, ForeignProductByIdQuery query) {
       super(feed, query);

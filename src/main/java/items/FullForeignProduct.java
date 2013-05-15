@@ -8,8 +8,6 @@ import items.key_values.Route;
 import org.apache.abdera.model.Entry;
 import utils.EntryTool;
 
-import static utils.AtomTool.getVidalTagContent;
-
 
 public class FullForeignProduct extends Item {
 

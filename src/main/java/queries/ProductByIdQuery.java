@@ -9,8 +9,8 @@ public class ProductByIdQuery extends Query<ProductByIdQuery> {
 
    private final int id;
 
-   public ProductByIdQuery(String baseUrl, int id, VidalAPI vidalAPI) {
-      super(baseUrl, vidalAPI);
+   public ProductByIdQuery(int id, VidalAPI vidalAPI) {
+      super(vidalAPI);
       this.id = id;
    }
 
@@ -22,6 +22,9 @@ public class ProductByIdQuery extends Query<ProductByIdQuery> {
 
    @Override
    protected StringBuilder buildUrl() {
-      return new StringBuilder().append(this.baseUrl).append("/rest/api/product/").append(this.id);
+      return new StringBuilder()
+              .append(this.vidalAPI.getBaseUrl())
+              .append("/rest/api/product/")
+              .append(this.id);
    }
 }

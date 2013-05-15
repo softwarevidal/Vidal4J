@@ -9,13 +9,8 @@ public class ForeignProductByIdQuery extends Query<ForeignProductByIdQuery> {
 
    private final int id;
 
-   public ForeignProductByIdQuery(String baseUrl, int id) {
-      super(baseUrl);
-      this.id = id;
-   }
-
-   public ForeignProductByIdQuery(String baseUrl, int id, VidalAPI vidalAPI) {
-      super(baseUrl, vidalAPI);
+   public ForeignProductByIdQuery(int id, VidalAPI vidalAPI) {
+      super(vidalAPI);
       this.id = id;
    }
 
@@ -27,8 +22,10 @@ public class ForeignProductByIdQuery extends Query<ForeignProductByIdQuery> {
 
    @Override
    protected StringBuilder buildUrl() {
-      StringBuilder builder = new StringBuilder();
-      builder.append(this.baseUrl).append("/rest/api/product/").append(this.id).append("/foreign-products");
-      return builder;
+      return new StringBuilder()
+              .append(this.vidalAPI.getBaseUrl())
+              .append("/rest/api/product/")
+              .append(this.id)
+              .append("/foreign-products");
    }
 }

@@ -42,35 +42,35 @@ public class APIResultTools {
    public static APIProductByNameResult getAPIProductResultFromXMLResource(String xmlSource)
            throws FileNotFoundException {
       Feed feed = getFeedFromXML(xmlSource);
-      ProductByNameQuery byNameQuery = new ProductByNameQuery("", new VidalAPI(""));
+      ProductByNameQuery byNameQuery = new ProductByNameQuery(new VidalAPI(""));
       return new APIProductByNameResult(feed, byNameQuery);
    }
 
    public static APIForeignProductByIdResult getAPIForeignProductResultFromXMLResource(String xmlSource)
            throws FileNotFoundException {
       Feed feed = getFeedFromXML(xmlSource);
-      ForeignProductByIdQuery byIdQuery = new ForeignProductByIdQuery("", 0);
+      ForeignProductByIdQuery byIdQuery = new ForeignProductByIdQuery(0, new VidalAPI(""));
       return new APIForeignProductByIdResult(feed, byIdQuery);
    }
 
    public static APIEqFrenchProductByIdResult getAPIEqFrenchProductResultFromXMLResource(String xmlSource)
            throws FileNotFoundException {
       Feed feed = getFeedFromXML(xmlSource);
-      EqFrenchProductByIdQuery byIdQuery = new EqFrenchProductByIdQuery("", 0, new VidalAPI(""));
+      EqFrenchProductByIdQuery byIdQuery = new EqFrenchProductByIdQuery(0, new VidalAPI(""));
       return new APIEqFrenchProductByIdResult(feed, byIdQuery);
    }
 
    public static APIForeignProductByNameResult getAPIEqFrenchProductByNameResultFromXMLResource(String xmlSource)
            throws FileNotFoundException {
       Feed feed = getFeedFromXML(xmlSource);
-      ForeignProductByNameQuery byNameQuery = new ForeignProductByNameQuery("", "", new VidalAPI(""));
+      ForeignProductByNameQuery byNameQuery = new ForeignProductByNameQuery("", new VidalAPI(""));
       return new APIForeignProductByNameResult(feed, byNameQuery);
    }
 
    public static APIProductByIdResult getAPIFullProductResultFromXMLResource(String xmlSource)
            throws FileNotFoundException {
       Feed feed = getFeedFromXML(xmlSource);
-      ProductByIdQuery productByIdQuery = new ProductByIdQuery("", 0, new VidalAPI(""));
+      ProductByIdQuery productByIdQuery = new ProductByIdQuery(0, new VidalAPI(""));
       return new APIProductByIdResult(feed, productByIdQuery);
    }
 
