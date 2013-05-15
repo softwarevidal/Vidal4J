@@ -5,7 +5,10 @@ import items.key_values.ATCClass;
 import items.key_values.Country;
 import items.key_values.GalenicForm;
 import items.key_values.Route;
+import org.apache.abdera.i18n.iri.IRI;
 import org.apache.abdera.model.Entry;
+import org.apache.abdera.model.Feed;
+import results.EqFrenchProductByIdResult;
 import utils.EntryTool;
 
 
@@ -33,5 +36,11 @@ public class ForeignProduct extends Item {
 
    public Route getRoute() {
       return EntryTool.getRoute(this.entry);
+   }
+
+   public EqFrenchProductByIdResult openEqFrenchProducts() {
+      IRI link = this.getLinkFromTitleAttr("PRODUCTS");
+      Feed feed = this.fullVidalAPI.openPage(link);
+      return new EqFrenchProductByIdResult(feed, this.fullVidalAPI);
    }
 }

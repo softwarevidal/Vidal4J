@@ -1,5 +1,6 @@
 package items;
 
+import api.FullVidalAPI;
 import org.junit.Before;
 import org.junit.Test;
 import results.ForeignProductByIdResult;
@@ -56,7 +57,9 @@ public class ForeignProductTest {
 
    private ForeignProduct getFirstForeignProductFromXMLResource(String xmlSource)
            throws FileNotFoundException {
-      ForeignProductByIdResult foreignProductResult = getAPIForeignProductResultFromXMLResource(xmlSource);
+      FullVidalAPI fullVidalAPI = new FullVidalAPI("");
+      ForeignProductByIdResult foreignProductResult =
+              getAPIForeignProductResultFromXMLResource(xmlSource, fullVidalAPI);
       return foreignProductResult.getForeignProducts().get(0);
    }
 }

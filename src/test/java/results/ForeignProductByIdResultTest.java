@@ -1,5 +1,6 @@
 package results;
 
+import api.FullVidalAPI;
 import items.ForeignProduct;
 import org.junit.Test;
 
@@ -14,7 +15,7 @@ public class ForeignProductByIdResultTest {
    @Test
    public void shouldReturnTheListOfForeignProducts() throws FileNotFoundException {
       ForeignProductByIdResult foreignProductByIdResult =
-              getAPIForeignProductResultFromXMLResource("foreignProducts.xml");
+              getAPIForeignProductResultFromXMLResource("foreignProducts.xml", new FullVidalAPI(""));
 
       List<ForeignProduct> foreignProducts = foreignProductByIdResult.getForeignProducts();
 

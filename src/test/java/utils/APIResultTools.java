@@ -20,10 +20,10 @@ public class APIResultTools {
       return new ProductByNameResult(feed, new FullVidalAPI(""));
    }
 
-   public static ForeignProductByIdResult getAPIForeignProductResultFromXMLResource(String xmlSource)
+   public static ForeignProductByIdResult getAPIForeignProductResultFromXMLResource(String xmlSource, FullVidalAPI fullVidalAPI)
            throws FileNotFoundException {
       Feed feed = getFeedFromXML(xmlSource);
-      return new ForeignProductByIdResult(feed, new FullVidalAPI(""));
+      return new ForeignProductByIdResult(feed, fullVidalAPI);
    }
 
    public static EqFrenchProductByIdResult getAPIEqFrenchProductResultFromXMLResource(String xmlSource)
