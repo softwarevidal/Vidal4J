@@ -45,6 +45,25 @@ public class QueryTest {
       assertThat(withParams.buildParams().toString()).endsWith("name=toto&city=paris");
    }
 
+   @Test
+   public void paramsBuilderShouldSupportListOfParams() {
+      QueryTestImpl withParamList = this.query.addParam("name", "toto").addParam("name", "toto");
+      assertThat(withParamList.buildParams().toString()).endsWith("name=toto&name=toto");
+   }
+
+   @Test
+   public void shouldRemoveAllOccurencesOfAParamFromItsKey() {
+      QueryTestImpl query = this.query.addParam("city", "paris").addParam("name", "toto").addParam("name", "tata");
+      query.removeParam("name");
+      assertThat(query.buildParams().toString()).isEqualTo("?city=paris");
+   }
+
+   @Test
+   public void shouldNotCrashWhenRemovingParamOfNoParam() {
+      QueryTestImpl noParam = this.query;
+      assertThat(noParam.removeParam("toto")).isNotNull();
+   }
+
    private class QueryTestImpl extends Query<QueryTestImpl> {
       @Override
       public APIResult execQuery() {

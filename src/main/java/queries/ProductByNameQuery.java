@@ -27,12 +27,12 @@ public class ProductByNameQuery extends PaginatedQuery<ProductByNameQuery> {
    }
 
    public ProductByNameQuery setQuery(String query) {
-      this.params.remove(STARTWITH_PARAM);
+      this.removeParam(STARTWITH_PARAM);
       return this.addParam(Q_PARAM, query);
    }
 
    public ProductByNameQuery setStartWith(String startWith) {
-      this.params.remove(Q_PARAM);
+      this.removeParam(Q_PARAM);
       return this.addParam(STARTWITH_PARAM, startWith);
    }
 

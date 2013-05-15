@@ -1,26 +1,27 @@
 package queries;
 
 import api.VidalAPI;
+import items.key_values.AbstractKeyValueItem;
 import org.apache.abdera.model.Feed;
 import results.APIResult;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.LinkedList;
+import java.util.List;
 
 import static utils.AtomTool.searchFeedFromURL;
 
 public abstract class Query<T> {
    protected String baseUrl;
-   protected Map<String, String> params;
+   protected List<GETParam> params;
    protected VidalAPI vidalAPI;
 
    public Query() {
-      this.params = new HashMap<String, String>();
+      this.params = new LinkedList<GETParam>();
    }
 
    public Query(String baseUrl) {
       this.baseUrl = baseUrl;
-      this.params = new HashMap<String, String>();
+      this.params = new LinkedList<GETParam>();
    }
 
    public Query(String baseUrl, VidalAPI vidalAPI) {
@@ -34,7 +35,17 @@ public abstract class Query<T> {
 
 
    protected T addParam(String key, String value) {
-      this.params.put(key, value);
+      this.params.add(new GETParam(key, value));
+      return (T) this;
+   }
+
+   protected T removeParam(String key) {
+      for(int i=0; i<this.params.size(); i++) {
+         if(this.params.get(i).getKey().equals(key)) {
+            this.params.remove(i);
+            this.removeParam(key);
+         }
+      }
       return (T) this;
    }
 
@@ -44,7 +55,7 @@ public abstract class Query<T> {
       if(! this.params.isEmpty()) {
          builder.append("?");
 
-         for(Map.Entry<String, String> param : this.params.entrySet()) {
+         for(GETParam param : this.params) {
             builder.append(param.getKey()).append("=").append(param.getValue()).append("&");
          }
 
@@ -62,5 +73,17 @@ public abstract class Query<T> {
 
    public VidalAPI getVidalAPI() {
       return this.vidalAPI;
+   }
+
+   private class GETParam extends AbstractKeyValueItem {
+      public GETParam(String key, String value) {
+         super(key, value);
+      }
+      public String getKey() {
+         return this.key;
+      }
+      public String getValue() {
+         return this.value;
+      }
    }
 }
