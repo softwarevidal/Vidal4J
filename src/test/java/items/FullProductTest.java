@@ -2,7 +2,7 @@ package items;
 
 import org.junit.Before;
 import org.junit.Test;
-import results.APIProductByIdResult;
+import results.ProductByIdResult;
 
 import java.io.FileNotFoundException;
 import java.net.MalformedURLException;
@@ -30,7 +30,7 @@ public class FullProductTest {
 
    private FullProduct getFullProductFromXMLResource(String xmlSource)
            throws FileNotFoundException {
-      APIProductByIdResult fullProductResult = getAPIFullProductResultFromXMLResource(xmlSource);
+      ProductByIdResult fullProductResult = getAPIFullProductResultFromXMLResource(xmlSource);
       return fullProductResult.getFullProduct();
    }
 }

@@ -5,9 +5,9 @@ import items.FullProduct;
 import org.apache.abdera.model.Entry;
 import org.apache.abdera.model.Feed;
 
-public class APIProductByIdResult extends APIResult {
+public class ProductByIdResult extends Result {
 
-   public APIProductByIdResult(Feed feed, FullVidalAPI fullVidalAPI) {
+   public ProductByIdResult(Feed feed, FullVidalAPI fullVidalAPI) {
       super(feed, fullVidalAPI);
    }
 

@@ -1,10 +1,9 @@
 package queries;
 
 import api.FullVidalAPIFactory;
-import api.VidalAPIFactory;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import results.APIProductByNameResult;
+import results.ProductByNameResult;
 import searches.ProductSearch;
 import utils.MarketStatusEnum;
 
@@ -21,7 +20,7 @@ public class ProductByNameQueryIT {
 
    @Test
    public void withOutParamsShouldReturnManyResults() {
-      APIProductByNameResult byNameResult = productSearch.byName().execQuery();
+      ProductByNameResult byNameResult = productSearch.byName().execQuery();
       assertThat(byNameResult.getTitle()).contains("Search Products - Query :");
       assertThat(byNameResult.getTotalResultsNumber()).isGreaterThan(5000);
       assertThat(byNameResult.getProducts().size()).isGreaterThan(1);
@@ -29,24 +28,24 @@ public class ProductByNameQueryIT {
 
    @Test
    public void withQueryParamShouldReturnNonEmptyResults() {
-      APIProductByNameResult byNameResult = productSearch.byName().setQuery("asp").execQuery();
+      ProductByNameResult byNameResult = productSearch.byName().setQuery("asp").execQuery();
       assertNonEmptyResults(byNameResult);
    }
 
    @Test
    public void withStartwithParamShouldReturnNonEmptyResults() {
-      APIProductByNameResult byNameResult = productSearch.byName().setStartWith("asp").execQuery();
+      ProductByNameResult byNameResult = productSearch.byName().setStartWith("asp").execQuery();
       assertNonEmptyResults(byNameResult);
    }
 
    @Test
    public void withStatusParamShouldReutrnNonEmptyResults() {
-      APIProductByNameResult byNameResult = productSearch.byName().setStatus(MarketStatusEnum.AVAILABLE).execQuery();
+      ProductByNameResult byNameResult = productSearch.byName().setStatus(MarketStatusEnum.AVAILABLE).execQuery();
       assertNonEmptyResults(byNameResult);
    }
 
 
-   private void assertNonEmptyResults(APIProductByNameResult byNameResult) {
+   private void assertNonEmptyResults(ProductByNameResult byNameResult) {
       assertThat(byNameResult.getTitle()).contains("Search Products - Query :");
       assertThat(byNameResult.getTotalResultsNumber()).isGreaterThan(1);
    }

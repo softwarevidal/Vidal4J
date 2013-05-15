@@ -8,11 +8,11 @@ import java.io.FileNotFoundException;
 import static org.fest.assertions.Assertions.assertThat;
 import static utils.APIResultTools.getAPIFullProductResultFromXMLResource;
 
-public class APIProductByIdResultTest {
+public class ProductByIdResultTest {
 
    @Test
    public void shouldReturnTheFullProduct() throws FileNotFoundException {
-      APIProductByIdResult fullProductResult = getAPIFullProductResultFromXMLResource("fullProduct.xml");
+      ProductByIdResult fullProductResult = getAPIFullProductResultFromXMLResource("fullProduct.xml");
 
       FullProduct fullProduct = fullProductResult.getFullProduct();
 

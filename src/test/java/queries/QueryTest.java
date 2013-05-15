@@ -3,7 +3,7 @@ package queries;
 import api.FullVidalAPI;
 import org.junit.Before;
 import org.junit.Test;
-import results.APIResult;
+import results.Result;
 
 import static org.fest.assertions.Assertions.assertThat;
 
@@ -71,7 +71,7 @@ public class QueryTest {
          super(fullVidalAPI);
       }
       @Override
-      public APIResult execQuery() {
+      public Result execQuery() {
          return null;  //To change body of implemented methods use File | Settings | File Templates.
       }
       @Override

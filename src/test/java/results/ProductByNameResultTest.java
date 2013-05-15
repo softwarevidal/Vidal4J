@@ -9,11 +9,11 @@ import java.util.List;
 import static org.fest.assertions.Assertions.assertThat;
 import static utils.APIResultTools.getAPIProductResultFromXMLResource;
 
-public class APIProductByNameResultTest {
+public class ProductByNameResultTest {
 
    @Test
    public void shouldReturnTheListOfProducts() throws FileNotFoundException {
-      APIProductByNameResult apiProductByNameResult = getAPIProductResultFromXMLResource("productByName_Long.xml");
+      ProductByNameResult apiProductByNameResult = getAPIProductResultFromXMLResource("productByName_Long.xml");
       List<FromNameProduct> fromNameProducts = apiProductByNameResult.getProducts();
       assertThat(fromNameProducts.size()).isEqualTo(10);
    }

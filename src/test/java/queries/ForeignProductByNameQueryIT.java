@@ -3,7 +3,7 @@ package queries;
 import api.FullVidalAPIFactory;
 import items.ForeignProduct;
 import org.junit.Test;
-import results.APIForeignProductByNameResult;
+import results.ForeignProductByNameResult;
 
 import java.util.List;
 
@@ -17,7 +17,7 @@ public class ForeignProductByNameQueryIT {
               .searchForeignProduct()
               .byName("asp");
 
-      APIForeignProductByNameResult byNameResult = byNameQuery.execQuery();
+      ForeignProductByNameResult byNameResult = byNameQuery.execQuery();
       List<ForeignProduct> eqFrenchProducts = byNameResult.getForeignProducts();
       assertThat(eqFrenchProducts.size()).isGreaterThan(1);
    }
@@ -28,7 +28,7 @@ public class ForeignProductByNameQueryIT {
                                                               .searchForeignProduct()
                                                               .byName("asp");
 
-      APIForeignProductByNameResult byNameResult = byNameQuery.setCountry("DZ").execQuery();
+      ForeignProductByNameResult byNameResult = byNameQuery.setCountry("DZ").execQuery();
       List<ForeignProduct> eqFrenchProducts = byNameResult.getForeignProducts();
       assertThat(eqFrenchProducts.size()).isGreaterThan(1);
    }

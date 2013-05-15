@@ -9,11 +9,11 @@ import java.util.List;
 import static org.fest.assertions.Assertions.assertThat;
 import static utils.APIResultTools.getAPIEqFrenchProductByNameResultFromXMLResource;
 
-public class APIForeignProductByNameResultTest {
+public class ForeignProductByNameResultTest {
 
    @Test
    public void shouldGetTheListOfEqFrenchProductsByName() throws FileNotFoundException {
-      APIForeignProductByNameResult byNameResult =
+      ForeignProductByNameResult byNameResult =
               getAPIEqFrenchProductByNameResultFromXMLResource("eqFrenchProductsByName.xml");
 
       List<ForeignProduct> eqFrenchProducts = byNameResult.getForeignProducts();

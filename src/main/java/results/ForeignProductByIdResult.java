@@ -8,9 +8,9 @@ import org.apache.abdera.model.Feed;
 import java.util.ArrayList;
 import java.util.List;
 
-public class APIForeignProductByIdResult extends APIResult {
+public class ForeignProductByIdResult extends Result {
 
-   public APIForeignProductByIdResult(Feed feed, FullVidalAPI fullVidalAPI) {
+   public ForeignProductByIdResult(Feed feed, FullVidalAPI fullVidalAPI) {
       super(feed, fullVidalAPI);
    }
 

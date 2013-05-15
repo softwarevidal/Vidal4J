@@ -3,7 +3,7 @@ package queries;
 import api.FullVidalAPI;
 import items.key_values.AbstractKeyValueItem;
 import org.apache.abdera.model.Feed;
-import results.APIResult;
+import results.Result;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -20,7 +20,7 @@ public abstract class Query<T> {
    }
 
 
-   public abstract APIResult execQuery();
+   public abstract Result execQuery();
 
    protected abstract StringBuilder buildUrl();
 

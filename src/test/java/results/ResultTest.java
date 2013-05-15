@@ -10,44 +10,44 @@ import java.io.FileNotFoundException;
 import static org.fest.assertions.Assertions.assertThat;
 import static utils.APIResultTools.getFeedFromXML;
 
-public class APIResultTest {
+public class ResultTest {
 
    @Test
    public void shouldReturnTheTitleOfTheFeed() throws FileNotFoundException {
-      APIResult apiResult = getAPIResultFromXMLResource("productByName_Long.xml");
-      assertThat(apiResult.getTitle()).isEqualTo("Search Products - Query :asp");
+      Result result = getAPIResultFromXMLResource("productByName_Long.xml");
+      assertThat(result.getTitle()).isEqualTo("Search Products - Query :asp");
    }
 
    @Test
    public void shouldReturnTheSelfLink() throws FileNotFoundException {
-      APIResult apiResult = getAPIResultFromXMLResource("productByName_Long.xml");
-      assertThat(apiResult.getSelfLink().getHref().toString())
+      Result result = getAPIResultFromXMLResource("productByName_Long.xml");
+      assertThat(result.getSelfLink().getHref().toString())
               .isEqualTo("/rest/api/products?q=asp&start-page=2&page-size=10");
    }
 
    @Test
    public void shouldReturnTheIdOftheFeed() throws FileNotFoundException {
-      APIResult apiResult = getAPIResultFromXMLResource("productByName_Long.xml");
-      assertThat(apiResult.getId().toString())
+      Result result = getAPIResultFromXMLResource("productByName_Long.xml");
+      assertThat(result.getId().toString())
               .isEqualTo("/rest/api/products?q=asp&start-page=2&page-size=10");
    }
 
    @Test
    public void shouldReturnTheDateOfLastUpdate() throws FileNotFoundException {
-      APIResult apiResult = getAPIResultFromXMLResource("productByName_Long.xml");
-      DateTime lastUpdate = apiResult.getLastUpdate();
+      Result result = getAPIResultFromXMLResource("productByName_Long.xml");
+      DateTime lastUpdate = result.getLastUpdate();
       assertThat(lastUpdate.getMillis()).isEqualTo(1361404800000L);
    }
 
 
-   private class APIResultImpl extends APIResult {
-      public APIResultImpl(Feed resultFeed) {
+   private class ResultImpl extends Result {
+      public ResultImpl(Feed resultFeed) {
          super(resultFeed, new FullVidalAPI(""));
       }
    }
 
-   private APIResult getAPIResultFromXMLResource(String xmlSource) throws FileNotFoundException {
+   private Result getAPIResultFromXMLResource(String xmlSource) throws FileNotFoundException {
       Feed feed = getFeedFromXML(xmlSource);
-      return new APIResultImpl(feed);
+      return new ResultImpl(feed);
    }
 }

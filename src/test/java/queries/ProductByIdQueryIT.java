@@ -3,7 +3,7 @@ package queries;
 import api.FullVidalAPIFactory;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import results.APIProductByIdResult;
+import results.ProductByIdResult;
 import searches.ProductSearch;
 
 import static org.fest.assertions.Assertions.assertThat;
@@ -19,7 +19,7 @@ public class ProductByIdQueryIT {
 
    @Test
    public void shouldReturnAProductFromId() {
-      APIProductByIdResult byIdResult = productSearch.byId(3).execQuery();
+      ProductByIdResult byIdResult = productSearch.byId(3).execQuery();
       assertThat(byIdResult.getTitle()).isEqualTo("Product 3");
    }
 }

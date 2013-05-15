@@ -2,7 +2,7 @@ package items;
 
 import org.junit.Before;
 import org.junit.Test;
-import results.APIForeignProductByIdResult;
+import results.ForeignProductByIdResult;
 
 import java.io.FileNotFoundException;
 
@@ -56,7 +56,7 @@ public class ForeignProductTest {
 
    private ForeignProduct getFirstForeignProductFromXMLResource(String xmlSource)
            throws FileNotFoundException {
-      APIForeignProductByIdResult foreignProductResult = getAPIForeignProductResultFromXMLResource(xmlSource);
+      ForeignProductByIdResult foreignProductResult = getAPIForeignProductResultFromXMLResource(xmlSource);
       return foreignProductResult.getForeignProducts().get(0);
    }
 }

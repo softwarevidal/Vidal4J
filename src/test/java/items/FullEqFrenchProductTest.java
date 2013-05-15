@@ -2,7 +2,7 @@ package items;
 
 import org.junit.Before;
 import org.junit.Test;
-import results.APIEqFrenchProductByIdResult;
+import results.EqFrenchProductByIdResult;
 
 import java.io.FileNotFoundException;
 
@@ -48,7 +48,7 @@ public class FullEqFrenchProductTest {
 
    private FullEqFrenchProduct getFirstForeignProductFromXMLResource(String xmlSource)
            throws FileNotFoundException {
-      APIEqFrenchProductByIdResult eqFrenchProductResult =
+      EqFrenchProductByIdResult eqFrenchProductResult =
               getAPIEqFrenchProductResultFromXMLResource(xmlSource);
       return eqFrenchProductResult.getEqFrenchProducts().get(0);
    }

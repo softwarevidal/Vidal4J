@@ -2,7 +2,7 @@ package queries;
 
 import api.FullVidalAPI;
 import org.apache.abdera.model.Feed;
-import results.APIForeignProductByNameResult;
+import results.ForeignProductByNameResult;
 
 
 public class ForeignProductByNameQuery extends PaginatedQuery<ForeignProductByNameQuery> {
@@ -13,9 +13,9 @@ public class ForeignProductByNameQuery extends PaginatedQuery<ForeignProductByNa
    }
 
    @Override
-   public APIForeignProductByNameResult execQuery() {
+   public ForeignProductByNameResult execQuery() {
       Feed feed = this.fetchResults();
-      return new APIForeignProductByNameResult(feed, this.fullVidalAPI);
+      return new ForeignProductByNameResult(feed, this.fullVidalAPI);
    }
 
    @Override

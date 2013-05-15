@@ -8,10 +8,10 @@ import org.apache.abdera.model.Feed;
 import java.util.ArrayList;
 import java.util.List;
 
-public class APIProductByNameResult extends APIPaginatedResults<APIProductByNameResult> {
+public class ProductByNameResult extends PaginatedResults<ProductByNameResult> {
 
-   public APIProductByNameResult(Feed feed, FullVidalAPI fullVidalAPI) {
-      super(feed, fullVidalAPI, APIProductByNameResult.class);
+   public ProductByNameResult(Feed feed, FullVidalAPI fullVidalAPI) {
+      super(feed, fullVidalAPI, ProductByNameResult.class);
    }
 
 

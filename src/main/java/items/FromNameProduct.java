@@ -4,7 +4,7 @@ import api.FullVidalAPI;
 import items.key_values.MarketStatus;
 import items.key_values.VidalList;
 import org.apache.abdera.model.Entry;
-import results.APIProductByIdResult;
+import results.ProductByIdResult;
 import utils.DispensationPlace;
 import utils.EntryTool;
 
@@ -75,7 +75,7 @@ public class FromNameProduct extends Item {
       return EntryTool.isRetrocedable(this.entry);
    }
 
-   public APIProductByIdResult openFullProduct() {
+   public ProductByIdResult openFullProduct() {
       int vidalId = this.getVidalId();
       return this.fullVidalAPI.searchProduct().byId(vidalId).execQuery();
    }

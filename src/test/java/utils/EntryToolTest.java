@@ -3,7 +3,7 @@ package utils;
 import items.FullProduct;
 import org.junit.Before;
 import org.junit.Test;
-import results.APIProductByIdResult;
+import results.ProductByIdResult;
 
 import java.io.FileNotFoundException;
 
@@ -86,7 +86,7 @@ public class EntryToolTest {
 
    private FullProduct getFullProductFromXMLResource(String xmlSource)
            throws FileNotFoundException {
-      APIProductByIdResult fullProductResult = getAPIFullProductResultFromXMLResource(xmlSource);
+      ProductByIdResult fullProductResult = getAPIFullProductResultFromXMLResource(xmlSource);
       return fullProductResult.getFullProduct();
    }
 }

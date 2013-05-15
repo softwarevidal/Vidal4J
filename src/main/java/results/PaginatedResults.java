@@ -9,14 +9,14 @@ import org.apache.abdera.model.Link;
 import javax.xml.namespace.QName;
 import java.lang.reflect.InvocationTargetException;
 
-public abstract class APIPaginatedResults<P extends APIPaginatedResults>
-        extends APIResult {
+public abstract class PaginatedResults<P extends PaginatedResults>
+        extends Result {
 
    private final String OPENSEARCH_TAG_URL = "http://a9.com/-/spec/opensearch/1.1/";
    private final String REL_PREV = "prev";
    private Class<P> pClass;
 
-   public APIPaginatedResults(Feed resultFeed, FullVidalAPI fullVidalAPI1, Class<P> pClass) {
+   public PaginatedResults(Feed resultFeed, FullVidalAPI fullVidalAPI1, Class<P> pClass) {
       super(resultFeed, fullVidalAPI1);
       this.pClass = pClass;
    }

@@ -4,7 +4,7 @@ import api.FullVidalAPI;
 import org.apache.abdera.i18n.iri.IRI;
 import org.apache.abdera.model.Entry;
 import org.apache.abdera.model.Feed;
-import results.APIForeignProductByIdResult;
+import results.ForeignProductByIdResult;
 
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
@@ -30,9 +30,9 @@ public class FullProduct extends FromNameProduct {
       return this.getLinkFromTitleAttr("FOREIGN_PRODUCTS");
    }
 
-   public APIForeignProductByIdResult openFullForeignProduct() {
+   public ForeignProductByIdResult openFullForeignProduct() {
       IRI link = this.getForeignProductsLink();
       Feed feed = this.fullVidalAPI.openPage(link);
-      return new APIForeignProductByIdResult(feed, this.fullVidalAPI);
+      return new ForeignProductByIdResult(feed, this.fullVidalAPI);
    }
 }

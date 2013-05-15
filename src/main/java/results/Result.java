@@ -8,11 +8,11 @@ import org.joda.time.DateTime;
 
 import java.util.Date;
 
-public abstract class APIResult {
+public abstract class Result {
    protected final Feed feed;
    protected final FullVidalAPI fullVidalAPI;
 
-   public APIResult(Feed resultFeed, FullVidalAPI fullVidalAPI) {
+   public Result(Feed resultFeed, FullVidalAPI fullVidalAPI) {
       this.feed = resultFeed;
       this.fullVidalAPI = fullVidalAPI;
    }

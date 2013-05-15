@@ -2,7 +2,7 @@ package queries;
 
 import api.FullVidalAPI;
 import org.apache.abdera.model.Feed;
-import results.APIProductByNameResult;
+import results.ProductByNameResult;
 import utils.MarketStatusEnum;
 
 
@@ -16,9 +16,9 @@ public class ProductByNameQuery extends PaginatedQuery<ProductByNameQuery> {
    }
 
    @Override
-   public APIProductByNameResult execQuery() {
+   public ProductByNameResult execQuery() {
       Feed feed = this.fetchResults();
-      return new APIProductByNameResult(feed, this.fullVidalAPI);
+      return new ProductByNameResult(feed, this.fullVidalAPI);
    }
 
    @Override

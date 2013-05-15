@@ -9,14 +9,14 @@ import java.util.List;
 import static org.fest.assertions.Assertions.assertThat;
 import static utils.APIResultTools.getAPIForeignProductResultFromXMLResource;
 
-public class APIForeignProductByIdResultTest {
+public class ForeignProductByIdResultTest {
 
    @Test
    public void shouldReturnTheListOfForeignProducts() throws FileNotFoundException {
-      APIForeignProductByIdResult apiForeignProductByIdResult =
+      ForeignProductByIdResult foreignProductByIdResult =
               getAPIForeignProductResultFromXMLResource("foreignProducts.xml");
 
-      List<ForeignProduct> foreignProducts = apiForeignProductByIdResult.getForeignProducts();
+      List<ForeignProduct> foreignProducts = foreignProductByIdResult.getForeignProducts();
 
       assertThat(foreignProducts.size()).isEqualTo(35);
    }

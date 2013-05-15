@@ -2,7 +2,7 @@ package items;
 
 import org.junit.Before;
 import org.junit.Test;
-import results.APIProductByNameResult;
+import results.ProductByNameResult;
 
 import java.io.FileNotFoundException;
 
@@ -25,7 +25,7 @@ public class FromNameProductTest {
 
 
    private FromNameProduct getFirstProductFromXMLResource(String xmlSource) throws FileNotFoundException {
-      APIProductByNameResult apiProductByNameResult = getAPIProductResultFromXMLResource(xmlSource);
+      ProductByNameResult apiProductByNameResult = getAPIProductResultFromXMLResource(xmlSource);
       return apiProductByNameResult.getProducts().get(0);
    }
 }
