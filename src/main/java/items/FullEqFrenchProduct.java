@@ -2,15 +2,12 @@ package items;
 
 import api.VidalAPI;
 import items.key_values.AMMType;
-import org.apache.abdera.model.Element;
 import org.apache.abdera.model.Entry;
 import utils.EntryTool;
 
-import static utils.AtomTool.getVidalTagContent;
+public class FullEqFrenchProduct extends FromNameProduct {
 
-public class EqFrenchOfIdProduct extends OfNameProduct {
-
-   public EqFrenchOfIdProduct(Entry entry, VidalAPI vidalAPI) {
+   public FullEqFrenchProduct(Entry entry, VidalAPI vidalAPI) {
       super(entry, vidalAPI);
    }
 

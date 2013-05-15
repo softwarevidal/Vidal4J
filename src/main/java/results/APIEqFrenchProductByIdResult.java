@@ -1,6 +1,6 @@
 package results;
 
-import items.EqFrenchOfIdProduct;
+import items.FullEqFrenchProduct;
 import org.apache.abdera.model.Entry;
 import org.apache.abdera.model.Feed;
 import queries.EqFrenchProductByIdQuery;
@@ -14,14 +14,14 @@ public class APIEqFrenchProductByIdResult extends APIResult {
       super(feed, eqFrenchProductByIdQuery);
    }
 
-   public List<EqFrenchOfIdProduct> getEqFrenchProducts() {
+   public List<FullEqFrenchProduct> getEqFrenchProducts() {
       List<Entry> entries = this.feed.getEntries();
-      ArrayList<EqFrenchOfIdProduct> eqFrenchOfIdProducts = new ArrayList<EqFrenchOfIdProduct>();
+      ArrayList<FullEqFrenchProduct> fullEqFrenchProducts = new ArrayList<FullEqFrenchProduct>();
 
       for(Entry entry : entries) {
-         eqFrenchOfIdProducts.add(new EqFrenchOfIdProduct(entry, this.query.getVidalAPI()));
+         fullEqFrenchProducts.add(new FullEqFrenchProduct(entry, this.query.getVidalAPI()));
       }
 
-      return eqFrenchOfIdProducts;
+      return fullEqFrenchProducts;
    }
 }

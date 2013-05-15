@@ -9,9 +9,9 @@ import utils.DispensationPlace;
 import utils.EntryTool;
 
 
-public class OfNameProduct extends Item {
+public class FromNameProduct extends Item {
 
-   public OfNameProduct(Entry entry, VidalAPI vidalAPI) {
+   public FromNameProduct(Entry entry, VidalAPI vidalAPI) {
       super(entry, vidalAPI);
    }
 
@@ -75,7 +75,7 @@ public class OfNameProduct extends Item {
       return EntryTool.isRetrocedable(this.entry);
    }
 
-   public APIProductByIdResult openProduct() {
+   public APIProductByIdResult openFullProduct() {
       int vidalId = this.getVidalId();
       return this.vidalAPI.searchProduct().byId(vidalId).execQuery();
    }

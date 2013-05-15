@@ -15,8 +15,8 @@ public class OfNameProductIT {
    public void shouldOpenTheProduct() {
       VidalAPI vidalAPI = VidalAPIFactory.getDevInstance();
       APIProductByNameResult byNameResult = vidalAPI.searchProduct().byName().setQuery("asp").execQuery();
-      OfNameProduct nameProduct = byNameResult.getProducts().get(0);
-      APIProductByIdResult byIdResult = nameProduct.openProduct();
+      FromNameProduct nameProduct = byNameResult.getProducts().get(0);
+      APIProductByIdResult byIdResult = nameProduct.openFullProduct();
 
       assertThat(byIdResult.getTitle()).contains("Product ");
    }

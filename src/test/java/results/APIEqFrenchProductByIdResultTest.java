@@ -1,6 +1,6 @@
 package results;
 
-import items.EqFrenchOfIdProduct;
+import items.FullEqFrenchProduct;
 import org.junit.Test;
 
 import java.io.FileNotFoundException;
@@ -16,8 +16,8 @@ public class APIEqFrenchProductByIdResultTest {
       APIEqFrenchProductByIdResult eqFrenchProductResult =
               getAPIEqFrenchProductResultFromXMLResource("eqFrenchProducts.xml");
 
-      List<EqFrenchOfIdProduct> eqFrenchOfIdProducts = eqFrenchProductResult.getEqFrenchProducts();
+      List<FullEqFrenchProduct> fullEqFrenchProducts = eqFrenchProductResult.getEqFrenchProducts();
 
-      assertThat(eqFrenchOfIdProducts.size()).isEqualTo(2);
+      assertThat(fullEqFrenchProducts.size()).isEqualTo(2);
    }
 }

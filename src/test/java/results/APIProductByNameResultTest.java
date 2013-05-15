@@ -1,6 +1,6 @@
 package results;
 
-import items.OfNameProduct;
+import items.FromNameProduct;
 import org.junit.Test;
 
 import java.io.FileNotFoundException;
@@ -14,8 +14,8 @@ public class APIProductByNameResultTest {
    @Test
    public void shouldReturnTheListOfProducts() throws FileNotFoundException {
       APIProductByNameResult apiProductByNameResult = getAPIProductResultFromXMLResource("productByName_Long.xml");
-      List<OfNameProduct> ofNameProducts = apiProductByNameResult.getProducts();
-      assertThat(ofNameProducts.size()).isEqualTo(10);
+      List<FromNameProduct> fromNameProducts = apiProductByNameResult.getProducts();
+      assertThat(fromNameProducts.size()).isEqualTo(10);
    }
 
 }

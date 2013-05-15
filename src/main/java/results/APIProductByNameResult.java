@@ -1,6 +1,6 @@
 package results;
 
-import items.OfNameProduct;
+import items.FromNameProduct;
 import org.apache.abdera.model.Entry;
 import org.apache.abdera.model.Feed;
 import queries.ProductByNameQuery;
@@ -15,14 +15,14 @@ public class APIProductByNameResult extends APIPaginatedResults<ProductByNameQue
    }
 
 
-   public List<OfNameProduct> getProducts() {
+   public List<FromNameProduct> getProducts() {
       List<Entry> entries = this.feed.getEntries();
-      List<OfNameProduct> ofNameProducts = new ArrayList<OfNameProduct>();
+      List<FromNameProduct> fromNameProducts = new ArrayList<FromNameProduct>();
 
       for(Entry entry : entries) {
-         ofNameProducts.add(new OfNameProduct(entry, this.query.getVidalAPI()));
+         fromNameProducts.add(new FromNameProduct(entry, this.query.getVidalAPI()));
       }
 
-      return ofNameProducts;
+      return fromNameProducts;
    }
 }

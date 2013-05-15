@@ -9,22 +9,22 @@ import java.io.FileNotFoundException;
 import static org.fest.assertions.Assertions.assertThat;
 import static utils.APIResultTools.getAPIProductResultFromXMLResource;
 
-public class OfNameProductTest {
+public class FromNameProductTest {
 
-   private OfNameProduct ofNameProduct;
+   private FromNameProduct fromNameProduct;
 
    @Before
    public void setUp() throws FileNotFoundException {
-      this.ofNameProduct = this.getFirstProductFromXMLResource("productByName_Long.xml");
+      this.fromNameProduct = this.getFirstProductFromXMLResource("productByName_Long.xml");
    }
 
    @Test
    public void shouldReturnTheNameOfTheProduct() {
-      assertThat(this.ofNameProduct.getName()).isEqualTo("ASPIRINE RATIOPHARM 500 mg cp séc");
+      assertThat(this.fromNameProduct.getName()).isEqualTo("ASPIRINE RATIOPHARM 500 mg cp séc");
    }
 
 
-   private OfNameProduct getFirstProductFromXMLResource(String xmlSource) throws FileNotFoundException {
+   private FromNameProduct getFirstProductFromXMLResource(String xmlSource) throws FileNotFoundException {
       APIProductByNameResult apiProductByNameResult = getAPIProductResultFromXMLResource(xmlSource);
       return apiProductByNameResult.getProducts().get(0);
    }
