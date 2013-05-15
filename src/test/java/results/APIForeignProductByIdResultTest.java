@@ -1,6 +1,6 @@
 package results;
 
-import items.FullForeignProduct;
+import items.ForeignProduct;
 import org.junit.Test;
 
 import java.io.FileNotFoundException;
@@ -16,8 +16,8 @@ public class APIForeignProductByIdResultTest {
       APIForeignProductByIdResult apiForeignProductByIdResult =
               getAPIForeignProductResultFromXMLResource("foreignProducts.xml");
 
-      List<FullForeignProduct> fullForeignProducts = apiForeignProductByIdResult.getForeignProducts();
+      List<ForeignProduct> foreignProducts = apiForeignProductByIdResult.getForeignProducts();
 
-      assertThat(fullForeignProducts.size()).isEqualTo(35);
+      assertThat(foreignProducts.size()).isEqualTo(35);
    }
 }

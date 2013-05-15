@@ -19,7 +19,7 @@ public class APIForeignProductByNameResultIT {
 
       APIForeignProductByNameResult nextPage = byNameResult.openNextPage();
 
-      assertThat(nextPage.getEqFrenchProducts().size()).isGreaterThan(1);
+      assertThat(nextPage.getForeignProducts().size()).isGreaterThan(1);
       assertThat(byNameResult.getCurrentPageNumber()).isEqualTo(2);
       assertThat(nextPage.getCurrentPageNumber()).isEqualTo(3);
    }
@@ -32,7 +32,7 @@ public class APIForeignProductByNameResultIT {
 
       APIForeignProductByNameResult prevPage = byNameResult.openPrevPage();
 
-      assertThat(prevPage.getEqFrenchProducts().size()).isGreaterThan(1);
+      assertThat(prevPage.getForeignProducts().size()).isGreaterThan(1);
       assertThat(byNameResult.getCurrentPageNumber()).isEqualTo(2);
       assertThat(prevPage.getCurrentPageNumber()).isEqualTo(1);
    }

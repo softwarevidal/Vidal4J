@@ -1,6 +1,6 @@
 package results;
 
-import items.FromNameForeignProduct;
+import items.ForeignProduct;
 import org.junit.Test;
 
 import java.io.FileNotFoundException;
@@ -16,7 +16,7 @@ public class APIForeignProductByNameResultTest {
       APIForeignProductByNameResult byNameResult =
               getAPIEqFrenchProductByNameResultFromXMLResource("eqFrenchProductsByName.xml");
 
-      List<FromNameForeignProduct> eqFrenchProducts = byNameResult.getEqFrenchProducts();
+      List<ForeignProduct> eqFrenchProducts = byNameResult.getForeignProducts();
 
       assertThat(eqFrenchProducts.size()).isEqualTo(25);
    }

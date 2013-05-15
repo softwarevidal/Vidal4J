@@ -1,7 +1,7 @@
 package results;
 
 import api.VidalAPI;
-import items.FromNameForeignProduct;
+import items.ForeignProduct;
 import org.apache.abdera.model.Entry;
 import org.apache.abdera.model.Feed;
 
@@ -16,12 +16,12 @@ public class APIForeignProductByNameResult
    }
 
 
-   public List<FromNameForeignProduct> getEqFrenchProducts() {
+   public List<ForeignProduct> getForeignProducts() {
       List<Entry> entries = this.feed.getEntries();
-      ArrayList<FromNameForeignProduct> eqFrenchProductsByName = new ArrayList<FromNameForeignProduct>();
+      ArrayList<ForeignProduct> eqFrenchProductsByName = new ArrayList<ForeignProduct>();
 
       for(Entry entry : entries) {
-         eqFrenchProductsByName.add(new FromNameForeignProduct(entry, this.vidalAPI));
+         eqFrenchProductsByName.add(new ForeignProduct(entry, this.vidalAPI));
       }
 
       return eqFrenchProductsByName;

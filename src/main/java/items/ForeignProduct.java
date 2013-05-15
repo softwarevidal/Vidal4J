@@ -9,9 +9,9 @@ import org.apache.abdera.model.Entry;
 import utils.EntryTool;
 
 
-public class FullForeignProduct extends Item {
+public class ForeignProduct extends Item {
 
-   public FullForeignProduct(Entry entry, VidalAPI vidalAPI) {
+   public ForeignProduct(Entry entry, VidalAPI vidalAPI) {
       super(entry, vidalAPI);
    }
 
