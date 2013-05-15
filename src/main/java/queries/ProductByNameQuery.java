@@ -18,7 +18,7 @@ public class ProductByNameQuery extends PaginatedQuery<ProductByNameQuery> {
    @Override
    public APIProductByNameResult execQuery() {
       Feed feed = this.fetchResults();
-      return new APIProductByNameResult(feed, this);
+      return new APIProductByNameResult(feed, this.vidalAPI);
    }
 
    @Override

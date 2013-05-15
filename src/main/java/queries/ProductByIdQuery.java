@@ -17,7 +17,7 @@ public class ProductByIdQuery extends Query<ProductByIdQuery> {
    @Override
    public APIProductByIdResult execQuery() {
       Feed feed = this.fetchResults();
-      return new APIProductByIdResult(feed, this);
+      return new APIProductByIdResult(feed, this.vidalAPI);
    }
 
    @Override

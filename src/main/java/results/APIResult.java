@@ -1,24 +1,20 @@
 package results;
 
+import api.VidalAPI;
 import org.apache.abdera.i18n.iri.IRI;
 import org.apache.abdera.model.Feed;
 import org.apache.abdera.model.Link;
 import org.joda.time.DateTime;
-import queries.Query;
 
 import java.util.Date;
 
-public abstract class APIResult<T extends Query> {
-   protected Feed feed;
-   protected T query;
+public abstract class APIResult {
+   protected final Feed feed;
+   protected final VidalAPI vidalAPI;
 
-   public APIResult(Feed resultFeed) {
+   public APIResult(Feed resultFeed, VidalAPI vidalAPI) {
       this.feed = resultFeed;
-   }
-
-   public APIResult(Feed resultFeed, T query) {
-      this.feed = resultFeed;
-      this.query = query;
+      this.vidalAPI = vidalAPI;
    }
 
 

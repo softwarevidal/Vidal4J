@@ -18,7 +18,7 @@ public class EqFrenchProductByIdQuery extends Query<EqFrenchProductByIdQuery> {
    @Override
    public APIEqFrenchProductByIdResult execQuery() {
       Feed feed = this.fetchResults();
-      return new APIEqFrenchProductByIdResult(feed, this);
+      return new APIEqFrenchProductByIdResult(feed, this.vidalAPI);
    }
 
    @Override

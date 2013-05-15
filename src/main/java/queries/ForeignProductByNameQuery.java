@@ -15,7 +15,7 @@ public class ForeignProductByNameQuery extends PaginatedQuery<ForeignProductByNa
    @Override
    public APIForeignProductByNameResult execQuery() {
       Feed feed = this.fetchResults();
-      return new APIForeignProductByNameResult(feed, this);
+      return new APIForeignProductByNameResult(feed, this.vidalAPI);
    }
 
    @Override

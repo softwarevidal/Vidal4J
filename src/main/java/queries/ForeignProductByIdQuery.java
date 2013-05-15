@@ -17,7 +17,7 @@ public class ForeignProductByIdQuery extends Query<ForeignProductByIdQuery> {
    @Override
    public APIForeignProductByIdResult execQuery() {
       Feed feed = this.fetchResults();
-      return new APIForeignProductByIdResult(feed, this);
+      return new APIForeignProductByIdResult(feed, this.vidalAPI);
    }
 
    @Override

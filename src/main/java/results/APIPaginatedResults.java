@@ -1,5 +1,6 @@
 package results;
 
+import api.VidalAPI;
 import org.apache.abdera.i18n.iri.IRI;
 import org.apache.abdera.model.Element;
 import org.apache.abdera.model.Feed;
@@ -9,35 +10,29 @@ import queries.PaginatedQuery;
 import javax.xml.namespace.QName;
 import java.lang.reflect.InvocationTargetException;
 
-public abstract class APIPaginatedResults<T extends PaginatedQuery, P extends APIPaginatedResults>
-        extends APIResult<T> {
+public abstract class APIPaginatedResults<P extends APIPaginatedResults>
+        extends APIResult {
 
    private final String OPENSEARCH_TAG_URL = "http://a9.com/-/spec/opensearch/1.1/";
    private final String REL_PREV = "prev";
    private Class<P> pClass;
-   private Class<T> tClass;
 
-   public APIPaginatedResults(Feed resultFeed) {
-      super(resultFeed);
-   }
-
-   public APIPaginatedResults(Feed resultFeed, T query, Class<P> pClass, Class<T> tClass) {
-      super(resultFeed, query);
+   public APIPaginatedResults(Feed resultFeed, VidalAPI vidalAPI1, Class<P> pClass) {
+      super(resultFeed, vidalAPI1);
       this.pClass = pClass;
-      this.tClass = tClass;
    }
 
 
    public P openNextPage() {
       IRI link = getNextPageLink();
-      Feed feed = this.query.getVidalAPI().openPage(link);
-      return this.newChildInstance(feed, this.query);
+      Feed feed = this.vidalAPI.openPage(link);
+      return this.newChildInstance(feed);
    }
 
    public P openPrevPage() {
       IRI link = getPrevPageLink();
-      Feed feed = this.query.getVidalAPI().openPage(link);
-      return this.newChildInstance(feed, this.query);
+      Feed feed = this.vidalAPI.openPage(link);
+      return this.newChildInstance(feed);
    }
 
    public IRI getNextPageLink() {
@@ -66,10 +61,10 @@ public abstract class APIPaginatedResults<T extends PaginatedQuery, P extends AP
    }
 
 
-   private P newChildInstance(Feed feed, PaginatedQuery query) {
+   private P newChildInstance(Feed feed) {
       P instance = null;
       try {
-         instance = this.pClass.getConstructor(Feed.class, this.tClass).newInstance(feed, query);
+         instance = this.pClass.getConstructor(Feed.class, VidalAPI.class).newInstance(feed, this.vidalAPI);
       } catch (NoSuchMethodException e) {
          e.printStackTrace();
       } catch (InvocationTargetException e) {

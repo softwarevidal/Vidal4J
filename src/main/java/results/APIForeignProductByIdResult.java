@@ -1,18 +1,18 @@
 package results;
 
+import api.VidalAPI;
 import items.FullForeignProduct;
 import org.apache.abdera.model.Entry;
 import org.apache.abdera.model.Feed;
 import queries.ForeignProductByIdQuery;
-import queries.Query;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class APIForeignProductByIdResult extends APIResult<ForeignProductByIdQuery> {
+public class APIForeignProductByIdResult extends APIResult {
 
-   public APIForeignProductByIdResult(Feed feed, ForeignProductByIdQuery query) {
-      super(feed, query);
+   public APIForeignProductByIdResult(Feed feed, VidalAPI vidalAPI) {
+      super(feed, vidalAPI);
    }
 
 
@@ -21,7 +21,7 @@ public class APIForeignProductByIdResult extends APIResult<ForeignProductByIdQue
       List<FullForeignProduct> fullForeignProducts = new ArrayList<FullForeignProduct>();
 
       for(Entry entry : entries) {
-         fullForeignProducts.add(new FullForeignProduct(entry, this.query.getVidalAPI()));
+         fullForeignProducts.add(new FullForeignProduct(entry, this.vidalAPI));
       }
 
       return fullForeignProducts;

@@ -1,5 +1,6 @@
 package results;
 
+import api.VidalAPI;
 import org.apache.abdera.model.Feed;
 import org.junit.Test;
 import results.APIPaginatedResults;
@@ -65,7 +66,7 @@ public class APIPaginatedResultsTest {
 
    private class PaginatedResultsImpl extends APIPaginatedResults {
       public PaginatedResultsImpl(Feed resultFeed) {
-         super(resultFeed);
+         super(resultFeed, new VidalAPI(""), PaginatedResultsImpl.class);
       }
    }
 }

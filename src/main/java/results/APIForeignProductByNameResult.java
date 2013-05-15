@@ -1,18 +1,18 @@
 package results;
 
+import api.VidalAPI;
 import items.FromNameForeignProduct;
 import org.apache.abdera.model.Entry;
 import org.apache.abdera.model.Feed;
-import queries.ForeignProductByNameQuery;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class APIForeignProductByNameResult
-        extends APIPaginatedResults<ForeignProductByNameQuery, APIForeignProductByNameResult> {
+        extends APIPaginatedResults<APIForeignProductByNameResult> {
 
-   public APIForeignProductByNameResult(Feed resultFeed, ForeignProductByNameQuery query) {
-      super(resultFeed, query, APIForeignProductByNameResult.class, ForeignProductByNameQuery.class);
+   public APIForeignProductByNameResult(Feed resultFeed, VidalAPI vidalAPI) {
+      super(resultFeed, vidalAPI, APIForeignProductByNameResult.class);
    }
 
 
@@ -21,7 +21,7 @@ public class APIForeignProductByNameResult
       ArrayList<FromNameForeignProduct> eqFrenchProductsByName = new ArrayList<FromNameForeignProduct>();
 
       for(Entry entry : entries) {
-         eqFrenchProductsByName.add(new FromNameForeignProduct(entry, this.query.getVidalAPI()));
+         eqFrenchProductsByName.add(new FromNameForeignProduct(entry, this.vidalAPI));
       }
 
       return eqFrenchProductsByName;
