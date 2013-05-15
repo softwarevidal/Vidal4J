@@ -5,7 +5,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import results.APIProductByNameResult;
 import searches.ProductSearch;
-import utils.MarketStatus;
+import utils.MarketStatusEnum;
 
 import static org.fest.assertions.Assertions.assertThat;
 
@@ -40,7 +40,7 @@ public class ProductByNameQueryIT {
 
    @Test
    public void withStatusParamShouldReutrnNonEmptyResults() {
-      APIProductByNameResult byNameResult = productSearch.byName().setStatus(MarketStatus.AVAILABLE).execQuery();
+      APIProductByNameResult byNameResult = productSearch.byName().setStatus(MarketStatusEnum.AVAILABLE).execQuery();
       assertNonEmptyResults(byNameResult);
    }
 

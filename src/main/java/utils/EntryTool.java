@@ -59,7 +59,8 @@ public class EntryTool {
    public static MarketStatus getMarketStatus(Entry entry) {
       Element element = getVidalTagContent("marketStatus", entry);
       String name = element.getAttributeValue("name");
-      return MarketStatus.valueOf(name);
+      String text = element.getText();
+      return new MarketStatus(name, text);
    }
 
    public static boolean IsPrescriptivableByMidWife(Entry entry) {

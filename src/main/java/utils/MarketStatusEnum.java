@@ -1,6 +1,6 @@
 package utils;
 
-public enum MarketStatus {
+public enum MarketStatusEnum {
    AVAILABLE,
    DELETED,
    PHARMACO,

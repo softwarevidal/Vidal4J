@@ -1,12 +1,12 @@
 package items;
 
 import api.VidalAPI;
+import items.key_values.MarketStatus;
 import items.key_values.VidalList;
 import org.apache.abdera.model.Entry;
 import results.APIProductByIdResult;
 import utils.DispensationPlace;
 import utils.EntryTool;
-import utils.MarketStatus;
 
 
 public class OfNameProduct extends Item {

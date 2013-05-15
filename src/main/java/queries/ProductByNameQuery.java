@@ -3,7 +3,7 @@ package queries;
 import api.VidalAPI;
 import org.apache.abdera.model.Feed;
 import results.APIProductByNameResult;
-import utils.MarketStatus;
+import utils.MarketStatusEnum;
 
 
 public class ProductByNameQuery extends PaginatedQuery<ProductByNameQuery> {
@@ -36,7 +36,7 @@ public class ProductByNameQuery extends PaginatedQuery<ProductByNameQuery> {
       return this.addParam(STARTWITH_PARAM, startWith);
    }
 
-   public ProductByNameQuery setStatus(MarketStatus status) {
+   public ProductByNameQuery setStatus(MarketStatusEnum status) {
       return this.addParam("status", status.toString());
    }
 }

@@ -3,8 +3,6 @@ package items;
 import org.junit.Before;
 import org.junit.Test;
 import results.APIProductByNameResult;
-import utils.DispensationPlace;
-import utils.MarketStatus;
 
 import java.io.FileNotFoundException;
 

@@ -65,7 +65,7 @@ public class EntryToolTest {
 
    @Test
    public void shouldReturnTheMarketStatus() {
-      assertThat(this.ofIdProduct.getMarketStatus()).isEqualTo(MarketStatus.AVAILABLE);
+      assertThat(this.ofIdProduct.getMarketStatus().asEnum()).isEqualTo(MarketStatusEnum.AVAILABLE);
    }
 
    @Test
