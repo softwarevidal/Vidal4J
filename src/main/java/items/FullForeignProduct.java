@@ -11,9 +11,9 @@ import utils.EntryTool;
 import static utils.AtomTool.getVidalTagContent;
 
 
-public class ForeignProduct extends Item {
+public class FullForeignProduct extends Item {
 
-   public ForeignProduct(Entry entry, VidalAPI vidalAPI) {
+   public FullForeignProduct(Entry entry, VidalAPI vidalAPI) {
       super(entry, vidalAPI);
    }
 

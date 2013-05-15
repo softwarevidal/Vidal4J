@@ -2,7 +2,7 @@ package queries;
 
 import api.VidalAPI;
 import org.apache.abdera.model.Feed;
-import results.APIForeignProductResult;
+import results.APIForeignProductByIdResult;
 
 
 public class ForeignProductByIdQuery extends Query<ForeignProductByIdQuery> {
@@ -20,9 +20,9 @@ public class ForeignProductByIdQuery extends Query<ForeignProductByIdQuery> {
    }
 
    @Override
-   public APIForeignProductResult execQuery() {
+   public APIForeignProductByIdResult execQuery() {
       Feed feed = this.fetchResults();
-      return new APIForeignProductResult(feed, this);
+      return new APIForeignProductByIdResult(feed, this);
    }
 
    @Override

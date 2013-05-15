@@ -9,15 +9,15 @@ import java.io.FileNotFoundException;
 import static org.fest.assertions.Assertions.assertThat;
 
 
-public class APIEqFrenchProductByNameResultIT {
+public class APIForeignProductByNameResultIT {
 
    @Test
    public void shouldLoadTheNextPage() throws FileNotFoundException {
       VidalAPI vidalAPI = VidalAPIFactory.getDevInstance();
-      APIEqFrenchProductByNameResult byNameResult = vidalAPI.searchEqFrenchProduct().byName("asp")
+      APIForeignProductByNameResult byNameResult = vidalAPI.searchForeignProduct().byName("asp")
               .setPageSize(10).setStartPage(2).execQuery();
 
-      APIEqFrenchProductByNameResult nextPage = byNameResult.openNextPage();
+      APIForeignProductByNameResult nextPage = byNameResult.openNextPage();
 
       assertThat(nextPage.getEqFrenchProducts().size()).isGreaterThan(1);
       assertThat(byNameResult.getCurrentPageNumber()).isEqualTo(2);
@@ -27,10 +27,10 @@ public class APIEqFrenchProductByNameResultIT {
    @Test
    public void shouldLoadThePrevPage() throws FileNotFoundException {
       VidalAPI vidalAPI = VidalAPIFactory.getDevInstance();
-      APIEqFrenchProductByNameResult byNameResult = vidalAPI.searchEqFrenchProduct().byName("asp")
+      APIForeignProductByNameResult byNameResult = vidalAPI.searchForeignProduct().byName("asp")
               .setPageSize(10).setStartPage(2).execQuery();
 
-      APIEqFrenchProductByNameResult prevPage = byNameResult.openPrevPage();
+      APIForeignProductByNameResult prevPage = byNameResult.openPrevPage();
 
       assertThat(prevPage.getEqFrenchProducts().size()).isGreaterThan(1);
       assertThat(byNameResult.getCurrentPageNumber()).isEqualTo(2);

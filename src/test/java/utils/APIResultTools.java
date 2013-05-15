@@ -46,11 +46,11 @@ public class APIResultTools {
       return new APIProductByNameResult(feed, byNameQuery);
    }
 
-   public static APIForeignProductResult getAPIForeignProductResultFromXMLResource(String xmlSource)
+   public static APIForeignProductByIdResult getAPIForeignProductResultFromXMLResource(String xmlSource)
            throws FileNotFoundException {
       Feed feed = getFeedFromXML(xmlSource);
       ForeignProductByIdQuery byIdQuery = new ForeignProductByIdQuery("", 0);
-      return new APIForeignProductResult(feed, byIdQuery);
+      return new APIForeignProductByIdResult(feed, byIdQuery);
    }
 
    public static APIEqFrenchProductByIdResult getAPIEqFrenchProductResultFromXMLResource(String xmlSource)
@@ -60,11 +60,11 @@ public class APIResultTools {
       return new APIEqFrenchProductByIdResult(feed, byIdQuery);
    }
 
-   public static APIEqFrenchProductByNameResult getAPIEqFrenchProductByNameResultFromXMLResource(String xmlSource)
+   public static APIForeignProductByNameResult getAPIEqFrenchProductByNameResultFromXMLResource(String xmlSource)
            throws FileNotFoundException {
       Feed feed = getFeedFromXML(xmlSource);
-      EqFrenchProductByNameQuery byNameQuery = new EqFrenchProductByNameQuery("", "", new VidalAPI(""));
-      return new APIEqFrenchProductByNameResult(feed, byNameQuery);
+      ForeignProductByNameQuery byNameQuery = new ForeignProductByNameQuery("", "", new VidalAPI(""));
+      return new APIForeignProductByNameResult(feed, byNameQuery);
    }
 
    public static APIProductByIdResult getAPIFullProductResultFromXMLResource(String xmlSource)

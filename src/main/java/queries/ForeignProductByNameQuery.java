@@ -2,20 +2,20 @@ package queries;
 
 import api.VidalAPI;
 import org.apache.abdera.model.Feed;
-import results.APIEqFrenchProductByNameResult;
+import results.APIForeignProductByNameResult;
 
 
-public class EqFrenchProductByNameQuery extends PaginatedQuery<EqFrenchProductByNameQuery> {
+public class ForeignProductByNameQuery extends PaginatedQuery<ForeignProductByNameQuery> {
 
-   public EqFrenchProductByNameQuery(String baseUrl, String name, VidalAPI vidalAPI) {
+   public ForeignProductByNameQuery(String baseUrl, String name, VidalAPI vidalAPI) {
       super(baseUrl, vidalAPI);
       this.addParam("q", name);
    }
 
    @Override
-   public APIEqFrenchProductByNameResult execQuery() {
+   public APIForeignProductByNameResult execQuery() {
       Feed feed = this.fetchResults();
-      return new APIEqFrenchProductByNameResult(feed, this);
+      return new APIForeignProductByNameResult(feed, this);
    }
 
    @Override
@@ -24,7 +24,7 @@ public class EqFrenchProductByNameQuery extends PaginatedQuery<EqFrenchProductBy
    }
 
 
-   public EqFrenchProductByNameQuery setCountry(String country) {
+   public ForeignProductByNameQuery setCountry(String country) {
       return this.addParam("country", country);
    }
 }

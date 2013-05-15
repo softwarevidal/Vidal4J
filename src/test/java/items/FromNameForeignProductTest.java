@@ -6,7 +6,7 @@ import items.key_values.GalenicForm;
 import items.key_values.Route;
 import org.junit.Before;
 import org.junit.Test;
-import results.APIEqFrenchProductByNameResult;
+import results.APIForeignProductByNameResult;
 import utils.Category;
 
 import java.io.FileNotFoundException;
@@ -14,9 +14,9 @@ import java.io.FileNotFoundException;
 import static org.fest.assertions.Assertions.assertThat;
 import static utils.APIResultTools.getAPIEqFrenchProductByNameResultFromXMLResource;
 
-public class EqFrenchOfNameProductTest {
+public class FromNameForeignProductTest {
 
-   private EqFrenchOfNameProduct productOfNameQuery;
+   private FromNameForeignProduct productOfNameQuery;
 
    @Before
    public void setUp() throws FileNotFoundException {
@@ -67,8 +67,8 @@ public class EqFrenchOfNameProductTest {
    }
 
 
-   private EqFrenchOfNameProduct getFirstProductFromXML(String xmlSource) throws FileNotFoundException {
-      APIEqFrenchProductByNameResult byNameResult =
+   private FromNameForeignProduct getFirstProductFromXML(String xmlSource) throws FileNotFoundException {
+      APIForeignProductByNameResult byNameResult =
               getAPIEqFrenchProductByNameResultFromXMLResource(xmlSource);
       return byNameResult.getEqFrenchProducts().get(0);
    }

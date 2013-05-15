@@ -1,6 +1,6 @@
 package results;
 
-import items.ForeignProduct;
+import items.FullForeignProduct;
 import org.junit.Test;
 
 import java.io.FileNotFoundException;
@@ -9,15 +9,15 @@ import java.util.List;
 import static org.fest.assertions.Assertions.assertThat;
 import static utils.APIResultTools.getAPIForeignProductResultFromXMLResource;
 
-public class APIForeignProductResultTest {
+public class APIForeignProductByIdResultTest {
 
    @Test
    public void shouldReturnTheListOfForeignProducts() throws FileNotFoundException {
-      APIForeignProductResult apiForeignProductResult =
+      APIForeignProductByIdResult apiForeignProductByIdResult =
               getAPIForeignProductResultFromXMLResource("foreignProducts.xml");
 
-      List<ForeignProduct> foreignProducts = apiForeignProductResult.getForeignProducts();
+      List<FullForeignProduct> fullForeignProducts = apiForeignProductByIdResult.getForeignProducts();
 
-      assertThat(foreignProducts.size()).isEqualTo(35);
+      assertThat(fullForeignProducts.size()).isEqualTo(35);
    }
 }

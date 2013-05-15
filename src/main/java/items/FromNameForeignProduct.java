@@ -11,9 +11,9 @@ import utils.EntryTool;
 import static utils.AtomTool.getVidalTagContent;
 
 
-public class EqFrenchOfNameProduct extends Item {
+public class FromNameForeignProduct extends Item {
 
-   public EqFrenchOfNameProduct(Entry entry, VidalAPI vidalAPI) {
+   public FromNameForeignProduct(Entry entry, VidalAPI vidalAPI) {
       super(entry, vidalAPI);
    }
 
