@@ -9,7 +9,7 @@ import results.ForeignProductByIdResult;
 
 import java.io.FileNotFoundException;
 
-import static org.fest.assertions.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 import static utils.APIResultTools.getAPIForeignProductResultFromXMLResource;
 
 public class ForeignProductIT {

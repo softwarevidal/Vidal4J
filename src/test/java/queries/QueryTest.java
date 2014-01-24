@@ -5,7 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 import results.Result;
 
-import static org.fest.assertions.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class QueryTest {
 

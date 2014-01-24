@@ -7,7 +7,7 @@ import org.junit.Test;
 
 import java.io.FileNotFoundException;
 
-import static org.fest.assertions.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 import static utils.APIResultTools.getFeedFromXML;
 
 public class ResultTest {

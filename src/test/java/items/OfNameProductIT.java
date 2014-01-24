@@ -6,7 +6,7 @@ import org.junit.Test;
 import results.ProductByIdResult;
 import results.ProductByNameResult;
 
-import static org.fest.assertions.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 
 public class OfNameProductIT {

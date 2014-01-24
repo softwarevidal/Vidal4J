@@ -2,11 +2,11 @@ package utils;
 
 import api.FullVidalAPI;
 import com.google.common.io.Resources;
-import results.*;
 import org.apache.abdera.Abdera;
 import org.apache.abdera.model.Document;
 import org.apache.abdera.model.Feed;
 import org.apache.abdera.parser.Parser;
+import results.*;
 
 import java.io.File;
 import java.io.FileInputStream;

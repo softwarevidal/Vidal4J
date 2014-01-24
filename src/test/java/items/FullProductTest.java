@@ -8,7 +8,7 @@ import java.io.FileNotFoundException;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 
-import static org.fest.assertions.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 import static utils.APIResultTools.getAPIFullProductResultFromXMLResource;
 
 public class FullProductTest {

@@ -7,7 +7,7 @@ import org.junit.Test;
 import results.ForeignProductByIdResult;
 import results.ProductByIdResult;
 
-import static org.fest.assertions.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 
 public class FullProductIT {
