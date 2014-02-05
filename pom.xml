@@ -87,4 +87,33 @@
             </plugin>
         </plugins>
     </build>
+
+    <!-- where to retrieve dependencies -->
+    <repositories>
+        <repository>
+            <id>vidal-main-repo</id>
+            <name>Vidal Nexus Maven Central Repository</name>
+            <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <url>http://nexus.vidal.net:8081/nexus/content/groups/vidal</url>
+        </repository>
+    </repositories>
+
+    <!-- where to deploy snapshots and releases : require proper credentials in settings.xml -->
+    <distributionManagement>
+        <repository>
+            <id>vidal-releases</id>
+            <url>http://nexus.vidal.net:8081/nexus/content/repositories/vidal-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>vidal-snapshots</id>
+            <uniqueVersion>true</uniqueVersion>
+            <url>http://nexus.vidal.net:8081/nexus/content/repositories/vidal-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
