@@ -100,7 +100,7 @@
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
-            <url>http://nexus.vidal.net:8081/nexus/content/groups/vidal</url>
+            <url>http://nexus.vidal.net/content/groups/vidal</url>
         </repository>
     </repositories>
 
@@ -108,12 +108,12 @@
     <distributionManagement>
         <repository>
             <id>vidal-releases</id>
-            <url>http://nexus.vidal.net:8081/nexus/content/repositories/vidal-releases/</url>
+            <url>http://nexus.vidal.net/content/repositories/vidal-releases/</url>
         </repository>
         <snapshotRepository>
             <id>vidal-snapshots</id>
             <uniqueVersion>true</uniqueVersion>
-            <url>http://nexus.vidal.net:8081/nexus/content/repositories/vidal-snapshots/</url>
+            <url>http://nexus.vidal.net/content/repositories/vidal-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 </project>
