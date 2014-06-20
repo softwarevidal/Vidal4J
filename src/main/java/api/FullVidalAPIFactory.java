@@ -11,6 +11,6 @@ public class FullVidalAPIFactory {
    }
 
    public static FullVidalAPI getDevInstance() {
-      return new FullVidalAPI("http://apirest-dev.vidal.fr");
+	   return new FullVidalAPI("http://dev-software.vidal.net/excalibur-rest-snapshot/");
    }
 }
